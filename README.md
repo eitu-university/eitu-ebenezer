@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ebenezer - Organización Cristiana Evangélica Pentecostal
 
-## Getting Started
+Sitio web oficial de la organización cristiana evangélica pentecostal internacional Ebenezer.
 
-First, run the development server:
+## 🚀 Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15.4.4** - Framework de React
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Framework de CSS
+- **SCSS** - Preprocesador de CSS
+- **React Icons** - Iconografía
+- **Clsx** - Utilidad para clases condicionales
+- **Zod** - Validación de esquemas
+- **Sonner** - Notificaciones toast
+- **Resend** - Servicio de email
+- **React Hook Form** - Manejo de formularios
+- **@hookform/resolvers** - Resolvers para React Hook Form
+- **Prettier Plugin Tailwind CSS** - Ordenamiento de clases
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/                 # App Router de Next.js
+├── components/          # Componentes reutilizables
+│   ├── banner/         # Componente del banner principal
+│   ├── header/         # Componente del header
+│   ├── footer/         # Componente del footer
+│   ├── sections/       # Secciones de la página
+│   └── seo/           # Componentes de SEO
+├── data/              # Datos estáticos
+├── hooks/             # Hooks personalizados
+├── lib/               # Utilidades y configuraciones
+├── types/             # Tipos de TypeScript
+└── zod/               # Esquemas de validación
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clona el repositorio:
+```bash
+git clone <repository-url>
+cd ebenezer
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-## Learn More
+3. Ejecuta el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Scripts Disponibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Ejecuta el servidor de desarrollo
+- `npm run build` - Construye la aplicación para producción
+- `npm run start` - Ejecuta la aplicación en modo producción
+- `npm run lint` - Ejecuta el linter
+- `npm run postbuild` - Genera el sitemap después del build
 
-## Deploy on Vercel
+## 🎨 Características
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Diseño Responsivo** - Mobile-first design
+- **SEO Optimizado** - Meta tags, sitemap, y estructura semántica
+- **Accesibilidad** - Cumple con estándares WCAG
+- **Performance** - Optimizado para velocidad
+- **Formularios Validados** - Con Zod y React Hook Form
+- **Notificaciones** - Sistema de toast con Sonner
+- **Navegación Suave** - Scroll suave entre secciones
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📧 Configuración de Email
+
+Para configurar el envío de emails con Resend:
+
+1. Crea una cuenta en [Resend](https://resend.com)
+2. Obtén tu API key
+3. Configura las variables de entorno:
+
+```env
+RESEND_API_KEY=tu_api_key_aqui
+```
+
+## 🌐 Despliegue
+
+El proyecto está optimizado para desplegarse en Vercel, pero también funciona en otras plataformas.
+
+### Variables de Entorno Requeridas
+
+```env
+SITE_URL=https://tu-dominio.com
+RESEND_API_KEY=tu_api_key_de_resend
+```
+
+## 📄 Licencia
+
+Este proyecto es propiedad de la organización Ebenezer.
+
+## 🤝 Contribución
+
+Para contribuir al proyecto, por favor contacta con el equipo de desarrollo.
+
+---
+
+**Ebenezer** - "Hasta aquí nos ayudó Jehová"

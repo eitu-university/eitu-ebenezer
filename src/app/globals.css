@@ -1,26 +1,95 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Focus styles for better accessibility */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
 }
+
+/* Button hover effects */
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.navLink {
+  position: relative;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* styles/globals.css */

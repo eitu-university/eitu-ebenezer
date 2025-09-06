@@ -1,0 +1,122 @@
+/* Custom styles for Swiper */
+.carouselContainer {
+  position: relative;
+  width: calc(min(90rem, 100%));
+  margin: 0 auto;
+  min-height: 70vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.swiperContainer {
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  padding: 60px 0 155px 0;
+}
+
+.swiperSlide {
+  width: 20rem; /* Ancho de la tarjeta en el centro */
+  height: 21rem; /* Altura de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  position: relative;
+}
+.slideContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  border-radius: 15px;
+}
+.miniFlag {
+  @apply absolute right-2 top-2 h-10 w-10 rounded-full shadow-xl
+}
+
+/* Estilos de navegación y paginación */
+/* .swiper-button-next, */
+.swiper-button-prev {
+  /* color: #fff !important; Color de los íconos de navegación */
+  /* background-color: #3b82f6; Color de fondo de los botones */
+  /* width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; */
+  background: white;
+  border-radius: 50%;
+  top: 47%;
+  left: -30%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
+}
+
+.swiper-button-prev::after {
+  content: '';
+}
+.swiper-button-prev .bx {
+  font-size: 25px;
+}
+.swiper-button-next {
+  background: white;
+  border-radius: 50%;
+  top: 47%;
+  right: -30%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
+}
+.swiper-button-next::after {
+  content: '';
+}
+.swiper-button-next .bx {
+  font-size: 25px;
+}
+@media (min-width: 760px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+  }
+}
+
+/* Ajusta los íconos para que no se vean extraños */
+/* .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+} */
+
+/* Opcional: para que las flechas tengan el mismo look que la imagen */
+.swiper-button-prev {
+  /* left: 20px; Ajusta la posición izquierda */
+}
+
+.swiper-button-next {
+  /* right: 20px; Ajusta la posición derecha */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  /* background-color: #2563eb; */
+}
+
+.swiper-pagination-bullet {
+  /* background-color: #9ca3af !important; Color de los puntos de la paginación */
+}
+
+.swiper-pagination-bullet-active {
+  /* background-color: #3b82f6 !important; Color del punto activo */
+}

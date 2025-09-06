@@ -1,9 +1,33 @@
-import Image from "next/image";
+import SEO from '@/components/seo/SEO';
+import Header from '@/components/header/Header';
+import Banner from '@/components/banner/Banner';
+import AboutUs from '@/components/sections/AboutUs';
+import Staff from '@/components/sections/Staff';
+import Ministries from '@/components/sections/Ministries';
+import Testimonials from '@/components/sections/Testimonials';
+import Contact from '@/components/sections/Contact/Contact';
+// import Footer from '@/components/footer/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
+import { Toaster } from 'sonner';
+import Nations from '@/components/sections/Nations/Nations';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <SEO />
+      <Toaster position="top-right" />
+      
+      <Header />
+      <main className="">
+        <Banner />
+        <Nations />
+        <AboutUs />
+        <Staff />
+        <Ministries />
+        <Testimonials />
+        <Contact />
+      </main>
+      <ScrollToTop />
+    </>
   );
 }

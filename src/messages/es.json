@@ -1,0 +1,86 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "about": "Acerca de Nosotros",
+    "contact": "Contacto",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "Homepage": {
+    "title": "Bienvenido a Ebenezer",
+    "subtitle": "Organización Cristiana Evangélica Pentecostal",
+    "description": "Dedicados a compartir el amor de Cristo y transformar vidas a través del evangelio"
+  },
+  "Banner": {
+    "title": "Bienvenidos a Ebenezer",
+    "subtitle": "Donde la fe se encuentra con la esperanza",
+    "description": "Somos una organización cristiana evangélica pentecostal internacional comprometida con compartir el evangelio y transformar vidas a través del poder de Jesucristo.",
+    "cta": "Únete a Nosotros"
+  },
+  "AboutUs": {
+    "title": "Acerca de Nosotros",
+    "subtitle": "Nuestra Historia y Misión",
+    "description": "Ebenezer es más que una organización; es una familia de creyentes unidos por el amor de Cristo y el deseo de servir a Dios y a la comunidad.",
+    "mission": "Nuestra Misión",
+    "missionText": "Proclamar el evangelio de Jesucristo, hacer discípulos y transformar vidas a través del poder del Espíritu Santo.",
+    "vision": "Nuestra Visión",
+    "visionText": "Ser una luz en el mundo, llevando esperanza y amor a todas las naciones."
+  },
+  "Staff": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Líderes Dedicados al Servicio",
+    "description": "Conoce a los pastores y líderes que guían nuestra congregación con amor y dedicación."
+  },
+  "Ministries": {
+    "title": "Nuestros Ministerios",
+    "subtitle": "Sirviendo en Diversas Áreas",
+    "description": "Descubre las diferentes formas en que servimos a nuestra comunidad y compartimos el amor de Cristo."
+  },
+  "Testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Historias de Transformación",
+    "description": "Escucha las poderosas historias de cómo Dios ha transformado vidas en nuestra congregación."
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos Aquí para Ti",
+    "description": "¿Tienes preguntas? ¿Necesitas oración? ¿Quieres unirte a nuestra familia? No dudes en contactarnos.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    },
+    "info": {
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "hours": "Horarios de Servicio"
+    }
+  },
+  "Footer": {
+    "description": "Organización Cristiana Evangélica Pentecostal Internacional",
+    "quickLinks": "Enlaces Rápidos",
+    "contactInfo": "Información de Contacto",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados"
+  },
+  "Common": {
+    "readMore": "Leer Más",
+    "learnMore": "Saber Más",
+    "getInTouch": "Ponte en Contacto",
+    "joinUs": "Únete a Nosotros",
+    "prayer": "Oración",
+    "worship": "Adoración",
+    "fellowship": "Comunión",
+    "service": "Servicio"
+  },
+  "SEO": {
+    "title": "Ebenezer - Organización Cristiana Evangélica Pentecostal",
+    "description": "Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.",
+    "keywords": "cristiano, evangélico, pentecostal, iglesia, fe, evangelio, oración, adoración"
+  }
+}
