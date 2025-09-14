@@ -2,13 +2,14 @@ import { nations } from '@/data/nations';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
-export default function NationsPage({
+export default async function NationsPage({
   params,
 }: {
   params: { country: string };
 }) {
+  const param = await params;
   const nation = nations.find(
-    (n) => n.slug.split('/').pop() === params.country
+    (n) => n.slug.split('/').pop() === param.country
   );
 
   if (!nation) return notFound();
@@ -26,14 +27,14 @@ export default function NationsPage({
         />
         {/* Contenido centrado sobre la imagen */}
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 text-center text-white">
+          <img
+            src={nation.flagSvg}
+            alt={`${nation.name} flag`}
+            className="h-28 w-28 shadow-xl rounded-full"
+          />
           <h1 className="text-4xl font-bold">{nation.name}</h1>
           <p className="mt-2 text-lg">{nation.description}</p>
         </div>
-        <img
-          src={nation.flagSvg}
-          alt={`${nation.name} flag`}
-          className="h-18 absolute right-0 top-0 w-28 shadow-xl"
-        />
       </div>
     </div>
   );

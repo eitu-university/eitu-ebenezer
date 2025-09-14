@@ -8,7 +8,7 @@ export default function RoutesLayout({
   return (
     <>
       <Header />
-      <div className="h-28 bg-gray-700"></div>
+      <div className="h-44 md:h-44 bg-gray-700"></div>
       {children}
     </>
   );

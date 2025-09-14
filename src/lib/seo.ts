@@ -57,7 +57,7 @@ export const defaultMetadata: Metadata = {
     },
   },
   verification: {
-    google: 'tu-google-verification-code',
+    google: 'my-verification-code',
   },
 };
 

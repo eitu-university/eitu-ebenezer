@@ -1,86 +1,79 @@
-import { FiHeart, FiUsers, FiGlobe, FiBookOpen } from 'react-icons/fi';
+import { values } from '@/data/about-us';
 
 export default function AboutUs() {
-  const values = [
-    {
-      icon: FiHeart,
-      title: 'Amor de Cristo',
-      description: 'Compartimos el amor incondicional de Jesucristo con todos.'
-    },
-    {
-      icon: FiUsers,
-      title: 'Comunidad',
-      description: 'Construimos una comunidad unida en fe y propósito.'
-    },
-    {
-      icon: FiGlobe,
-      title: 'Misión Global',
-      description: 'Llevamos el evangelio a todas las naciones del mundo.'
-    },
-    {
-      icon: FiBookOpen,
-      title: 'Enseñanza Bíblica',
-      description: 'Fundamos nuestras vidas en la verdad de la Palabra de Dios.'
-    }
-  ];
-
   return (
-    <section id="about" className="py-28 bg-gray-50 dark:bg-gray-900">
+    <section id="about" className="bg-gray-50 py-28 dark:bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+        <div className="mx-auto mb-16 max-w-4xl text-center">
+          <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
             Acerca de Nosotros
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-            Ebenezer es una organización cristiana evangélica pentecostal internacional 
-            dedicada a compartir el amor de Cristo y transformar vidas a través del 
-            poder del Espíritu Santo.
+          <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
+            Ebenezer es una organización cristiana evangélica pentecostal
+            internacional dedicada a compartir el amor de Cristo y transformar
+            vidas a través del poder del Espíritu Santo.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="mb-16 grid items-center gap-12 md:grid-cols-2">
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
               Nuestra Historia
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Fundada en el año 1995, Ebenezer nació de la visión de crear una 
-              comunidad cristiana que refleje el amor y la gracia de Dios. 
-              Nuestro nombre &quot;Ebenezer&quot; significa &quot;Hasta aquí nos ayudó Jehová&quot;, 
-              recordándonos constantemente la fidelidad de Dios en nuestro caminar.
+            <p className="mb-6 leading-relaxed text-gray-600 dark:text-gray-300">
+              Lo que antes se conocia como Maranatha Bible Seminary, Inc.
+              fundado en el 1973 hoy dia se ha convertido en Ebenezer
+              Theological College and University, Inc. Este fue establecido en
+              el año 2015, como el organo oficial del Departamento de Educacion
+              Cristiana del Concilio Pentecostal Ebenezer, Inc. para llevar la
+              Educacion Teologica a un nivel mas alto de excelencia academica.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              A lo largo de más de 25 años, hemos sido testigos de cómo Dios 
-              transforma vidas, sana corazones y restaura familias. Nuestro 
-              compromiso es continuar siendo un faro de esperanza en un mundo 
+            {/* <p className="mb-6 leading-relaxed text-gray-600 dark:text-gray-300">
+              A lo largo de más de 25 años, hemos sido testigos de cómo Dios
+              transforma vidas, sana corazones y restaura familias. Nuestro
+              compromiso es continuar siendo un faro de esperanza en un mundo
               que necesita desesperadamente el amor de Cristo.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Hoy, con presencia en múltiples países, seguimos fieles a nuestra 
-              misión de predicar el evangelio, hacer discípulos y glorificar a 
+            <p className="leading-relaxed text-gray-600 dark:text-gray-300">
+              Hoy, con presencia en múltiples países, seguimos fieles a nuestra
+              misión de predicar el evangelio, hacer discípulos y glorificar a
               Dios en todo lo que hacemos.
-            </p>
+            </p> */}
           </div>
           <div className="relative">
-            <div className="bg-blue-600 rounded-2xl p-8 text-white">
-              <h4 className="text-xl font-bold mb-4">Nuestra Misión</h4>
-              <p className="text-blue-100 leading-relaxed">
-              &quot;Id por todo el mundo y predicad el evangelio a toda criatura&quot;
-                (Marcos 16:15). Llevamos esta gran comisión con pasión y 
-                dedicación, impactando vidas para la gloria de Dios.
+            <div className="rounded-2xl bg-blue-600 p-8 text-white ">
+              <h4 className="mb-4 text-xl font-bold">
+                Nuestra Misión
+              </h4>
+              <p className="leading-relaxed text-blue-100">
+                Nuestra misión es entrenar a los hombres y mujeres que persiguen
+                una vida de servicio al Señor a través de las normas bíblicas de
+                la fe cristiana. Esto se logrará proporcionándoles a nuestros
+                estudiantes educación cristiana teológica superior,
+                multidimensional y pluralista.
+              </p>
+              <h4 className="mb-4 mt-6 text-xl font-bold">
+                Nuestra Visión
+              </h4>
+              <p className="leading-relaxed text-blue-100">
+                Esforzarnos por ser una institución modelo que contribuirá al
+                mejoramiento de nuestra sociedad, entrenando a líderes
+                cristianos especializados y espirituales que llevarán nuestra
+                misión promoviendo los valores morales basados en los
+                fundamentos bíblicos de la fe cristiana.
               </p>
             </div>
           </div>
         </div>
 
         {/* Valores */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((value, index) => (
             <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <value.icon className="w-8 h-8 text-blue-600" />
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
+                <value.icon className="h-8 w-8 text-blue-600" />
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+              <h4 className="mb-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
                 {value.title}
               </h4>
               <p className="text-gray-600 dark:text-gray-300">
@@ -92,4 +85,4 @@ export default function AboutUs() {
       </div>
     </section>
   );
-} 
+}

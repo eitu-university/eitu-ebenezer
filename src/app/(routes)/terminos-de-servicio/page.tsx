@@ -81,28 +81,14 @@ export default function TermsOfServicePage() {
               Este sitio puede incluir enlaces a páginas externas. No nos
               hacemos responsables del contenido de sitios de terceros.
             </p>
-          </section>
-
-          <section aria-labelledby="cambios">
-            <h2
-              id="cambios"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
-            >
-              5. Cambios en los términos
-            </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              Podemos modificar estos Términos en cualquier momento. Las
-              modificaciones se publicarán en esta misma página con su fecha de
-              actualización.
-            </p>
-          </section>
+          </section>          
 
           <section aria-labelledby="contacto">
             <h2
               id="contacto"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              6. Contacto
+              5. Contacto
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
               Para cualquier consulta relacionada con el uso del sitio, puede
@@ -124,13 +110,27 @@ export default function TermsOfServicePage() {
                   className="text-blue-600 underline dark:text-blue-400"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://wa.me/19292588162?text=Hola,%20Ebenecer"
+                  href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
                 >
                   +1 (929) 258-8162
                 </a>
               </p>
               <p className="flex gap-4 items-center"><SlLocationPin size={20}/> Dirección: Ciudad, Estado, País</p>
             </div>
+          </section>
+
+          <section aria-labelledby="cambios">
+            <h2
+              id="cambios"
+              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+            >
+              6. Cambios en los términos
+            </h2>
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+              Podemos modificar estos Términos en cualquier momento. Las
+              modificaciones se publicarán en esta misma página con su fecha de
+              actualización.
+            </p>
           </section>
         </div>
       </section>

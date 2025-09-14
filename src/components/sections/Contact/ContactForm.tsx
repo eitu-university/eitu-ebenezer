@@ -192,11 +192,11 @@ export default function ContactForm() {
           </div>
           <div>
             <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">Información</h4>
-            <a href="mailto:hola@ebenezer.com" className='block dark:text-gray-300'>Email: info@ebenezer.org</a>
+            <a href="mailto:hola@ebenezer.com" className='block dark:text-gray-300'>Email: hola@eituebenezer.org</a>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://wa.me/19292588162?text=Hola,%20Ebenezer."
+              href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
               className='block dark:text-gray-300'
             >
               Teléfono: +(1) 929 258 8162

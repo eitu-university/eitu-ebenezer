@@ -105,6 +105,7 @@ export default async function RootLayout({
         className={`${inter.variable} ${lato.variable} bg-white font-lato text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100`}
       >
         <ThemeProvider>{children}</ThemeProvider>
+        <div className="h-64 dark:bg-gray-800"></div>
         <Footer />
       </body>
     </html>

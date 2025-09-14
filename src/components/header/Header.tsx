@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import { RiWhatsappLine, RiMailLine } from 'react-icons/ri';
 import ThemeToggle from '@/components/ThemeToggle';
 import Link from 'next/link';
+import Logo from '../Logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +54,7 @@ export default function Header() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://wa.me/19292588162?text=Hola,%20Ebenezer."
+              href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
               className="hover:text-lr-beige navLink flex items-center transition-colors"
             >
               <RiWhatsappLine className="mr-1.5 h-3 w-3" />
@@ -63,16 +64,11 @@ export default function Header() {
         </div>
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between lg:h-20">
+        <div className="flex h-36 items-center justify-between lg:h-36">
           {/* Logo */}
           <div className="flex items-center">
             <Link href={'/'} className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600">
-                <span className="text-lg font-bold text-white">E</span>
-              </div>
-              <span className="text-xl font-bold text-gray-200 lg:text-2xl">
-                Ebenezer
-              </span>
+              <Logo />
             </Link>
           </div>
 

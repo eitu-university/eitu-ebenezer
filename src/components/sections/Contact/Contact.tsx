@@ -1,6 +1,6 @@
-import { FiMapPin, FiPhone, FiMail, FiClock } from 'react-icons/fi';
+import { FiMapPin, FiMail, FiClock } from 'react-icons/fi';
 import ContactForm from './ContactForm';
-import { RiWhatsappLine, RiMailLine } from 'react-icons/ri';
+import { RiWhatsappLine } from 'react-icons/ri';
 
 export default function Contact() {
   return (
@@ -60,7 +60,7 @@ export default function Contact() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://wa.me/19292588162?text=Hola,%20Ebenezer"
+                    href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
                     className="text-gray-600 dark:text-gray-300"
                   >
                     +(1) 929 258 8162
