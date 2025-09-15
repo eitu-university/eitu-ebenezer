@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eituebenezer.com
+
+# Sitemaps
+Sitemap: https://eituebenezer.com/sitemap.xml

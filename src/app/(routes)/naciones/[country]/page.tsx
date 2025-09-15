@@ -2,15 +2,13 @@ import { nations } from '@/data/nations';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
-export default async function NationsPage({
-  params,
-}: {
-  params: { country: string };
-}) {
-  const param = await params;
-  const nation = nations.find(
-    (n) => n.slug.split('/').pop() === param.country
-  );
+interface NationsPageProps {
+  params: Promise<{ country: string }>;
+}
+
+export default async function NationsPage({ params }: NationsPageProps) {
+  const { country } = await params;
+  const nation = nations.find((n) => n.slug.split('/').pop() === country);
 
   if (!nation) return notFound();
 
@@ -30,7 +28,7 @@ export default async function NationsPage({
           <img
             src={nation.flagSvg}
             alt={`${nation.name} flag`}
-            className="h-28 w-28 shadow-xl rounded-full"
+            className="h-28 w-28 rounded-full shadow-xl"
           />
           <h1 className="text-4xl font-bold">{nation.name}</h1>
           <p className="mt-2 text-lg">{nation.description}</p>
