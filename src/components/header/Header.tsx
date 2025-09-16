@@ -41,34 +41,17 @@ export default function Header() {
           : 'bg-transparent'
       )}
     >
-      <div className="transparent-color text-lr-text-light/80 border-b border-white/10 py-1.5 text-xs">
-        <div className="container mx-auto flex items-center justify-end px-4">
-          <div className="flex items-center space-x-4 text-white dark:text-gray-200">
-            <a
-              href="mailto:hola@ebenezer.com"
-              className="hover:text-lr-beige navLink flex items-center transition-colors"
-            >
-              <RiMailLine className="mr-1.5 h-3 w-3" />
-              hola@ebenezer.com
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
-              className="hover:text-lr-beige navLink flex items-center transition-colors"
-            >
-              <RiWhatsappLine className="mr-1.5 h-3 w-3" />
-              +(1) 929 258 8162
-            </a>
-          </div>
-        </div>
-      </div>
+      <HeaderTopInfo />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-36 items-center justify-between lg:h-36">
+        <div
+          className={cn('flex items-center justify-between transition-all duration-300',
+            isScrolled ? 'h-20 md:h-24' : 'h-28 md:h-36'
+          )}
+        >
           {/* Logo */}
           <div className="flex items-center">
             <Link href={'/'} className="flex items-center space-x-2">
-              <Logo />
+              <Logo isScrolled={isScrolled}/>
             </Link>
           </div>
 
@@ -119,3 +102,28 @@ export default function Header() {
     </header>
   );
 }
+
+const HeaderTopInfo = () => (
+  <div className="transparent-color text-lr-text-light/80 border-b border-white/10 py-1.5 text-xs">
+    <div className="container mx-auto flex items-center justify-end px-4">
+      <div className="flex items-center space-x-4 text-white dark:text-gray-200">
+        <a
+          href="mailto:hola@ebenezer.com"
+          className="hover:text-lr-beige navLink flex items-center transition-colors"
+        >
+          <RiMailLine className="mr-1.5 h-3 w-3" />
+          hola@ebenezer.com
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
+          className="hover:text-lr-beige navLink flex items-center transition-colors"
+        >
+          <RiWhatsappLine className="mr-1.5 h-3 w-3" />
+          +(1) 929 258 8162
+        </a>
+      </div>
+    </div>
+  </div>
+);
