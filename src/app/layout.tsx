@@ -78,7 +78,7 @@ export default async function RootLayout({
         />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/e-icon.png" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -88,18 +88,18 @@ export default async function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/e-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/e-icon.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://tudominio.com" />
+        <link rel="canonical" href="https://eituebenezer.com" />
       </head>
       <body
         className={`${inter.variable} ${lato.variable} bg-white font-lato text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100`}

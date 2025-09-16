@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 
 // Configuración SEO base
 export const siteConfig = {
-  name: 'Ebenezer',
+  name: 'Eitu Ebenezer',
   description: 'Proyecto Next.js optimizado para SEO',
-  url: 'https://tudominio.com',
-  ogImage: 'https://tudominio.com/og-image.jpg',
+  url: 'https://eituebenezer.com',
+  ogImage: 'https://eituebenezer.com/og-image.jpg',
   links: {
     twitter: 'https://twitter.com/tu-usuario',
     github: 'https://github.com/tu-usuario',

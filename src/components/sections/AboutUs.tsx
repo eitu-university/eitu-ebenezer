@@ -2,7 +2,7 @@ import { values } from '@/data/about-us';
 
 export default function AboutUs() {
   return (
-    <section id="about" className="bg-gray-50 py-28 dark:bg-gray-800">
+    <section id="about" className="bg-gray-50 py-20 md:py-28 dark:bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
@@ -20,7 +20,7 @@ export default function AboutUs() {
             <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
               Nuestra Historia
             </h3>
-            <p className="mb-6 leading-relaxed text-gray-600 dark:text-gray-300">
+            <p className="mb-6 leading-relaxed text-gray-600 dark:text-gray-300 text-justify">
               Lo que antes se conocia como Maranatha Bible Seminary, Inc.
               fundado en el 1973 hoy dia se ha convertido en Ebenezer
               Theological College and University, Inc. Este fue establecido en
@@ -45,7 +45,7 @@ export default function AboutUs() {
               <h4 className="mb-4 text-xl font-bold">
                 Nuestra Misión
               </h4>
-              <p className="leading-relaxed text-blue-100">
+              <p className="leading-relaxed text-blue-100 text-justify">
                 Nuestra misión es entrenar a los hombres y mujeres que persiguen
                 una vida de servicio al Señor a través de las normas bíblicas de
                 la fe cristiana. Esto se logrará proporcionándoles a nuestros
@@ -55,7 +55,7 @@ export default function AboutUs() {
               <h4 className="mb-4 mt-6 text-xl font-bold">
                 Nuestra Visión
               </h4>
-              <p className="leading-relaxed text-blue-100">
+              <p className="leading-relaxed text-blue-100 text-justify">
                 Esforzarnos por ser una institución modelo que contribuirá al
                 mejoramiento de nuestra sociedad, entrenando a líderes
                 cristianos especializados y espirituales que llevarán nuestra
