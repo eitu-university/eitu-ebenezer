@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed left-0 right-0 top-0 z-50 transition-all duration-300',
+        'fixed left-0 right-0 top-0 z-50 transition-all duration-1000',
         isScrolled
           ? 'bg-[#011437]/60 shadow-lg backdrop-blur-md dark:bg-[#0b1220]/60'
           : 'bg-transparent'
@@ -44,14 +44,15 @@ export default function Header() {
       <HeaderTopInfo />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={cn('flex items-center justify-between transition-all duration-300',
-            isScrolled ? 'h-20 md:h-24' : 'h-28 md:h-36'
+          className={cn(
+            'flex items-center justify-between transition-all duration-1000',
+            isScrolled ? 'h-20 md:h-28' : 'h-28 md:h-36'
           )}
         >
           {/* Logo */}
           <div className="flex items-center">
             <Link href={'/'} className="flex items-center space-x-2">
-              <Logo isScrolled={isScrolled}/>
+              <Logo isScrolled={isScrolled} />
             </Link>
           </div>
 
@@ -87,13 +88,14 @@ export default function Header() {
           <div className="md:hidden">
             <div className="space-y-1 border-t border-gray-200 bg-white px-2 pb-3 pt-2 dark:border-gray-700 dark:bg-[#0b1220]">
               {navigationItems.map((item) => (
-                <button
+                <Link
                   key={item.href}
-                  onClick={() => scrollToSection(item.href)}
+                  href={item.href}
+                  // onClick={() => scrollToSection(item.href)}
                   className="block w-full rounded-md px-3 py-2 text-left font-medium text-gray-700 transition-colors duration-200 hover:bg-gray-50 hover:text-blue-600 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400"
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>

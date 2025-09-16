@@ -23,18 +23,23 @@ export default function Banner() {
     }
   };
 
+  const imgUrlDesktop = "sm:bg-[url('/images/banner/desktop.webp')]";
+  const imgUrlMobile = "bg-[url('/images/banner/mobile.webp')]";
+
   return (
     <div className="relative">
       <section
         id="home"
         className="relative flex h-screen items-center justify-center overflow-hidden"
       >
-        {/* Background Image with Parallax */}
+        {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/banner/mobile.webp')] sm:bg-[url('/images/banner/desktop.webp')]"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-          }}
+          className={`absolute inset-0 transform bg-cover bg-center duration-1000 ease-in-out ${scrollY > 50 ? 'scale-110' : ''} bg-no-repeat ${imgUrlMobile} ${imgUrlDesktop}`}
+          style={
+            {
+              // transform: `translateY(${scrollY * 0.5}px)`,
+            }
+          }
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 dark:bg-black/70" />
@@ -43,7 +48,7 @@ export default function Banner() {
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white sm:px-6 lg:px-8">
           <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-5xl">
-            Escuela ministerial de los {' '}
+            Escuela ministerial de los{' '}
             <mark className={`${styles.scribble}`}>Obreros Aprobados</mark>
           </h1>
           <p className="mb-8 text-xl font-light text-gray-200 sm:text-2xl lg:text-3xl">
