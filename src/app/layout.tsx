@@ -16,7 +16,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'Ebenezer - Organización Cristiana Evangélica Pentecostal',
+  title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
   description:
     'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
   keywords:
@@ -29,24 +29,31 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://ebenezer.org'),
+  metadataBase: new URL('https://eituebenezer.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Ebenezer - Organización Cristiana Evangélica Pentecostal',
+    title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
     description:
       'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
-    url: 'https://ebenezer.org',
-    siteName: 'Ebenezer',
+    url: 'https://eituebenezer.com',
+    siteName: 'EituEbenezer',
     locale: 'es_ES',
     type: 'website',
+    images: [
+      { url: '/images/logo-eituebenezer-og.jpg', width: 1200, height: 630, alt: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal' },
+      { url: '/images/logo-eituebenezer.jpg', alt: 'EituEbenezer - Logo alternativo' },
+      { url: '/images/banner/desktop.webp', alt: 'EituEbenezer - Banner Desktop' },
+      { url: '/images/banner/mobile.webp', alt: 'EituEbenezer - Banner Mobile' },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ebenezer - Organización Cristiana Evangélica Pentecostal',
+    title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
     description:
       'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
+    images: ['/images/logo-eituebenezer-og.jpg'],
   },
   robots: {
     index: true,
@@ -58,6 +65,30 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'android-chrome-192x192',
+        url: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        rel: 'android-chrome-512x512',
+        url: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
   },
 };
 
@@ -78,7 +109,7 @@ export default async function RootLayout({
         />
 
         {/* Favicon */}
-        <link rel="icon" href="/e-icon.png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -88,13 +119,13 @@ export default async function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/e-icon.png"
+          href="/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/e-icon.png"
+          href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
 
