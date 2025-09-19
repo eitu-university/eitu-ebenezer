@@ -12,14 +12,25 @@ export async function generateMetadata({
 }: NationsPageProps): Promise<Metadata> {
   const { country } = await params;
   const nation = nations.find((n) => n.slug.split('/').pop() === country);
+  const lang = nation?.lang || 'es';
 
   const ogUrl = nation ? `/og/nations/${country}.png` : '/opengraph-image.png';
+  const title = nation
+    ? lang === 'en'
+      ? `EITU Ebenezer | ${nation.name}`
+      : `UITE Ebenezer | ${nation.name}`
+    : 'Nación no encontrada';
+
+  const description =
+    nation && lang === 'en'
+      ? 'A theological community: here to educate and serve you.'
+      : nation
+        ? 'Comunidad teológica con el ideal de eduacarte y servirte.'
+        : 'La nación que buscas no está disponible.';
 
   return {
-    title: nation ? `EituEbenezer | ${nation.name}` : 'Nación no encontrada',
-    description: nation
-      ? `EituEbenezer en ${nation.name}`
-      : 'Sin descripción disponible',
+    title,
+    description,
     openGraph: {
       images: [{ url: ogUrl }],
     },

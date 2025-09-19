@@ -17,7 +17,7 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: 'EituEbenezer | Ebenezer International Theological University',
-  description: 'Universidad Teológica con el ideal de educarte y servirte',
+  description: 'Comunidad Teológica con el ideal de educarte y servirte',
   keywords:
     'cristiano, evangélico, pentecostal, iglesia, fe, evangelio, oración, adoración',
   authors: [{ name: 'Abel Aspiazu' }],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'EituEbenezer | Ebenezer International Theological University',
-    description: 'Universidad Teológica con el ideal de educarte y servirte',
+    description: 'Comunidad Teológica con el ideal de educarte y servirte',
     url: 'https://eituebenezer.com',
     siteName: 'EituEbenezer',
     locale: 'es_ES',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/opengraph-image.png',
-        alt: 'EituEbenezer | Universidad Teológica con el ideal de educarte y servirte',
+        alt: 'EituEbenezer | Comunidad Teológica con el ideal de educarte y servirte',
       },
     ],
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title:
       'EituEbenezer | Ebenezer International Theological University',
-    description: 'Universidad Teológica con el ideal de educarte y servirte',
+    description: 'Comunidad Teológica con el ideal de educarte y servirte',
     images: ['/opengraph-image.png'],
   },
   robots: {

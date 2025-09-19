@@ -3,6 +3,7 @@ import { NationsData } from '@/types';
 export const nations: NationsData[] = [
   {
     code: 'RD',
+    lang: 'es',
     name: 'República Dominicana',
     flagSvg: '/images/nations-flags/rd.svg',
     flag: '🇩🇴',
@@ -14,6 +15,7 @@ export const nations: NationsData[] = [
   },
   {
     code: 'EC',
+    lang: 'es',
     name: 'Ecuador',
     flagSvg: '/images/nations-flags/ec.svg',
     flag: '🇪🇨',
@@ -25,6 +27,7 @@ export const nations: NationsData[] = [
   },
   {
     code: 'SV',
+    lang: 'es',
     name: 'El Salvador',
     flagSvg: '/images/nations-flags/sv.svg',
     flag: '🇸🇻',
@@ -36,6 +39,7 @@ export const nations: NationsData[] = [
   },
   {
     code: 'CO',
+    lang: 'es',
     name: 'Colombia',
     flagSvg: '/images/nations-flags/co.svg',
     flag: '🇨🇴',
@@ -47,6 +51,7 @@ export const nations: NationsData[] = [
   },
   {
     code: 'ES',
+    lang: 'es',
     name: 'España',
     flagSvg: '/images/nations-flags/es.svg',
     flag: '🇪🇸',
@@ -58,7 +63,8 @@ export const nations: NationsData[] = [
   },
   {
     code: 'US',
-    name: 'EE.UU',
+    lang: 'en',
+    name: 'United States of America',
     flagSvg: '/images/nations-flags/eu.svg',
     flag: '🇺🇸',
     img: '/images/nations/eu.webp',
@@ -69,6 +75,7 @@ export const nations: NationsData[] = [
   },
   {
     code: 'MX',
+    lang: 'es',
     name: 'México',
     flagSvg: '/images/nations-flags/mx.svg',
     flag: '🇲🇽',
@@ -80,6 +87,7 @@ export const nations: NationsData[] = [
   },
   {
     code: 'AR',
+    lang: 'es',
     name: 'Argentina',
     flagSvg: '/images/nations-flags/ar.svg',
     flag: '🇦🇷',
