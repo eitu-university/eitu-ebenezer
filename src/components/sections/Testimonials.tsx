@@ -9,7 +9,7 @@ export default function Testimonials() {
       id: 1,
       name: 'María González',
       role: 'Miembro desde 2018',
-      content: 'Ebenezer ha sido un lugar donde he encontrado mi propósito en Cristo. La comunidad aquí es verdaderamente una familia que me ha apoyado en los momentos más difíciles de mi vida.',
+      content: 'EituEbenezer ha sido un lugar donde he encontrado mi propósito en Cristo. La comunidad aquí es verdaderamente una familia que me ha apoyado en los momentos más difíciles de mi vida.',
       rating: 5
     },
     {
@@ -23,7 +23,7 @@ export default function Testimonials() {
       id: 3,
       name: 'Ana Patricia Silva',
       role: 'Miembro desde 2020',
-      content: 'Cuando llegué a Ebenezer, estaba perdida y sin dirección. Hoy puedo decir que he encontrado mi identidad en Cristo y un propósito claro para mi vida.',
+      content: 'Cuando llegué a EituEbenezer, estaba perdida y sin dirección. Hoy puedo decir que he encontrado mi identidad en Cristo y un propósito claro para mi vida.',
       rating: 5
     },
     {

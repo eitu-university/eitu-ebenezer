@@ -41,7 +41,7 @@ export default function SEO({
 
       {/* Additional meta tags */}
       <meta name="robots" content="index, follow" />
-      <meta name="author" content="Ebenezer" />
+      <meta name="author" content="Abel Aspiazu" />
       <meta name="theme-color" content="#1e40af" />
     </Head>
   );

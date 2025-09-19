@@ -12,7 +12,7 @@ export default function Contact() {
           </h2>
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
             Estamos aquí para servirte. No dudes en contactarnos para cualquier
-            pregunta o para saber más sobre nuestra organización.
+            pregunta o para saber más sobre nuestra Universidad.
           </p>
         </div>
 

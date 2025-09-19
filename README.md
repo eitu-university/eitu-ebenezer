@@ -1,6 +1,6 @@
-# Ebenezer - Organización Cristiana Evangélica Pentecostal
+# EituEbenezer - Universidad Cristiana Evangélica Pentecostal
 
-Sitio web oficial de la organización cristiana evangélica pentecostal internacional Ebenezer.
+Sitio web oficial de la Universidad cristiana evangélica pentecostal internacional EituEbenezer.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -40,7 +40,7 @@ src/
 1. Clona el repositorio:
 ```bash
 git clone <repository-url>
-cd ebenezer
+cd eituebenezer
 ```
 
 2. Instala las dependencias:
@@ -98,7 +98,7 @@ RESEND_API_KEY=tu_api_key_de_resend
 
 ## 📄 Licencia
 
-Este proyecto es propiedad de la organización Ebenezer.
+Este proyecto es propiedad de la Universidad Internacional EituEbenezer.
 
 ## 🤝 Contribución
 
@@ -106,4 +106,4 @@ Para contribuir al proyecto, por favor contacta con el equipo de desarrollo.
 
 ---
 
-**Ebenezer** - "Hasta aquí nos ayudó Jehová"
+**EituEbenezer** - "Hasta aquí nos ayudó Jehová"

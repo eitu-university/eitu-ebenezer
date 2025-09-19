@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
             Política de Privacidad
           </h1>
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-            Organización Cristiana Evangélica Pentecostal Ebenezer
+            Organización Cristiana Evangélica Pentecostal EituEbenezer
           </p>
           <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
             Última actualización: 3 de septiembre de 2025
@@ -25,8 +25,8 @@ export default function PrivacyPolicyPage() {
               1. Introducción
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              En la Organización Cristiana Evangélica Pentecostal Ebenezer (en
-              adelante, “Ebenezer”), valoramos y respetamos la privacidad de
+              En la Organización Cristiana Evangélica Pentecostal EituEbenezer (en
+              adelante, “EituEbenezer”), valoramos y respetamos la privacidad de
               nuestros visitantes, miembros, colaboradores y usuarios de nuestro
               sitio web. Esta Política de Privacidad explica cómo recopilamos,
               usamos, almacenamos y protegemos sus datos personales. Al utilizar
@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage() {
               <li>Consentimiento expreso del titular</li>
               <li>Cumplimiento de obligaciones legales o fiscales</li>
               <li>
-                Interés legítimo de Ebenezer con fines pastorales,
+                Interés legítimo de EituEbenezer con fines pastorales,
                 administrativos o de comunicación
               </li>
             </ul>
@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
               5. Compartición de datos
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              Ebenezer no vende, alquila ni comparte los datos personales con
+              EituEbenezer no vende, alquila ni comparte los datos personales con
               terceros, salvo en los siguientes casos:
             </p>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">

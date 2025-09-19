@@ -52,11 +52,10 @@ export default function Banner() {
             <mark className={`${styles.scribble}`}>Obreros Aprobados</mark>
           </h1>
           <p className="mb-8 text-xl font-light text-gray-200 sm:text-2xl lg:text-3xl">
-            Organización Cristiana Evangélica Pentecostal Ebenezer
+            Universidad Internacional Teológica Ebenezer
           </p>
           <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-300 sm:text-xl">
-            Transformando vidas a través del amor de Cristo y el poder del
-            Espíritu Santo
+            Una comunidad teológica con el ideal de educarte y servirte
           </p>
 
           {/* CTA Buttons */}

@@ -9,7 +9,7 @@ export default function AboutUs() {
             Acerca de Nosotros
           </h2>
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
-            Ebenezer es una organización cristiana evangélica pentecostal
+            EituEbenezer es una Universidad cristiana evangélica pentecostal
             internacional dedicada a compartir el amor de Cristo y transformar
             vidas a través del poder del Espíritu Santo.
           </p>
@@ -22,10 +22,10 @@ export default function AboutUs() {
             </h3>
             <p className="mb-6 leading-relaxed text-gray-600 dark:text-gray-300 text-justify">
               Lo que antes se conocia como Maranatha Bible Seminary, Inc.
-              fundado en el 1973 hoy dia se ha convertido en Ebenezer
+              fundado en el 1973 hoy dia se ha convertido en EituEbenezer
               Theological College and University, Inc. Este fue establecido en
               el año 2015, como el organo oficial del Departamento de Educacion
-              Cristiana del Concilio Pentecostal Ebenezer, Inc. para llevar la
+              Cristiana del Concilio Pentecostal EituEbenezer, Inc. para llevar la
               Educacion Teologica a un nivel mas alto de excelencia academica.
             </p>
             {/* <p className="mb-6 leading-relaxed text-gray-600 dark:text-gray-300">

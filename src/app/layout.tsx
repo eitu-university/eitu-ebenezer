@@ -16,9 +16,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
-  description:
-    'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
+  title: 'EituEbenezer | Ebenezer International Theological University',
+  description: 'Universidad Teológica con el ideal de educarte y servirte',
   keywords:
     'cristiano, evangélico, pentecostal, iglesia, fe, evangelio, oración, adoración',
   authors: [{ name: 'Abel Aspiazu' }],
@@ -34,22 +33,24 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
-    description:
-      'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
+    title: 'EituEbenezer | Ebenezer International Theological University',
+    description: 'Universidad Teológica con el ideal de educarte y servirte',
     url: 'https://eituebenezer.com',
     siteName: 'EituEbenezer',
     locale: 'es_ES',
     type: 'website',
     images: [
-      { url: '/opengraph-image.png', alt: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal' },
+      {
+        url: '/opengraph-image.png',
+        alt: 'EituEbenezer | Universidad Teológica con el ideal de educarte y servirte',
+      },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
-    description:
-      'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
+    title:
+      'EituEbenezer | Ebenezer International Theological University',
+    description: 'Universidad Teológica con el ideal de educarte y servirte',
     images: ['/opengraph-image.png'],
   },
   robots: {

@@ -13,7 +13,7 @@ export default function Staff() {
           </h2>
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
             Conoce a los líderes que Dios ha puesto al frente de nuestra
-            organización para guiar y servir a nuestra comunidad con amor y
+            Universidad para guiar y servir a nuestra comunidad con amor y
             sabiduría.
           </p>
         </div>
