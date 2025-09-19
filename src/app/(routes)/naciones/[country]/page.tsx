@@ -25,7 +25,7 @@ export async function generateMetadata({
     nation && lang === 'en'
       ? 'A theological community: here to educate and serve you.'
       : nation
-        ? 'Comunidad teológica con el ideal de eduacarte y servirte.'
+        ? 'Comunidad teológica con el ideal de educarte y servirte.'
         : 'La nación que buscas no está disponible.';
 
   return {
