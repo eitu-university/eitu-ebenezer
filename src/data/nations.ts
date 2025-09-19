@@ -8,7 +8,7 @@ export const nations: NationsData[] = [
     flag: '🇩🇴',
     img: '/images/nations/rd.webp',
     imgThumb: '/images/nations-min/rd.webp',
-    slug: '/naciones/do',
+    slug: '/naciones/rd',
     description:
       'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
   },

@@ -1,9 +1,33 @@
 import { nations } from '@/data/nations';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 interface NationsPageProps {
   params: Promise<{ country: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: NationsPageProps): Promise<Metadata> {
+  const { country } = await params;
+  const nation = nations.find((n) => n.slug.split('/').pop() === country);
+
+  const ogUrl = nation ? `/og/nations/${country}.png` : '/opengraph-image.png';
+
+  return {
+    title: nation ? `EituEbenezer | ${nation.name}` : 'Nación no encontrada',
+    description: nation
+      ? `EituEbenezer en ${nation.name}`
+      : 'Sin descripción disponible',
+    openGraph: {
+      images: [{ url: ogUrl }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: [ogUrl],
+    },
+  };
 }
 
 export default async function NationsPage({ params }: NationsPageProps) {

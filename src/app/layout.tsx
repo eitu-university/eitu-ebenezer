@@ -42,10 +42,7 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     type: 'website',
     images: [
-      { url: '/images/logo-eituebenezer-og.jpg', width: 1200, height: 630, alt: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal' },
-      { url: '/images/logo-eituebenezer.jpg', alt: 'EituEbenezer - Logo alternativo' },
-      { url: '/images/banner/desktop.webp', alt: 'EituEbenezer - Banner Desktop' },
-      { url: '/images/banner/mobile.webp', alt: 'EituEbenezer - Banner Mobile' },
+      { url: '/opengraph-image.png', alt: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal' },
     ],
   },
   twitter: {
@@ -53,7 +50,7 @@ export const metadata: Metadata = {
     title: 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
     description:
       'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
-    images: ['/images/logo-eituebenezer-og.jpg'],
+    images: ['/opengraph-image.png'],
   },
   robots: {
     index: true,
