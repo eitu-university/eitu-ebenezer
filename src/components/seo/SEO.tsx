@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = 'EituEbenezer - Organización Cristiana Evangélica Pentecostal',
-  description = 'Organización cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.',
+  title = 'EituEbenezer - Universidad Cristiana Evangélica Pentecostal',
+  description = 'Universidad cristiana evangélica pentecostal internacional dedicada a enseñar en el amor de Cristo y transformar vidas a través del evangelio.',
   keywords = 'cristiano, evangélico, pentecostal, iglesia, fe, evangelio, oración, adoración',
   image = '/opengraph-image.png',
   url = 'https://eituebenezer.com',

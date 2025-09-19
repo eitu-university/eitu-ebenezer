@@ -11,7 +11,7 @@ export default function TermsOfServicePage() {
             Términos de Servicio
           </h1>
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-            Organización Cristiana Evangélica Pentecostal EituEbenezer
+            Universidad Cristiana Evangélica Pentecostal EituEbenezer
           </p>
           <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
             Última actualización: 3 de septiembre de 2025
@@ -28,7 +28,7 @@ export default function TermsOfServicePage() {
             </h2>
             <div className="mt-3 space-y-3 text-gray-700 dark:text-gray-300">
               <p>
-                El sitio web de la Organización Cristiana Evangélica Pentecostal
+                El sitio web de la Universidad Cristiana Evangélica Pentecostal
                 EituEbenezer tiene como propósito compartir información sobre
                 nuestras actividades, enseñanzas cristianas, y contenidos
                 espirituales.

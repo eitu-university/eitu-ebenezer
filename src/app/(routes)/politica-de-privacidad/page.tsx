@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
             Política de Privacidad
           </h1>
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-            Organización Cristiana Evangélica Pentecostal EituEbenezer
+            Universidad Cristiana Evangélica Pentecostal EituEbenezer
           </p>
           <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
             Última actualización: 3 de septiembre de 2025
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
               1. Introducción
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              En la Organización Cristiana Evangélica Pentecostal EituEbenezer (en
+              En la Universidad Cristiana Evangélica Pentecostal EituEbenezer (en
               adelante, “EituEbenezer”), valoramos y respetamos la privacidad de
               nuestros visitantes, miembros, colaboradores y usuarios de nuestro
               sitio web. Esta Política de Privacidad explica cómo recopilamos,
