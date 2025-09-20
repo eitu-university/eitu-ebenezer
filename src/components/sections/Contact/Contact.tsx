@@ -1,6 +1,7 @@
 import { FiMapPin, FiMail, FiClock } from 'react-icons/fi';
 import ContactForm from './ContactForm';
 import { RiWhatsappLine } from 'react-icons/ri';
+import { contactInfo } from '@/data';
 
 export default function Contact() {
   return (
@@ -40,11 +41,11 @@ export default function Contact() {
                     Dirección
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    123 Calle Principal
+                    {contactInfo.address.street}
                     <br />
-                    Ciudad, Estado 12345
+                    {contactInfo.address.city}
                     <br />
-                    Estados Unidos
+                    {contactInfo.address.country}
                   </p>
                 </div>
               </div>
@@ -60,10 +61,10 @@ export default function Contact() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
+                    href={contactInfo.whatsappLink}
                     className="text-gray-600 dark:text-gray-300"
                   >
-                    +(1) 929 258 8162
+                    {contactInfo.phone}
                   </a>
                 </div>
               </div>
@@ -76,8 +77,11 @@ export default function Contact() {
                   <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">
                     Email
                   </h4>
-                  <a href='mailto:hola@ebenezer.org' className="text-gray-600 dark:text-gray-300">
-                    hola@ebenezer.org
+                  <a
+                    href={contactInfo.emailLink}
+                    className="text-gray-600 dark:text-gray-300"
+                  >
+                    {contactInfo.email}
                   </a>
                 </div>
               </div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { navigationItems } from '@/data/navigation';
+import { navigationItems, contactInfo } from '@/data';
 import { cn } from '@/lib/utils';
 import { RiWhatsappLine, RiMailLine } from 'react-icons/ri';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -24,13 +24,13 @@ export default function Header() {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
+  // const scrollToSection = (href: string) => {
+  //   const element = document.querySelector(href);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  //   setIsMenuOpen(false);
+  // };
 
   return (
     <header
@@ -110,20 +110,20 @@ const HeaderTopInfo = () => (
     <div className="container mx-auto flex items-center justify-end px-4">
       <div className="flex items-center space-x-4 text-white dark:text-gray-200">
         <a
-          href="mailto:hola@ebenezer.com"
+          href={contactInfo.emailLink}
           className="hover:text-lr-beige navLink flex items-center transition-colors"
         >
           <RiMailLine className="mr-1.5 h-3 w-3" />
-          hola@ebenezer.com
+          {contactInfo.email}
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
+          href={contactInfo.whatsappLink}
           className="hover:text-lr-beige navLink flex items-center transition-colors"
         >
           <RiWhatsappLine className="mr-1.5 h-3 w-3" />
-          +(1) 929 258 8162
+          {contactInfo.phone}
         </a>
       </div>
     </div>

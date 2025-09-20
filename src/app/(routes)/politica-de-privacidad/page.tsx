@@ -1,3 +1,4 @@
+import { contactInfo } from '@/data';
 import React from 'react';
 
 export default function PrivacyPolicyPage() {
@@ -25,13 +26,13 @@ export default function PrivacyPolicyPage() {
               1. Introducción
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              En la Universidad Cristiana Evangélica Pentecostal EituEbenezer (en
-              adelante, “EituEbenezer”), valoramos y respetamos la privacidad de
-              nuestros visitantes, miembros, colaboradores y usuarios de nuestro
-              sitio web. Esta Política de Privacidad explica cómo recopilamos,
-              usamos, almacenamos y protegemos sus datos personales. Al utilizar
-              nuestro sitio web o compartir sus datos con nosotros, usted acepta
-              los términos de esta política.
+              En la Universidad Cristiana Evangélica Pentecostal EituEbenezer
+              (en adelante, “EituEbenezer”), valoramos y respetamos la
+              privacidad de nuestros visitantes, miembros, colaboradores y
+              usuarios de nuestro sitio web. Esta Política de Privacidad explica
+              cómo recopilamos, usamos, almacenamos y protegemos sus datos
+              personales. Al utilizar nuestro sitio web o compartir sus datos
+              con nosotros, usted acepta los términos de esta política.
             </p>
           </section>
 
@@ -112,8 +113,8 @@ export default function PrivacyPolicyPage() {
               5. Compartición de datos
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              EituEbenezer no vende, alquila ni comparte los datos personales con
-              terceros, salvo en los siguientes casos:
+              EituEbenezer no vende, alquila ni comparte los datos personales
+              con terceros, salvo en los siguientes casos:
             </p>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
               <li>
@@ -168,9 +169,9 @@ export default function PrivacyPolicyPage() {
               través del correo electrónico{' '}
               <a
                 className="text-blue-600 underline dark:text-blue-400"
-                href="mailto:hola@eituebenezer.org"
+                href={contactInfo.emailLink}
               >
-                hola@eituebenezer.org
+                {contactInfo.email}
               </a>
               .
             </p>
@@ -202,21 +203,21 @@ export default function PrivacyPolicyPage() {
                 📧 Email:{' '}
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
-                  href="mailto:hola@ebenezer.org"
+                  href={contactInfo.emailLink}
                 >
-                  hola@ebenezer.org
+                  {contactInfo.email}
                 </a>
               </p>
               <p>
                 📞 Teléfono:{' '}
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
-                  href="tel:+19292588162"
+                  href={contactInfo.whatsappLink}
                 >
-                  +1 (929) 258-8162
+                  {contactInfo.phone}
                 </a>
               </p>
-              <p>📍 Dirección: Ciudad, Estado, País</p>
+              <p>📍 Dirección: {contactInfo.address.country}, {contactInfo.address.city}</p>
             </div>
           </section>
 

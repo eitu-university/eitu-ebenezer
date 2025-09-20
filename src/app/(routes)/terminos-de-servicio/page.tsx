@@ -1,6 +1,7 @@
+import { contactInfo } from '@/data';
 import React from 'react';
 import { RiWhatsappLine, RiMailLine } from 'react-icons/ri';
-import { SlLocationPin } from "react-icons/sl";
+import { SlLocationPin } from 'react-icons/sl';
 
 export default function TermsOfServicePage() {
   return (
@@ -81,7 +82,7 @@ export default function TermsOfServicePage() {
               Este sitio puede incluir enlaces a páginas externas. No nos
               hacemos responsables del contenido de sitios de terceros.
             </p>
-          </section>          
+          </section>
 
           <section aria-labelledby="contacto">
             <h2
@@ -95,27 +96,29 @@ export default function TermsOfServicePage() {
               contactarnos en:
             </p>
             <div className="mt-3 space-y-4 text-gray-700 dark:text-gray-300">
-              <p className="flex gap-4 items-center">
-                <RiMailLine size={20}/> Email:
+              <p className="flex items-center gap-4">
+                <RiMailLine size={20} /> Email:
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
-                  href="mailto:hola@eituebenezer.org"
+                  href={contactInfo.emailLink}
                 >
-                  hola@eituebenezer.org
+                  {contactInfo.email}
                 </a>
               </p>
-              <p className="flex gap-4 items-center">
-                <RiWhatsappLine size={20}/> Teléfono:
+              <p className="flex items-center gap-4">
+                <RiWhatsappLine size={20} /> Teléfono:
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
+                  href={contactInfo.whatsappLink}
                 >
-                  +1 (929) 258-8162
+                  {contactInfo.phone}
                 </a>
               </p>
-              <p className="flex gap-4 items-center"><SlLocationPin size={20}/> Dirección: Ciudad, Estado, País</p>
+              <p className="flex items-center gap-4">
+                <SlLocationPin size={20} /> Dirección: {contactInfo.address.country}, {contactInfo.address.city}
+              </p>
             </div>
           </section>
 

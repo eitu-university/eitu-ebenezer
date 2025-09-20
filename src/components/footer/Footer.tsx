@@ -3,6 +3,7 @@ import { FiMail, FiMapPin } from 'react-icons/fi';
 import { RiWhatsappLine } from 'react-icons/ri';
 import Logo from '../Logo';
 import { quickLinks, socialMedia } from '@/data/footer';
+import { contactInfo } from '@/data';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -71,9 +72,11 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <FiMapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-400" />
                   <p className="text-sm text-gray-300">
-                    123 Calle Principal
+                    {contactInfo.address.street}
                     <br />
-                    Ciudad, Estado 12345
+                    {contactInfo.address.city}
+                    <br />
+                    {contactInfo.address.country}
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -81,19 +84,19 @@ export default function Footer() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
+                    href={contactInfo.whatsappLink}
                     className="text-sm text-gray-300"
                   >
-                    +1 (929) 258 8162
+                    {contactInfo.phone}
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FiMail className="h-5 w-5 flex-shrink-0 text-blue-400" />
                   <a
-                    href="mailto:hola@ebenezer.org"
+                    href={contactInfo.emailLink}
                     className="text-sm text-gray-300"
                   >
-                    hola@ebenezer.org
+                    {contactInfo.email}
                   </a>
                 </div>
               </div>

@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { contactFormSchema, type ContactFormSchema } from '@/zod/schemas';
 import { FiSend, FiUser, FiMail, FiMessageSquare } from 'react-icons/fi';
 import { toast } from 'sonner';
+import { contactInfo } from '@/data';
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -73,10 +74,12 @@ export default function ContactForm() {
 
   return (
     <div
-      className={`rounded-2xl bg-white p-8 dark:bg-gray-700 shadow-lg ${isSubmitting ? 'pointer-events-none opacity-50' : 'opacity-100'}`}
+      className={`rounded-2xl bg-white p-8 shadow-lg dark:bg-gray-700 ${isSubmitting ? 'pointer-events-none opacity-50' : 'opacity-100'}`}
     >
       <div className="mb-8 text-center">
-        <h3 className="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">Contáctanos</h3>
+        <h3 className="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">
+          Contáctanos
+        </h3>
         <p className="text-gray-600 dark:text-gray-300">
           ¿Tienes alguna pregunta o quieres saber más sobre nosotros?
         </p>
@@ -187,19 +190,26 @@ export default function ContactForm() {
             <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">
               Horarios de Servicio
             </h4>
-            <p className='dark:text-gray-300'>Domingos: 9:00 AM - 12:00 PM</p>
-            <p className='dark:text-gray-300'>Miércoles: 7:00 PM - 9:00 PM</p>
+            <p className="dark:text-gray-300">Domingos: 9:00 AM - 12:00 PM</p>
+            <p className="dark:text-gray-300">Miércoles: 7:00 PM - 9:00 PM</p>
           </div>
           <div>
-            <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">Información</h4>
-            <a href="mailto:hola@ebenezer.com" className='block dark:text-gray-300'>Email: hola@eituebenezer.org</a>
+            <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">
+              Información
+            </h4>
+            <a
+              href={contactInfo.emailLink}
+              className="block dark:text-gray-300"
+            >
+              Email: {contactInfo.email}
+            </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://wa.me/19292588162?text=Hola%20EITUEbenezer,%20quiero%20más%20información."
-              className='block dark:text-gray-300'
+              href={contactInfo.whatsappLink}
+              className="block dark:text-gray-300"
             >
-              Teléfono: +(1) 929 258 8162
+              Teléfono: {contactInfo.phone}
             </a>
           </div>
         </div>
