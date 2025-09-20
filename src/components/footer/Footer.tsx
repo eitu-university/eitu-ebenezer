@@ -23,7 +23,7 @@ export default function Footer() {
                   EITU Ebenezer
                 </span>
               </div>
-              <p className="mb-6 leading-relaxed text-gray-300">
+              <p className="mb-6 leading-relaxed text-gray-300 text-justify">
                 Somos una universidad teológica cristiana comprometida con la
                 formación de líderes con propósito. Nuestra misión es educarte
                 con excelencia y servirte con vocación.

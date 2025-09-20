@@ -27,7 +27,7 @@ export default function TermsOfServicePage() {
             >
               1. Uso del sitio web
             </h2>
-            <div className="mt-3 space-y-3 text-gray-700 dark:text-gray-300">
+            <div className="mt-3 space-y-3 text-gray-700 dark:text-gray-300 text-justify">
               <p>
                 El sitio web de la Universidad Cristiana Evangélica Pentecostal
                 EituEbenezer tiene como propósito compartir información sobre
@@ -48,7 +48,7 @@ export default function TermsOfServicePage() {
             >
               2. Propiedad del contenido
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Todo el contenido publicado (textos, imágenes, videos, audios,
               documentos) pertenece a EituEbenezer, salvo que se indique lo
               contrario. Queda prohibida su reproducción o distribución sin
@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
             >
               3. Uso adecuado
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Se espera que el uso de este sitio sea respetuoso y conforme a
               principios cristianos. No se permite el uso del contenido para
               burlas, difamación o cualquier fin contrario a la fe y valores que
@@ -78,7 +78,7 @@ export default function TermsOfServicePage() {
             >
               4. Enlaces externos
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Este sitio puede incluir enlaces a páginas externas. No nos
               hacemos responsables del contenido de sitios de terceros.
             </p>
@@ -91,7 +91,7 @@ export default function TermsOfServicePage() {
             >
               5. Contacto
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Para cualquier consulta relacionada con el uso del sitio, puede
               contactarnos en:
             </p>
@@ -129,7 +129,7 @@ export default function TermsOfServicePage() {
             >
               6. Cambios en los términos
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Podemos modificar estos Términos en cualquier momento. Las
               modificaciones se publicarán en esta misma página con su fecha de
               actualización.

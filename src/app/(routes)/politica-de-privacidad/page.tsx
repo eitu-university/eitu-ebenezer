@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             >
               1. Introducción
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               En la Universidad Cristiana Evangélica Pentecostal EituEbenezer
               (en adelante, “EituEbenezer”), valoramos y respetamos la
               privacidad de nuestros visitantes, miembros, colaboradores y
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
             >
               2. Datos que recopilamos
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
               <li>Nombre completo</li>
               <li>Dirección de correo electrónico</li>
               <li>Número de teléfono</li>
@@ -66,7 +66,7 @@ export default function PrivacyPolicyPage() {
             >
               3. Finalidad del tratamiento de los datos
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
               <li>
                 Gestionar la comunicación con nuestros miembros y visitantes
               </li>
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
             >
               4. Base legal para el tratamiento de datos
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
               <li>Consentimiento expreso del titular</li>
               <li>Cumplimiento de obligaciones legales o fiscales</li>
               <li>
@@ -116,7 +116,7 @@ export default function PrivacyPolicyPage() {
               EituEbenezer no vende, alquila ni comparte los datos personales
               con terceros, salvo en los siguientes casos:
             </p>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
               <li>
                 Cuando sea requerido por ley o por una autoridad competente
               </li>
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
             >
               6. Cookies y tecnologías similares
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Nuestro sitio web puede utilizar cookies para mejorar la
               navegación y obtener estadísticas anónimas de uso. Usted puede
               configurar su navegador para bloquear o eliminar las cookies en
@@ -154,7 +154,7 @@ export default function PrivacyPolicyPage() {
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
               Usted tiene derecho a:
             </p>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
               <li>Acceder a sus datos personales</li>
               <li>Rectificar datos inexactos o incompletos</li>
               <li>
@@ -164,7 +164,7 @@ export default function PrivacyPolicyPage() {
               <li>Oponerse al tratamiento o solicitar su limitación</li>
               <li>Retirar su consentimiento en cualquier momento</li>
             </ul>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Para ejercer estos derechos, puede comunicarse con nosotros a
               través del correo electrónico{' '}
               <a
@@ -184,7 +184,7 @@ export default function PrivacyPolicyPage() {
             >
               8. Conservación de los datos
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Conservaremos sus datos personales únicamente durante el tiempo
               necesario para cumplir con los fines descritos y con las
               obligaciones legales aplicables.
@@ -228,7 +228,7 @@ export default function PrivacyPolicyPage() {
             >
               10. Seguridad de los datos
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Implementamos medidas técnicas y organizativas apropiadas para
               proteger sus datos personales contra pérdida, mal uso, acceso no
               autorizado, divulgación o destrucción.
@@ -242,7 +242,7 @@ export default function PrivacyPolicyPage() {
             >
               11. Cambios en esta política
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
               Nos reservamos el derecho de modificar esta Política de Privacidad
               en cualquier momento. Los cambios serán publicados en esta misma
               página con su fecha de actualización.

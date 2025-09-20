@@ -24,7 +24,7 @@ export default function ThemeToggle() {
       className="p-2 rounded-md transition-colors duration-200 text-gray-200 hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
       title={isDark ? 'Cambiar a claro' : 'Cambiar a oscuro'}
     >
-      {isDark ? <FiSun size={18} /> : <FiMoon size={18} />}
+      {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}
     </button>
   );
 }

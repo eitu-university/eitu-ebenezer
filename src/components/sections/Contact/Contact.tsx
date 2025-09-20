@@ -24,7 +24,7 @@ export default function Contact() {
               <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
                 Información de Contacto
               </h3>
-              <p className="mb-8 leading-relaxed text-gray-600 dark:text-gray-300">
+              <p className="mb-8 leading-relaxed text-gray-600 dark:text-gray-300 text-justify">
                 Nuestras puertas están abiertas para ti. Ven y únete a nuestra
                 familia espiritual donde encontrarás amor, aceptación y
                 propósito.
