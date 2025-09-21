@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { navigationItems } from '@/data';
 import { cn } from '@/lib/utils';
 import { RiMenu5Line, RiCloseLine } from 'react-icons/ri';
@@ -12,6 +12,7 @@ import { HeaderTopInfo } from './HeaderTopInfo';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,6 +76,7 @@ export default function Header() {
             <ThemeToggle />
             {/* Mobile Menu Button */}
             <button
+              ref={closeButtonRef}
               onClick={toggleMenu}
               className="rounded-md p-2 text-gray-200 transition-colors duration-200 hover:bg-gray-100 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-400 md:hidden"
             >
@@ -88,7 +90,11 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        <MobileMenu isMenuOpen={isMenuOpen} onClose={toggleMenu} />
+        <MobileMenu
+          isMenuOpen={isMenuOpen}
+          onClose={() => setIsMenuOpen(false)}
+          closeButtonRef={closeButtonRef}
+        />
       </div>
     </header>
   );

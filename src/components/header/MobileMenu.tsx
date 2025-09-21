@@ -1,11 +1,15 @@
 'use client';
 import { navigationItems } from '@/data';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
 
-type Props = { isMenuOpen: boolean; onClose: () => void };
+type Props = {
+  isMenuOpen: boolean;
+  onClose: () => void;
+  closeButtonRef: RefObject<HTMLButtonElement | null>;
+};
 
-const MobileMenu = ({ isMenuOpen, onClose }: Props) => {
+const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
   const [animateIn, setAnimateIn] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -18,20 +22,29 @@ const MobileMenu = ({ isMenuOpen, onClose }: Props) => {
     setAnimateIn(false);
   }, [isMenuOpen]);
 
-  // Cierra al hacer click fuera del contenedor y con tecla Escape
+  // Cierra al hacer click fuera del contenedor
   useEffect(() => {
     if (!isMenuOpen) return;
 
     const handleClickOutside = (e: MouseEvent | TouchEvent) => {
       const el = containerRef.current;
-      if (!el) return;
-      if (e.target instanceof Node && !el.contains(e.target)) {
+      // referencia del boton close en Header.tsx
+      const elCloseButton = closeButtonRef.current;
+      if (!el || !elCloseButton) return;
+
+      if (
+        e.target instanceof Node &&
+        !el.contains(e.target) &&
+        !elCloseButton.contains(e.target)
+      ) {
         onClose();
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside, { passive: true });
+    document.addEventListener('touchstart', handleClickOutside, {
+      passive: true,
+    });
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
