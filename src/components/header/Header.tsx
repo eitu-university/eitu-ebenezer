@@ -88,7 +88,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        <MobileMenu isMenuOpen={isMenuOpen} />
+        <MobileMenu isMenuOpen={isMenuOpen} onClose={toggleMenu} />
       </div>
     </header>
   );
