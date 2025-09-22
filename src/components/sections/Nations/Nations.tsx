@@ -11,7 +11,7 @@ import { nations } from '@/data/nations';
 
 const Nations = () => {
   return (
-    <div className={styles.carouselContainer}>
+    <div className={`${styles.carouselContainer} bg-white dark:bg-gray-900`}>
       <div className="mx-auto mb-16 max-w-4xl text-center">
         <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
           Naciones

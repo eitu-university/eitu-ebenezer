@@ -31,11 +31,11 @@ export default function Banner() {
     <div className="relative">
       <section
         id="home"
-        className="relative flex h-screen items-center justify-center overflow-hidden"
+        className={`${styles.banner}`}
       >
         {/* Background Image */}
         <div
-          className={`absolute inset-0 transform bg-cover bg-center duration-1000 ease-in-out ${scrollY > 50 ? 'scale-110' : ''} bg-no-repeat ${imgUrlMobile} ${imgUrlDesktop}`}
+          className={`fixed inset-0 -z-10 transform bg-cover bg-center duration-1000 ease-in-out ${scrollY > 50 ? 'scale-110' : ''} bg-no-repeat ${imgUrlMobile} ${imgUrlDesktop}`}
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 dark:bg-black/70" />
