@@ -19,12 +19,12 @@ export const navigationItems: NavItem[] = [
   },
   {
     label: 'Programas de estudio',
-    href: '/programas-estudio',
+    href: '/programas-de-estudio',
     icon: FiZap,
   },
   {
     label: 'Programas de curso',
-    href: '/programas-curso',
+    href: '/programas-de-curso',
     icon: FiZap,
   },
 ];
