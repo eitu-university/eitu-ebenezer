@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <SEO />
-      <Toaster position="top-right" />
+      <Toaster position="top-center" />
       
       <Header />
       <main className="">

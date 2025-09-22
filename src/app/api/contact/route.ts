@@ -13,7 +13,6 @@ export async function POST(req: Request) {
     const validatedData = contactFormSchema.parse(body);
     const { email, message, name} =
       validatedData;
-    console.log(validatedData);
 
     const { data, error } = await resend.emails.send({
       from: process.env.EMAIL_FROM || '',

@@ -1,4 +1,5 @@
 import Header from '@/components/header/Header';
+import { Toaster } from 'sonner';
 
 export default function RoutesLayout({
   children,
@@ -7,8 +8,9 @@ export default function RoutesLayout({
 }) {
   return (
     <>
+      <Toaster position="top-center" />
       <Header />
-      <div className="h-36 md:h-44 bg-gray-700"></div>
+      <div className="h-36 bg-gray-700 md:h-44"></div>
       {children}
     </>
   );
