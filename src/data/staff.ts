@@ -3,30 +3,33 @@ import { StaffMember } from '@/types';
 export const staffMembers: StaffMember[] = [
   {
     id: '1',
-    name: 'Pastor Juan Carlos Rodríguez',
-    position: 'Pastor Principal',
+    name: 'Daniel Vaca',
+    position: 'Director',
     image: '/staff/pastor-1.jpg',
-    description: 'Líder espiritual con más de 20 años de experiencia en el ministerio pastoral.'
+    description:
+      'Líder espiritual con más de 20 años de experiencia en el ministerio pastoral.',
   },
   {
     id: '2',
-    name: 'María Elena González',
-    position: 'Directora de Ministerio de Mujeres',
+    name: 'Marisol Flores',
+    position: 'Tesorera | Profesora',
     image: '/staff/pastor-2.jpg',
-    description: 'Dedicada a empoderar y guiar a las mujeres en su caminar espiritual.'
+    description:
+      'Estoy profundamente comprometida con la misión del Ebenezer International Theological University y creo firmemente en la visión de preparar, capacitar y empoderar a los individuos para el servicio en el Reino de Dios.',
   },
   {
     id: '3',
-    name: 'David Morales',
-    position: 'Director de Jóvenes',
+    name: 'Marina Santiago Lopez',
+    position: 'Secretaria | Missionera | Profesora',
     image: '/staff/pastor-3.jpg',
-    description: 'Apasionado por llevar a los jóvenes a una relación más profunda con Cristo.'
+    description:
+      'Estoy profundamente comprometida con la misión del Ebenezer International Theological University y creo firmemente en la visión de preparar, capacitar y empoderar a los individuos para el servicio en el Reino de Dios.',
   },
   {
     id: '4',
-    name: 'Ana Patricia Silva',
-    position: 'Directora de Música y Alabanza',
+    name: 'Mary Bell Rosario',
+    position: 'Vocal',
     image: '/staff/pastor-4.jpg',
-    description: 'Guiando la adoración y alabanza con excelencia y devoción.'
-  }
-]; 
+    description: 'Guiando la adoración y alabanza con excelencia y devoción.',
+  },
+];

@@ -2,18 +2,6 @@ import { NationsData } from '@/types';
 
 export const nations: NationsData[] = [
   {
-    code: 'RD',
-    lang: 'es',
-    name: 'República Dominicana',
-    flagSvg: '/images/nations-flags/rd.svg',
-    flag: '🇩🇴',
-    img: '/images/nations/rd.webp',
-    imgThumb: '/images/nations-min/rd.webp',
-    slug: '/naciones/rd',
-    description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
-  },
-  {
     code: 'EC',
     lang: 'es',
     name: 'Ecuador',
@@ -22,6 +10,18 @@ export const nations: NationsData[] = [
     img: '/images/nations/ecuador.webp',
     imgThumb: '/images/nations-min/ecuador.webp',
     slug: '/naciones/ec',
+    description:
+      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+  },
+  {
+    code: 'RD',
+    lang: 'es',
+    name: 'República Dominicana',
+    flagSvg: '/images/nations-flags/rd.svg',
+    flag: '🇩🇴',
+    img: '/images/nations/rd.webp',
+    imgThumb: '/images/nations-min/rd.webp',
+    slug: '/naciones/rd',
     description:
       'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
   },

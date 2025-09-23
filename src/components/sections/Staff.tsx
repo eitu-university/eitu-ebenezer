@@ -47,7 +47,7 @@ export default function Staff() {
                 <p className="mb-3 font-semibold text-blue-600 dark:text-blue-400">
                   {member.position}
                 </p>
-                <p className="mb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                <p className="mb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-justify">
                   {member.description}
                 </p>
 

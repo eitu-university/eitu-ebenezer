@@ -2,6 +2,9 @@ import { FiMapPin, FiMail, FiClock } from 'react-icons/fi';
 import ContactForm from './ContactForm';
 import { RiWhatsappLine } from 'react-icons/ri';
 import { contactInfo } from '@/data';
+import DynamicMap from '@/components/DynamicMap';
+
+
 
 export default function Contact() {
   return (
@@ -52,42 +55,6 @@ export default function Contact() {
 
               <div className="flex items-start space-x-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                  <RiWhatsappLine className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">
-                    Teléfono
-                  </h4>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={contactInfo.whatsappLink}
-                    className="text-gray-600 dark:text-gray-300"
-                  >
-                    {contactInfo.phone}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                  <FiMail className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">
-                    Email
-                  </h4>
-                  <a
-                    href={contactInfo.emailLink}
-                    className="text-gray-600 dark:text-gray-300"
-                  >
-                    {contactInfo.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
                   <FiClock className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
@@ -104,13 +71,7 @@ export default function Contact() {
             </div>
 
             {/* Mapa o imagen */}
-            <div className="flex h-64 items-center justify-center rounded-2xl bg-gray-200 dark:bg-gray-700">
-              <div className="text-center text-gray-500 dark:text-gray-400">
-                <FiMapPin className="mx-auto mb-2 h-12 w-12" />
-                <p>Mapa interactivo</p>
-                <p className="text-sm">(Se integrará Google Maps)</p>
-              </div>
-            </div>
+            <DynamicMap />
           </div>
 
           {/* Formulario de contacto */}

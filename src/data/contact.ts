@@ -5,8 +5,8 @@ export const contactInfo = {
   whatsappLink:
     'https://wa.me/15613139313?text=Hola%20EITUEbenezer,%20quiero%20más%20información.',
   address: {
-    city: 'Ciudad, Estado 123',
-    street: '123 Calle Principal',
+    city: 'Florida',
+    street: '4194 Lake Worth Rd, Lake Worth Beach',
     country: 'Estados Unidos',
   },
 };
