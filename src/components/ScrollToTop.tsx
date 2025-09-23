@@ -13,7 +13,7 @@ export default function ScrollToTop() {
     <button
       onClick={scrollToTop}
       className={cn(
-        'fixed bottom-8 right-8 z-50 w-12 h-12 bg-blue-600 hover:bg-blue-700',
+        'fixed bottom-8 right-8 z-[9999] w-12 h-12 bg-blue-600 hover:bg-blue-700',
         'text-white rounded-full shadow-lg hover:shadow-xl',
         'transition-all duration-300 transform hover:scale-110',
         'flex items-center justify-center'
