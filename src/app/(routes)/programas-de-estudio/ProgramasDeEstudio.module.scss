@@ -15,8 +15,9 @@
 }
 
 
-.containerAnimate {
+.animteFadeInRight {
   animation: fadeInRight 500ms ease-in-out;
+  will-change: transform, opacity;
 }
 
 @keyframes fadeInRight {
@@ -26,5 +27,14 @@
   }
   to {
     opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Evitar saltos del background en móviles (iOS/Android) */
+@media (max-width: 768px) {
+  .banner {
+    background-attachment: scroll; /* Desactivamos parallax en mobile para evitar "movimiento" de la imagen */
+    background-position: center top;
   }
 }

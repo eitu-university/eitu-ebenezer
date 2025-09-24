@@ -4,10 +4,10 @@ import styles from './Postgrados.module.scss';
 const Postgrados = () => {
   return (
     <div className="relative">
-      <section id="home" className={`${styles.banner}`}>
+      <section className={`${styles.banner}`}>
         {/* CONTENIDO */}
-        <div className="container relative z-10 mx-auto flex justify-center px-4">
-          <div className={styles.containerAnimate}>
+        <div className="relative z-10 mx-auto flex justify-center px-4">
+          <div className={`${styles.containerAnimate}`}>
             <h1 className="mb-6 flex flex-col justify-center text-5xl font-bold leading-tight text-white md:text-7xl">
               Postgrados
             </h1>
