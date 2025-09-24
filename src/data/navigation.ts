@@ -27,4 +27,9 @@ export const navigationItems: NavItem[] = [
     href: '/programas-de-curso',
     icon: FiZap,
   },
+  {
+    label: 'Postgrados',
+    href: '/postgrados',
+    icon: FiZap,
+  },
 ];
