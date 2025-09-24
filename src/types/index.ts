@@ -14,7 +14,8 @@ export interface ContactFormData {
 
 export interface NavItem {
   label: string;
-  href: string;
+  href?: string | null;
+  options?: NavItem[] | undefined;
   icon: React.ComponentType
 }
 

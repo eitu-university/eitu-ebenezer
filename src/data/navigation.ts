@@ -18,18 +18,24 @@ export const navigationItems: NavItem[] = [
     icon: FiMail,
   },
   {
-    label: 'Programas de estudio',
-    href: '/programas-de-estudio',
-    icon: FiZap,
-  },
-  {
-    label: 'Programas de curso',
-    href: '/programas-de-curso',
-    icon: FiZap,
-  },
-  {
     label: 'Postgrados',
     href: '/postgrados',
     icon: FiZap,
+  },
+  {
+    label: 'Programas',
+    icon: FiZap,
+    options: [
+      {
+        label: 'Programas de estudio',
+        href: '/programas-de-estudio',
+        icon: FiZap,
+      },
+      {
+        label: 'Programas de curso',
+        href: '/programas-de-curso',
+        icon: FiZap,
+      },
+    ],
   },
 ];
