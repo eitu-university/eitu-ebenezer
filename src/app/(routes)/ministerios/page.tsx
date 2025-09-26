@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo'
 import AboutUs from '@/components/sections/AboutUs';
-import Staff from '@/components/sections/Staff';
+import Staff from '@/components/sections/Staff/Staff';
 
 export const metadata: Metadata = {
   ...generateMetadata(

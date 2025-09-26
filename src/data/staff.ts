@@ -5,15 +5,15 @@ export const staffMembers: StaffMember[] = [
     id: '1',
     name: 'Daniel Vaca',
     position: 'Director',
-    image: '/staff/pastor-1.jpg',
+    image: '',
     description:
-      'Líder espiritual con más de 20 años de experiencia en el ministerio pastoral.',
+      'Dios me ha permitido desarrollarme como ministro de alabanza, ser alumno y maestro de nuestra institución hace más de 10 años. Y estoy convencido que en el corazón de Dios EITU es lo que reza nuestra lema: La escuela ministerial de los obreros aprobados.',
   },
   {
     id: '2',
     name: 'Marisol Flores',
-    position: 'Tesorera | Profesora',
-    image: '/staff/pastor-2.jpg',
+    position: 'Licenciatura en Teología Cristiana',
+    image: '/images/directiva/marisol.webp',
     description:
       'Estoy profundamente comprometida con la misión del Ebenezer International Theological University y creo firmemente en la visión de preparar, capacitar y empoderar a los individuos para el servicio en el Reino de Dios.',
   },
@@ -21,15 +21,15 @@ export const staffMembers: StaffMember[] = [
     id: '3',
     name: 'Marina Santiago Lopez',
     position: 'Secretaria | Missionera | Profesora',
-    image: '/staff/pastor-3.jpg',
+    image: '',
     description:
-      'Estoy profundamente comprometida con la misión del Ebenezer International Theological University y creo firmemente en la visión de preparar, capacitar y empoderar a los individuos para el servicio en el Reino de Dios.',
+      'Si tuviera que recomendar algo, sería esta universidad, porque es increíble. Me encanta lo que he aprendido y la maravillosa unidad que hay en ella. Me encantan todos los aspectos de esta universidad y me han ayudado a construir mis cimientos.',
   },
   {
     id: '4',
     name: 'Mary Bell Rosario',
     position: 'Vocal',
-    image: '/staff/pastor-4.jpg',
+    image: '',
     description: 'Guiando la adoración y alabanza con excelencia y devoción.',
   },
 ];

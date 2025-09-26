@@ -1,10 +1,7 @@
-import { FiMapPin, FiMail, FiClock } from 'react-icons/fi';
+import { FiMapPin, FiClock } from 'react-icons/fi';
 import ContactForm from './ContactForm';
-import { RiWhatsappLine } from 'react-icons/ri';
 import { contactInfo } from '@/data';
 import DynamicMap from '@/components/DynamicMap';
-
-
 
 export default function Contact() {
   return (
@@ -27,7 +24,7 @@ export default function Contact() {
               <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
                 Información de Contacto
               </h3>
-              <p className="mb-8 leading-relaxed text-gray-600 dark:text-gray-300 text-justify">
+              <p className="mb-8 text-justify leading-relaxed text-gray-600 dark:text-gray-300">
                 Nuestras puertas están abiertas para ti. Ven y únete a nuestra
                 familia espiritual donde encontrarás amor, aceptación y
                 propósito.
@@ -70,11 +67,10 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Mapa o imagen */}
+            {/* Mapa */}
             <DynamicMap />
           </div>
 
-          {/* Formulario de contacto */}
           <div>
             <ContactForm />
           </div>
