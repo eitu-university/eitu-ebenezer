@@ -18,17 +18,19 @@
 
 .animteFadeInRight {
   animation: fadeInRight 500ms ease-in-out;
-  will-change: transform, opacity;
+  will-change: transform, opacity, blur;
 }
 
 @keyframes fadeInRight {
   from {
     opacity: 0;
     transform: translateX(300px);
+    filter: blur(33px);
   }
   to {
     opacity: 1;
     transform: translateX(0);
+    filter: blur(0px);
   }
 }
 
