@@ -4,7 +4,7 @@ import StaffCardList from './StaffCardList';
 export default function Staff() {
   return (
     <section className="bg-white py-28 dark:bg-gray-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-28">
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
             Nuestro Equipo

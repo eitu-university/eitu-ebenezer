@@ -28,8 +28,8 @@ export const staffMembers: StaffMember[] = [
   {
     id: '4',
     name: 'Mary Bell Rosario',
-    position: 'Vocal',
-    image: '',
-    description: 'Guiando la adoración y alabanza con excelencia y devoción.',
+    position: 'Magister en Consejeria Clinica y Teologia | Pastora',
+    image: '/images/directiva/maribell.webp',
+    description: 'En la  universidad Dios me ha llamado ser Profesora y Directora del departamento de Capellania. El mejor llamado es ser sierva del Dios altisimo. EITU ha sido de mucha bendicion para mi.',
   },
 ];
