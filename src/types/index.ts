@@ -16,7 +16,7 @@ export interface NavItem {
   label: string;
   href?: string | null;
   options?: NavItem[] | undefined;
-  icon: React.ComponentType
+  icon: React.ComponentType;
 }
 
 export interface Section {
@@ -30,10 +30,19 @@ export interface NationsData {
   code: string;
   name: string;
   flag: string;
-  flagSvg: string
+  flagSvg: string;
   img: string;
   imgThumb: string;
   description: string;
   slug: string;
   lang: 'es' | 'en';
+}
+
+export interface ProgramItem {
+  title: string;
+  description: string;
+  imgSrc: string;
+  alt: string;
+  link: string;
+  tags?: string[];
 }

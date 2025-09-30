@@ -1,0 +1,87 @@
+.carousel {
+  /* Total items to loop through (overridden from inline style) */
+  --items: 1;
+  /* Base duration, can be overridden by media queries below */
+  --carousel-duration: 40s;
+  --carousel-item-width: 280px;
+  --carousel-item-gap: 2rem;
+  --clr-cta: rgb(0, 132, 209);
+}
+
+/* Adjust duration for larger screens */
+@media (min-width: 640px) {
+  .carousel {
+    --carousel-duration: 50s;
+  }
+}
+
+/* Pause animation on hover */
+.carousel:hover > article {
+  animation-play-state: paused;
+}
+.carousel[reverse] > article {
+  animation-direction: reverse;
+}
+
+/* Article animation definition */
+.carousel > article {
+  /* Set initial position far off-screen to the right of the loop calculation */
+  left: calc(100% + var(--carousel-item-gap));
+
+  /* The animation name */
+  animation-name: marquee;
+  animation-duration: var(--carousel-duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+
+  /* Calculate the animation delay based on the index (--i) */
+  /* This spreads the items along the starting line */
+  animation-delay: calc(
+    var(--carousel-duration) / var(--items) * 1 * var(--i) * -1
+  );
+}
+
+/* Keyframe for the infinite horizontal scroll */
+@keyframes marquee {
+  100% {
+    transform: translateX(
+      /* (Total items * (item width + gap)) * -1 */
+        calc(
+          (
+              var(--items) *
+                (var(--carousel-item-width) + var(--carousel-item-gap))
+            ) *
+            -1
+        )
+    );
+  }
+}
+
+/* Masking for the fade effect on the edges */
+.carousel[data-mask] {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10% 90%,
+    transparent
+  );
+}
+
+.carousel a {
+  text-decoration: none;
+  text-transform: lowercase;
+  border: 1px solid var(--clr-cta);
+  color: var(--clr-cta);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  place-self: start;
+  transition: 150ms ease-in-out;
+}
+
+.carousel a:hover,
+.carousel a:focus-visible {
+  background-color: var(--clr-cta);
+  color: white;
+  outline: none;
+}

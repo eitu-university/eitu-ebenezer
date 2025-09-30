@@ -10,6 +10,7 @@ import Contact from '@/components/sections/Contact/Contact';
 import ScrollToTop from '@/components/ScrollToTop';
 import { Toaster } from 'sonner';
 import Nations from '@/components/sections/Nations/Nations';
+import { Programs } from '@/components/sections/Programs/Programs';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <main className="">
         <Banner />
         <Nations />
+        <Programs />
         <AboutUs />
         <Staff />
         <Ministries />
