@@ -13,7 +13,7 @@ const StaffCardItem = ({ member }: Prop) => {
   const description = member.description || '';
 
   return (
-    <div className="group overflow-hidden bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl dark:bg-gray-800">
+    <div className="group overflow-hidden bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl dark:bg-gray-800 rounded-b-3xl">
       <div className="relative overflow-hidden rounded-br-[50px]">
         <div className="flex h-64 w-full items-center justify-center bg-gradient-to-br from-blue-400 to-blue-600">
           <div className="relative h-72 w-full">
