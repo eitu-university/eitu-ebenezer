@@ -14,7 +14,7 @@ export const Programs = () => {
     <div className="grid min-h-screen place-items-center bg-gray-100 p-4 text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
-          Programas
+          Nuestros Programas
         </h2>
         <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
           En EituEbenezer damos formación bíblica sólida para el crecimiento
@@ -66,7 +66,7 @@ export const Programs = () => {
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="shadow-lg rounded-full border border-gray-300 bg-gray-50 px-2 py-0.5 text-[10px] font-medium text-gray-700 dark:border-white/15 dark:bg-white/5 dark:text-gray-200"
+                      className="rounded-full border border-gray-300 bg-gray-50 px-2 py-0.5 text-[10px] font-medium text-gray-700 shadow-lg dark:border-white/15 dark:bg-white/5 dark:text-gray-200"
                     >
                       {tag}
                     </span>

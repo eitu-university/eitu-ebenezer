@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     'Contacto',
     'Cuéntanos sobre ti y te responderemos a la brevedad.'
   ),
-  alternates: { canonical: 'https://tudominio.com/contacto' }
+  alternates: { canonical: 'https://eituebenezer.com/contacto' }
 };
 
 const Page = () => {

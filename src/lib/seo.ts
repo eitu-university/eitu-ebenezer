@@ -19,7 +19,12 @@ export const defaultMetadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ['Next.js', 'React', 'TypeScript', 'SEO'],
+  keywords: [
+    'Ebenezer',
+    'Universidad ebenezer',
+    'EiutuEbenezer',
+    'Universidad Evangelica',
+  ],
   authors: [{ name: 'Abel Aspiazu Torres' }],
   creator: 'Abel Aspiazu Torres',
   openGraph: {
@@ -78,4 +83,4 @@ export function generateMetadata(
     },
     robots: noIndex ? { index: false, follow: false } : undefined,
   };
-} 
+}

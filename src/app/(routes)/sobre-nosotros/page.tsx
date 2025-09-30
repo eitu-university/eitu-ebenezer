@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     'Sobre nosotros',
     'Conoce nuestro equipo, valores y método de trabajo para impulsar tu proyecto.'
   ),
-  alternates: { canonical: 'https://tudominio.com/sobre-nosotros' }
+  alternates: { canonical: 'https://eituebenezer.com/sobre-nosotros' }
 };
 
 const page = () => {

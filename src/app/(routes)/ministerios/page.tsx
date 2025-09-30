@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo'
-import AboutUs from '@/components/sections/AboutUs';
 import Staff from '@/components/sections/Staff/Staff';
 
 export const metadata: Metadata = {
@@ -8,7 +7,7 @@ export const metadata: Metadata = {
     'Ministerios',
     'Conoce nuestros ministerios.'
   ),
-  alternates: { canonical: 'https://tudominio.com/ministerios' }
+  alternates: { canonical: 'https://eituebenezer.com/ministerios' }
 };
 
 const page = () => {
