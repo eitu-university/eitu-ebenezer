@@ -26,6 +26,18 @@ export const nations: NationsData[] = [
       'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
   },
   {
+    code: 'PE',
+    lang: 'es',
+    name: 'Perú',
+    flagSvg: '/images/nations-flags/pe.svg',
+    flag: '🇩🇴',
+    img: '/images/nations/pe.webp',
+    imgThumb: '/images/nations-min/pe.webp',
+    slug: '/naciones/pe',
+    description:
+      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+  },
+  {
     code: 'SV',
     lang: 'es',
     name: 'El Salvador',
