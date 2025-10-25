@@ -82,6 +82,7 @@ export default function Testimonials() {
             {/* Navigation */}
             <div className="absolute left-4 top-1/2 -translate-y-1/2 transform sm:left-8">
               <button
+                aria-label="previous testimonial button"
                 onClick={prevTestimonial}
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-gray-600 shadow-lg transition-colors duration-200 hover:text-blue-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:text-blue-400"
               >
@@ -91,6 +92,7 @@ export default function Testimonials() {
 
             <div className="absolute right-4 top-1/2 -translate-y-1/2 transform sm:right-8">
               <button
+                aria-label="next testimonial button"
                 onClick={nextTestimonial}
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-gray-600 shadow-lg transition-colors duration-200 hover:text-blue-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:text-blue-400"
               >
@@ -103,6 +105,7 @@ export default function Testimonials() {
           <div className="mt-8 flex justify-center space-x-2">
             {testimonials.map((_, index) => (
               <button
+                aria-label="dot indicator button"
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`h-3 w-3 rounded-full transition-colors duration-200 ${

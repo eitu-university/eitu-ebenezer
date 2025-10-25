@@ -29,10 +29,7 @@ export default function Banner() {
 
   return (
     <div className="relative">
-      <section
-        id="home"
-        className={`${styles.banner}`}
-      >
+      <section id="home" className={`${styles.banner}`}>
         {/* Background Image */}
         <div
           className={`fixed inset-0 -z-10 transform bg-cover bg-center duration-1000 ease-in-out ${scrollY > 50 ? 'scale-110' : ''} bg-no-repeat ${imgUrlMobile} ${imgUrlDesktop}`}
@@ -79,6 +76,7 @@ export default function Banner() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-20 left-1/2 z-10 -translate-x-1/2 transform animate-bounce">
           <button
+            aria-label="explore more button"
             onClick={scrollToContent}
             className="text-white transition-colors duration-200 hover:text-blue-300"
           >
@@ -92,4 +90,3 @@ export default function Banner() {
     </div>
   );
 }
-

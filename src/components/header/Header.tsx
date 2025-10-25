@@ -66,6 +66,7 @@ export default function Header() {
             <ThemeToggle />
             {/* Mobile Menu Button */}
             <button
+              aria-label="Menu button"
               ref={closeButtonRef}
               onClick={toggleMenu}
               className="rounded-md p-2 text-gray-200 transition-colors duration-200 hover:bg-gray-100 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-400 md:hidden"
