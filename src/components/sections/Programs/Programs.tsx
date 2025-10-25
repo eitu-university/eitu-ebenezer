@@ -59,6 +59,7 @@ export const Programs = () => {
                 width={itemWidth}
                 height={200}
                 className="h-full w-full rounded-t-xl object-cover"
+                loading='lazy'
               />
               {/* TAGS AQUI */}
               {Array.isArray(item.tags) && item.tags.length > 0 ? (

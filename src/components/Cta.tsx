@@ -19,6 +19,7 @@ const Cta = ({ imgUrl, title, description, buttonHref, buttonText }: Props) => {
           alt={''}
           fill={true}
           className="h-52 w-80 object-cover shadow-lg"
+          loading='lazy'
         />
         {/* Contenido centrado sobre la imagen */}
         <div

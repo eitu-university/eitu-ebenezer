@@ -21,6 +21,7 @@ const StaffCardItem = ({ member }: Prop) => {
               src={member.image || '/images/avatar.webp'}
               alt={member.name}
               fill={true}
+              loading='lazy'
             />
           </div>
         </div>
