@@ -5,7 +5,7 @@ export const staffMembers: StaffMember[] = [
     id: '1',
     name: 'Daniel Vaca',
     position: 'Director',
-    image: '',
+    image: '/images/directiva/daniel.webp',
     description:
       'Dios me ha permitido desarrollarme como ministro de alabanza, ser alumno y maestro de nuestra institución hace más de 10 años. Y estoy convencido que en el corazón de Dios EITU es lo que reza nuestra lema: La escuela ministerial de los obreros aprobados.',
   },
@@ -21,7 +21,7 @@ export const staffMembers: StaffMember[] = [
     id: '3',
     name: 'Marina Santiago Lopez',
     position: 'Secretaria | Missionera | Profesora',
-    image: '',
+    image: '/images/directiva/marina.webp',
     description:
       'Si tuviera que recomendar algo, sería esta universidad, porque es increíble. Me encanta lo que he aprendido y la maravillosa unidad que hay en ella. Me encantan todos los aspectos de esta universidad y me han ayudado a construir mis cimientos.',
   },
