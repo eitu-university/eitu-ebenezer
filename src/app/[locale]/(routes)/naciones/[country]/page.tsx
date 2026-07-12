@@ -2,9 +2,10 @@ import { nations } from '@/data/nations';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 
 interface NationsPageProps {
-  params: Promise<{ country: string }>;
+  params: Promise<{ locale: string; country: string }>;
 }
 
 export async function generateMetadata({
@@ -13,20 +14,21 @@ export async function generateMetadata({
   const { country } = await params;
   const nation = nations.find((n) => n.slug.split('/').pop() === country);
   const lang = nation?.lang || 'es';
+  const t = await getTranslations('Nations');
 
   const ogUrl = nation ? `/og/nations/${country}.png` : '/opengraph-image.png';
   const title = nation
     ? lang === 'en'
       ? `EITU Ebenezer | ${nation.name}`
       : `UITE Ebenezer | ${nation.name}`
-    : 'Nación no encontrada';
+    : t('notFoundTitle');
 
   const description =
     nation && lang === 'en'
       ? 'A theological community: here to educate and serve you.'
       : nation
         ? 'Comunidad teológica con el ideal de educarte y servirte.'
-        : 'La nación que buscas no está disponible.';
+        : t('notFoundDescription');
 
   return {
     title,
@@ -49,8 +51,6 @@ export default async function NationsPage({ params }: NationsPageProps) {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
-      {/* <span className="text-8xl">{nation.flag}</span> */}
-
       <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
         <Image
           src={nation.img}

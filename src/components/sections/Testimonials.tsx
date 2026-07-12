@@ -1,9 +1,11 @@
 'use client';
 import { testimonials } from '@/data/testimonials';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { FiChevronLeft, FiChevronRight, FiStar } from 'react-icons/fi';
 
 export default function Testimonials() {
+  const t = useTranslations('Testimonials');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -23,11 +25,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
-            Testimonios
+            {t('title')}
           </h2>
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
-            Escucha las historias de transformación y cómo Dios ha trabajado en
-            las vidas de nuestros miembros.
+            {t('description')}
           </p>
         </div>
 
@@ -57,7 +58,7 @@ export default function Testimonials() {
 
               {/* Content */}
               <blockquote className="mb-8 text-center text-xl italic leading-relaxed text-gray-700 dark:text-gray-200 sm:text-2xl">
-                &quot;{currentTestimonial.content}&quot;
+                &quot;{t(`items.${currentTestimonial.id}.content`)}&quot;
               </blockquote>
 
               {/* Author */}
@@ -74,7 +75,7 @@ export default function Testimonials() {
                   {currentTestimonial.name}
                 </h4>
                 <p className="text-blue-600 dark:text-blue-400">
-                  {currentTestimonial.role}
+                  {t(`items.${currentTestimonial.id}.role`)}
                 </p>
               </div>
             </div>

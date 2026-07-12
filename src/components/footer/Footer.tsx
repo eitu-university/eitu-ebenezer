@@ -1,12 +1,15 @@
-import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import { FiMail, FiMapPin } from 'react-icons/fi';
 import { RiWhatsappLine } from 'react-icons/ri';
 import Logo from '../Logo';
 import { quickLinks, socialMedia } from '@/data/footer';
 import { contactInfo } from '@/data';
 
-export default function Footer() {
+export default async function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = await getTranslations('Footer');
+  const tNav = await getTranslations('Navigation');
 
   return (
     <div className="relative">
@@ -24,9 +27,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="mb-6 leading-relaxed text-gray-300 text-justify">
-                Somos una universidad teológica cristiana comprometida con la
-                formación de líderes con propósito. Nuestra misión es educarte
-                con excelencia y servirte con vocación.
+                {t('description')}
               </p>
               <div className="flex space-x-4">
                 {socialMedia.map((item, idx) => (
@@ -45,7 +46,7 @@ export default function Footer() {
             {/* Enlaces rápidos */}
             <div>
               <h3 className="mb-4 text-lg font-semibold text-gray-300">
-                Enlaces Rápidos
+                {t('quickLinksTitle')}
               </h3>
               <ul className="space-y-2">
                 {quickLinks.length > 0
@@ -55,7 +56,7 @@ export default function Footer() {
                           href={link.href}
                           className="navLink text-gray-300 transition-colors duration-200 hover:text-white"
                         >
-                          {link.label}
+                          {tNav(link.labelKey)}
                         </Link>
                       </li>
                     ))
@@ -66,7 +67,7 @@ export default function Footer() {
             {/* Información de contacto */}
             <div>
               <h3 className="mb-4 text-lg font-semibold text-gray-300">
-                Contacto
+                {t('contactTitle')}
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
@@ -107,7 +108,7 @@ export default function Footer() {
           <div className="mt-8 border-t border-gray-800 pt-8">
             <div className="flex flex-col items-center justify-between md:flex-row">
               <p className="text-sm text-gray-400">
-                © {currentYear} EituEbenezer. Todos los derechos reservados.
+                © {currentYear} EituEbenezer. {t('rights')}
               </p>
               <div className="mt-4 flex space-x-6 md:mt-0">
                 <Link
@@ -115,14 +116,14 @@ export default function Footer() {
                   href="/politica-de-privacidad"
                   className="navLink text-sm text-gray-400 transition-colors  duration-200 hover:text-white"
                 >
-                  Política de Privacidad
+                  {tNav('privacy')}
                 </Link>
                 <Link
                   target="_self"
                   href="/terminos-de-servicio"
                   className="navLink text-sm text-gray-400 transition-colors  duration-200 hover:text-white"
                 >
-                  Términos de Servicio
+                  {tNav('terms')}
                 </Link>
               </div>
             </div>

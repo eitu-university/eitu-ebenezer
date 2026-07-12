@@ -1,6 +1,8 @@
 'use client';
 import { navigationItems } from '@/data';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 import { RefObject, useEffect, useRef, useState } from 'react';
 import { FiChevronUp, FiChevronDown } from 'react-icons/fi';
 
@@ -11,6 +13,7 @@ type Props = {
 };
 
 const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
+  const t = useTranslations('Navigation');
   const [animateIn, setAnimateIn] = useState(false);
   const [openParents, setOpenParents] = useState<Record<string, boolean>>({});
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -87,11 +90,11 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
                   ].join(' ')}
                   style={{ transitionDelay: `${idx * 90}ms` }}
                 >
-                  <item.icon /> {item.label}
+                  <item.icon /> {t(item.labelKey)}
                 </Link>
               );
             else if (item.options) {
-              const parentKey = `${item.label}-${idx}`;
+              const parentKey = `${item.labelKey}-${idx}`;
               const isOpen = !!openParents[parentKey];
               return (
                 <div key={parentKey} className="w-full">
@@ -114,7 +117,7 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
                     style={{ transitionDelay: `${idx * 90}ms` }}
                   >
                     <span className="flex items-center gap-3">
-                      <item.icon /> {item.label}
+                      <item.icon /> {t(item.labelKey)}
                     </span>
                     <span className="ml-2 text-xs opacity-70">
                       {isOpen ? (
@@ -138,7 +141,7 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
                   >
                     {item.options.map((opt, subIdx) => (
                       <Link
-                        key={(opt.href ?? opt.label) + '-' + subIdx}
+                        key={(opt.href ?? opt.labelKey) + '-' + subIdx}
                         href={opt.href ?? '#'}
                         className={[
                           'mt-1 flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm',
@@ -152,7 +155,7 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
                         }}
                         onClick={onClose}
                       >
-                        {opt.icon ? <opt.icon /> : null} {opt.label}
+                        {opt.icon ? <opt.icon /> : null} {t(opt.labelKey)}
                       </Link>
                     ))}
                   </div>
@@ -160,6 +163,9 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
               );
             }
           })}
+          <div className="px-3 pt-2">
+            <LocaleSwitcher className="!text-gray-700 hover:!text-blue-600 dark:!text-gray-200 dark:hover:!text-blue-400" />
+          </div>
         </div>
       )}
     </>

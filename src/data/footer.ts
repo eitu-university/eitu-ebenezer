@@ -6,30 +6,30 @@ import {
 
 export const quickLinks = [
   {
-    label: 'Inicio',
+    labelKey: 'home',
     href: '/',
   },
   {
-    label: 'Acerca de Nosotros',
+    labelKey: 'aboutUs',
     href: '/sobre-nosotros',
   },
   {
-    label: 'Contacto',
+    labelKey: 'contact',
     href: '/contacto',
   },
   {
-    label: 'Ministerios',
+    labelKey: 'ministries',
     href: '/ministerios',
   },
   {
-    label: 'Eventos',
+    labelKey: 'events',
     href: '/eventos',
   },
   {
-    label: 'Naciones',
+    labelKey: 'nations',
     href: '/naciones',
   },
-];
+] as const satisfies { labelKey: keyof IntlMessages['Navigation']; href: string }[];
 
 export const socialMedia = [
   {

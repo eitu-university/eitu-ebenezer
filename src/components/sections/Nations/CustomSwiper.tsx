@@ -1,7 +1,7 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Autoplay } from 'swiper/modules';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { nations } from '@/data/nations';
 import styles from './NationsCarousel.module.css';
 

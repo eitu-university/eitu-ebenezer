@@ -1,9 +1,7 @@
 export interface StaffMember {
-  id: string;
+  id: keyof IntlMessages['Staff']['members'];
   name: string;
-  position: string;
   image: string;
-  description: string;
 }
 
 export interface ContactFormData {
@@ -13,7 +11,7 @@ export interface ContactFormData {
 }
 
 export interface NavItem {
-  label: string;
+  labelKey: keyof IntlMessages['Navigation'];
   href?: string | null;
   options?: NavItem[] | undefined;
   icon: React.ComponentType;
@@ -39,10 +37,8 @@ export interface NationsData {
 }
 
 export interface ProgramItem {
-  title: string;
-  description: string;
+  key: keyof IntlMessages['Programs']['items'];
   imgSrc: string;
-  alt: string;
   link: string;
-  tags?: string[];
+  tagKeys?: (keyof IntlMessages['Programs']['tags'])[];
 }

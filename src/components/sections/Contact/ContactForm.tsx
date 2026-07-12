@@ -1,15 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { contactFormSchema, type ContactFormSchema } from '@/zod/schemas';
+import { useTranslations } from 'next-intl';
+import { getContactFormSchema, type ContactFormSchema } from '@/zod/schemas';
 import { FiSend, FiUser, FiMail, FiMessageSquare } from 'react-icons/fi';
 import { toast } from 'sonner';
 import { contactInfo } from '@/data';
 
 export default function ContactForm() {
+  const tContact = useTranslations('Contact');
+  const t = useTranslations('Contact.form');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const contactFormSchema = useMemo(
+    () =>
+      getContactFormSchema({
+        nameMin: t('errors.nameMin'),
+        emailInvalid: t('errors.emailInvalid'),
+        messageMin: t('errors.messageMin'),
+      }),
+    [t]
+  );
 
   const {
     register,
@@ -25,17 +38,17 @@ export default function ContactForm() {
     toastType: 'success' | 'error' | 'info' = 'success'
   ) => {
     if (toastType === 'error')
-      toast.error('¡Ocurrió un error!', {
+      toast.error(t('toastErrorTitle'), {
         description: msg,
         duration: 5000,
       });
     else if (toastType === 'info') {
-      toast.info('¡Advertencia!', {
+      toast.info(t('toastErrorTitle'), {
         description: msg,
         duration: 5000,
       });
     }
-    toast.success('¡Todo listo!', {
+    toast.success(t('toastSuccessTitle'), {
       description: msg,
       duration: 5000,
     });
@@ -45,7 +58,6 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Simular envío de formulario
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -55,8 +67,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        // todo ok
-        showToast('Gracias, te contactaremos pronto.');
+        showToast(t('toastSuccessMessage'));
         reset();
       } else {
         const errorData = await response.json();
@@ -65,7 +76,7 @@ export default function ContactForm() {
       }
       reset();
     } catch (error) {
-      toast.error('Error al enviar el mensaje. Por favor, intenta de nuevo.');
+      toast.error(t('toastErrorGeneric'));
       console.error('Error:', error);
     } finally {
       setIsSubmitting(false);
@@ -78,11 +89,9 @@ export default function ContactForm() {
     >
       <div className="mb-8 text-center">
         <h3 className="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">
-          Contáctanos
+          {t('title')}
         </h3>
-        <p className="text-gray-600 dark:text-gray-300">
-          ¿Tienes alguna pregunta o quieres saber más sobre nosotros?
-        </p>
+        <p className="text-gray-600 dark:text-gray-300">{t('subtitle')}</p>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -92,7 +101,7 @@ export default function ContactForm() {
             htmlFor="name"
             className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
-            Nombre completo
+            {t('nameLabel')}
           </label>
           <div className="relative">
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -103,7 +112,7 @@ export default function ContactForm() {
               type="text"
               id="name"
               className="block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-              placeholder="Tu nombre completo"
+              placeholder={t('namePlaceholder')}
             />
           </div>
           {errors.name && (
@@ -117,7 +126,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
-            Correo electrónico
+            {t('emailLabel')}
           </label>
           <div className="relative">
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -128,7 +137,7 @@ export default function ContactForm() {
               type="email"
               id="email"
               className="block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-              placeholder="tu@email.com"
+              placeholder={t('emailPlaceholder')}
             />
           </div>
           {errors.email && (
@@ -142,7 +151,7 @@ export default function ContactForm() {
             htmlFor="message"
             className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
-            Mensaje
+            {t('messageLabel')}
           </label>
           <div className="relative">
             <div className="pointer-events-none absolute left-3 top-3 flex items-start">
@@ -153,7 +162,7 @@ export default function ContactForm() {
               id="message"
               rows={5}
               className="block w-full resize-none rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-              placeholder="Cuéntanos cómo podemos ayudarte..."
+              placeholder={t('messagePlaceholder')}
             />
           </div>
           {errors.message && (
@@ -172,12 +181,12 @@ export default function ContactForm() {
           {isSubmitting ? (
             <>
               <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
-              <span>Enviando...</span>
+              <span>{t('submitting')}</span>
             </>
           ) : (
             <>
               <FiSend className="h-5 w-5" />
-              <span>Enviar Mensaje</span>
+              <span>{t('submit')}</span>
             </>
           )}
         </button>
@@ -188,20 +197,22 @@ export default function ContactForm() {
         <div className="grid gap-6 text-sm text-gray-600 sm:grid-cols-2">
           <div>
             <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">
-              Horarios de Servicio
+              {tContact('info.hoursLabel')}
             </h4>
-            <p className="dark:text-gray-300">Domingos: 9:00 AM - 12:00 PM</p>
-            <p className="dark:text-gray-300">Miércoles: 7:00 PM - 9:00 PM</p>
+            <p className="dark:text-gray-300">{tContact('info.hoursSunday')}</p>
+            <p className="dark:text-gray-300">
+              {tContact('info.hoursWednesday')}
+            </p>
           </div>
           <div>
             <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">
-              Información
+              {t('additionalInfoTitle')}
             </h4>
             <a
               href={contactInfo.emailLink}
               className="block dark:text-gray-300"
             >
-              Email: {contactInfo.email}
+              {t('emailPrefix')}: {contactInfo.email}
             </a>
             <a
               target="_blank"
@@ -209,7 +220,7 @@ export default function ContactForm() {
               href={contactInfo.whatsappLink}
               className="block dark:text-gray-300"
             >
-              Teléfono: {contactInfo.phone}
+              {t('phonePrefix')}: {contactInfo.phone}
             </a>
           </div>
         </div>

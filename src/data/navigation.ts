@@ -3,36 +3,36 @@ import { FiHome, FiMail, FiUsers, FiZap } from 'react-icons/fi';
 
 export const navigationItems: NavItem[] = [
   {
-    label: 'Inicio',
+    labelKey: 'home',
     href: '/',
     icon: FiHome,
   },
   {
-    label: 'Acerca de Nosotros',
+    labelKey: 'aboutUs',
     href: '/sobre-nosotros',
     icon: FiUsers,
   },
   {
-    label: 'Contacto',
+    labelKey: 'contact',
     href: '/contacto',
     icon: FiMail,
   },
   {
-    label: 'Postgrados',
+    labelKey: 'postgraduates',
     href: '/postgrados',
     icon: FiZap,
   },
   {
-    label: 'Programas',
+    labelKey: 'programs',
     icon: FiZap,
     options: [
       {
-        label: 'Programas de estudio',
+        labelKey: 'studyPrograms',
         href: '/programas-de-estudio',
         icon: FiZap,
       },
       {
-        label: 'Programas de curso',
+        labelKey: 'coursePrograms',
         href: '/programas-de-curso',
         icon: FiZap,
       },

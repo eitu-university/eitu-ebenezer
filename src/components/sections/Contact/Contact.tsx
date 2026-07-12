@@ -1,19 +1,21 @@
+import { getTranslations } from 'next-intl/server';
 import { FiMapPin, FiClock } from 'react-icons/fi';
 import ContactForm from './ContactForm';
 import { contactInfo } from '@/data';
 import DynamicMap from '@/components/DynamicMap';
 
-export default function Contact() {
+export default async function Contact() {
+  const t = await getTranslations('Contact');
+
   return (
     <section id="contact" className="bg-gray-50 py-28 dark:bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
-            Contáctanos
+            {t('title')}
           </h2>
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
-            Estamos aquí para servirte. No dudes en contactarnos para cualquier
-            pregunta o para saber más sobre nuestra Universidad.
+            {t('description')}
           </p>
         </div>
 
@@ -22,12 +24,10 @@ export default function Contact() {
           <div className="space-y-8">
             <div>
               <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                Información de Contacto
+                {t('info.title')}
               </h3>
               <p className="mb-8 text-justify leading-relaxed text-gray-600 dark:text-gray-300">
-                Nuestras puertas están abiertas para ti. Ven y únete a nuestra
-                familia espiritual donde encontrarás amor, aceptación y
-                propósito.
+                {t('info.description')}
               </p>
             </div>
 
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">
-                    Dirección
+                    {t('info.addressLabel')}
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
                     {contactInfo.address.street}
@@ -56,12 +56,12 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">
-                    Horarios de Servicio
+                    {t('info.hoursLabel')}
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    <strong>Domingos:</strong> 9:00 AM - 12:00 PM
+                    {t('info.hoursSunday')}
                     <br />
-                    <strong>Miércoles:</strong> 7:00 PM - 9:00 PM
+                    {t('info.hoursWednesday')}
                   </p>
                 </div>
               </div>

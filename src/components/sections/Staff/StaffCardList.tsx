@@ -1,7 +1,10 @@
+import { getTranslations } from 'next-intl/server';
 import { staffMembers } from '@/data/staff';
 import StaffCardItem from './StaffCardItem';
 
-const StaffCardList = () => {
+const StaffCardList = async () => {
+  const t = await getTranslations('Staff');
+
   return (
     <>
       {staffMembers.length > 0 ? (
@@ -11,9 +14,7 @@ const StaffCardList = () => {
           ))}
         </div>
       ) : (
-        <p className="flex justify-center text-lg font-bold">
-          Sin miembros disponibles
-        </p>
+        <p className="flex justify-center text-lg font-bold">{t('empty')}</p>
       )}
     </>
   );

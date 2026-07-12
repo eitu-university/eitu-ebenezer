@@ -1,21 +1,44 @@
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { contactInfo } from '@/data';
-import React from 'react';
 import { RiWhatsappLine, RiMailLine } from 'react-icons/ri';
 import { SlLocationPin } from 'react-icons/sl';
 
-export default function TermsOfServicePage() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SEO' });
+
+  return {
+    title: t('terms.title'),
+    description: t('terms.description'),
+    alternates: {
+      canonical:
+        locale === 'es'
+          ? '/terminos-de-servicio'
+          : `/${locale}/terminos-de-servicio`,
+    },
+  };
+}
+
+export default async function TermsOfServicePage() {
+  const t = await getTranslations('TermsOfService');
+
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900">
       <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <header className="mb-10 text-center">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
-            Términos de Servicio
+            {t('title')}
           </h1>
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-            Universidad Cristiana Evangélica Pentecostal EituEbenezer
+            {t('subtitle')}
           </p>
           <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
-            Última actualización: 3 de septiembre de 2025
+            {t('lastUpdated')}
           </p>
         </header>
 
@@ -25,19 +48,11 @@ export default function TermsOfServicePage() {
               id="uso-sitio"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              1. Uso del sitio web
+              {t('siteUse.heading')}
             </h2>
             <div className="mt-3 space-y-3 text-gray-700 dark:text-gray-300 text-justify">
-              <p>
-                El sitio web de la Universidad Cristiana Evangélica Pentecostal
-                EituEbenezer tiene como propósito compartir información sobre
-                nuestras actividades, enseñanzas cristianas, y contenidos
-                espirituales.
-              </p>
-              <p>
-                El uso de este sitio implica la aceptación de estos Términos de
-                Servicio.
-              </p>
+              <p>{t('siteUse.text1')}</p>
+              <p>{t('siteUse.text2')}</p>
             </div>
           </section>
 
@@ -46,13 +61,10 @@ export default function TermsOfServicePage() {
               id="propiedad"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              2. Propiedad del contenido
+              {t('contentOwnership.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Todo el contenido publicado (textos, imágenes, videos, audios,
-              documentos) pertenece a EituEbenezer, salvo que se indique lo
-              contrario. Queda prohibida su reproducción o distribución sin
-              autorización previa, especialmente para fines comerciales.
+              {t('contentOwnership.text')}
             </p>
           </section>
 
@@ -61,13 +73,10 @@ export default function TermsOfServicePage() {
               id="uso-adecuado"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              3. Uso adecuado
+              {t('properUse.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Se espera que el uso de este sitio sea respetuoso y conforme a
-              principios cristianos. No se permite el uso del contenido para
-              burlas, difamación o cualquier fin contrario a la fe y valores que
-              promovemos.
+              {t('properUse.text')}
             </p>
           </section>
 
@@ -76,11 +85,10 @@ export default function TermsOfServicePage() {
               id="enlaces"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              4. Enlaces externos
+              {t('externalLinks.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Este sitio puede incluir enlaces a páginas externas. No nos
-              hacemos responsables del contenido de sitios de terceros.
+              {t('externalLinks.text')}
             </p>
           </section>
 
@@ -89,15 +97,14 @@ export default function TermsOfServicePage() {
               id="contacto"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              5. Contacto
+              {t('contact.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Para cualquier consulta relacionada con el uso del sitio, puede
-              contactarnos en:
+              {t('contact.intro')}
             </p>
             <div className="mt-3 space-y-4 text-gray-700 dark:text-gray-300">
               <p className="flex items-center gap-4">
-                <RiMailLine size={20} /> Email:
+                <RiMailLine size={20} /> {t('contact.emailLabel')}:
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
                   href={contactInfo.emailLink}
@@ -106,7 +113,7 @@ export default function TermsOfServicePage() {
                 </a>
               </p>
               <p className="flex items-center gap-4">
-                <RiWhatsappLine size={20} /> Teléfono:
+                <RiWhatsappLine size={20} /> {t('contact.phoneLabel')}:
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
                   target="_blank"
@@ -117,7 +124,8 @@ export default function TermsOfServicePage() {
                 </a>
               </p>
               <p className="flex items-center gap-4">
-                <SlLocationPin size={20} /> Dirección: {contactInfo.address.country}, {contactInfo.address.city}
+                <SlLocationPin size={20} /> {t('contact.addressLabel')}:{' '}
+                {contactInfo.address.country}, {contactInfo.address.city}
               </p>
             </div>
           </section>
@@ -127,12 +135,10 @@ export default function TermsOfServicePage() {
               id="cambios"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              6. Cambios en los términos
+              {t('changes.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Podemos modificar estos Términos en cualquier momento. Las
-              modificaciones se publicarán en esta misma página con su fecha de
-              actualización.
+              {t('changes.text')}
             </p>
           </section>
         </div>

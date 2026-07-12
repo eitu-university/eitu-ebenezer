@@ -1,12 +1,13 @@
 'use client';
 import './Programs.css';
 import type { CSSProperties } from 'react';
+import { useTranslations } from 'next-intl';
 import { ProgramList } from '@/data/programs';
 import Image from 'next/image';
-// const allCarouselItems = originalCarouselItems;
-// const NUM_ITEMS = ProgramList.length;
 
 export const Programs = () => {
+  const t = useTranslations('Programs');
+  const tCommon = useTranslations('Common');
   const itemWidth = 310;
   const itemGap = 32;
 
@@ -14,12 +15,10 @@ export const Programs = () => {
     <div className="grid min-h-screen place-items-center bg-gray-100 p-4 text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
-          Nuestros Programas
+          {t('title')}
         </h2>
         <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
-          En EituEbenezer damos formación bíblica sólida para el crecimiento
-          espiritual, liderazgo cristiano y preparación ministerial, centrados
-          en la Palabra de Dios.
+          {t('description')}
         </p>
       </div>
 
@@ -42,7 +41,7 @@ export const Programs = () => {
         {/* Map over the duplicated items to create the continuous loop */}
         {ProgramList.map((item, index) => (
           <article
-            key={index}
+            key={item.key}
             // Use the custom 'carousel > article' styles defined in the <style> block
             className="group absolute mt-4 h-[var(--carousel-item-height)] w-[var(--carousel-item-width)]"
             style={
@@ -55,21 +54,21 @@ export const Programs = () => {
               {/* Image section */}
               <Image
                 src={item.imgSrc}
-                alt={item.alt}
+                alt={t(`items.${item.key}.title`)}
                 width={itemWidth}
                 height={200}
                 className="h-full w-full rounded-t-xl object-cover"
                 loading='lazy'
               />
               {/* TAGS AQUI */}
-              {Array.isArray(item.tags) && item.tags.length > 0 ? (
+              {Array.isArray(item.tagKeys) && item.tagKeys.length > 0 ? (
                 <div className="flex flex-wrap gap-2 px-4 py-2">
-                  {item.tags.map((tag) => (
+                  {item.tagKeys.map((tagKey) => (
                     <span
-                      key={tag}
+                      key={tagKey}
                       className="rounded-full border border-gray-300 bg-gray-50 px-2 py-0.5 text-[10px] font-medium text-gray-700 shadow-lg dark:border-white/15 dark:bg-white/5 dark:text-gray-200"
                     >
-                      {tag}
+                      {t(`tags.${tagKey}`)}
                     </span>
                   ))}
                 </div>
@@ -79,15 +78,15 @@ export const Programs = () => {
 
               {/* Content area - uses custom padding set in the style block */}
               <div className="p-4 py-0 text-justify">
-                <h2 className="mb-2 !p-0 text-lg">{item.title}</h2>
+                <h2 className="mb-2 !p-0 text-lg">{t(`items.${item.key}.title`)}</h2>
                 <p className="m-0 text-sm text-gray-600 dark:text-gray-300">
-                  {item.description}
+                  {t(`items.${item.key}.description`)}
                 </p>
               </div>
 
               {/* CTA Button - uses custom styling from the style block */}
               <button className="flex justify-start p-4 pt-0 font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
-                Saber más →
+                {tCommon('learnMore')}
               </button>
             </div>
           </article>

@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 type Props = {
   text: string;
@@ -7,6 +8,7 @@ type Props = {
 };
 
 const TextToggle = ({ text, maxLength }: Props) => {
+  const t = useTranslations('Common');
   const [isExpanded, setIsExpanded] = useState(false);
   const isLongText = text.length > maxLength;
 
@@ -23,7 +25,7 @@ const TextToggle = ({ text, maxLength }: Props) => {
           onClick={toggleText}
           className="ml-1 text-blue-500 hover:underline"
         >
-          {isExpanded ? 'Ver menos' : 'Ver más'}
+          {isExpanded ? t('readLess') : t('readMore')}
         </button>
       )}
     </p>

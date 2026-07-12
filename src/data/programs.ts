@@ -1,110 +1,77 @@
-import { ProgramItem } from "@/types";
+import { ProgramItem } from '@/types';
 
 export const ProgramList: ProgramItem[] = [
   // Programas de Estudio - Licenciatura
   {
-    title: 'Licenciatura en [Nombre del Programa] - Primer Año',
-    description:
-      'Descripción del primer año de la licenciatura, con enfoque en materias introductorias y fundamentos básicos.',
+    key: 'bachelorYear1',
     imgSrc: '/images/350x200.svg',
-    alt: 'Licenciatura en [Nombre del Programa] - Primer Año',
     link: '#',
-    tags: ['Programas de Estudio', 'Primer Año'],
+    tagKeys: ['studyPrograms', 'firstYear'],
   },
   {
-    title: 'Licenciatura en [Nombre del Programa] - Segundo Año',
-    description:
-      'Descripción del segundo año, donde se profundiza en las áreas clave del programa.',
+    key: 'bachelorYear2',
     imgSrc: '/images/350x200.svg',
-    alt: 'Licenciatura en [Nombre del Programa] - Segundo Año',
     link: '#',
-    tags: ['Programas de Estudio', 'Segundo Año'],
+    tagKeys: ['studyPrograms', 'secondYear'],
   },
   {
-    title: 'Licenciatura en [Nombre del Programa] - Tercer Año',
-    description:
-      'Descripción del tercer año, con más especialización en las materias del área de estudio.',
+    key: 'bachelorYear3',
     imgSrc: '/images/350x200.svg',
-    alt: 'Licenciatura en [Nombre del Programa] - Tercer Año',
     link: '#',
-    tags: ['Programas de Estudio', 'Tercer Año'],
+    tagKeys: ['studyPrograms', 'thirdYear'],
   },
   {
-    title: 'Licenciatura en [Nombre del Programa] - Cuarto Año',
-    description:
-      'Descripción del cuarto año, donde los estudiantes aplican sus conocimientos en proyectos finales.',
+    key: 'bachelorYear4',
     imgSrc: '/images/350x200.svg',
-    alt: 'Licenciatura en [Nombre del Programa] - Cuarto Año',
     link: '#',
-    tags: ['Programas de Estudio', 'Cuarto Año'],
+    tagKeys: ['studyPrograms', 'fourthYear'],
   },
 
   // Programas de Cursos - Diplomados
   {
-    title: 'Diplomado en [Nombre del Curso]',
-    description:
-      'Este diplomado ofrece una formación avanzada en [tema del diplomado], con un enfoque práctico.',
+    key: 'diploma',
     imgSrc: '/images/350x200.svg',
-    alt: 'Diplomado en [Nombre del Curso]',
     link: '#',
-    tags: ['Programas de Cursos', 'Diplomados'],
+    tagKeys: ['coursePrograms', 'diplomas'],
   },
 
   // Programas de Cursos - Cursos Express
   {
-    title: 'Curso Express en [Nombre del Curso]',
-    description:
-      'Un curso corto y efectivo que te permitirá aprender [tema del curso express] en un tiempo reducido.',
+    key: 'expressCourse',
     imgSrc: '/images/350x200.svg',
-    alt: 'Curso Express en [Nombre del Curso]',
     link: '#',
-    tags: ['Programas de Cursos', 'Cursos Express'],
+    tagKeys: ['coursePrograms', 'expressCourses'],
   },
 
   // Programas de Cursos - Misceláneos
   {
-    title: 'Misceláneo: Liderazgo Ejecutivo',
-    description:
-      'Curso enfocado en el desarrollo de habilidades de liderazgo para ejecutivos en entornos corporativos.',
+    key: 'miscLeadership',
     imgSrc: '/images/350x200.svg',
-    alt: 'Misceláneo: Liderazgo Ejecutivo',
     link: '#',
-    tags: ['Programas de Cursos', 'Misceláneo'],
+    tagKeys: ['coursePrograms', 'misc'],
   },
   {
-    title: 'Misceláneo: Administración de Empresas',
-    description:
-      'Curso de gestión y administración de empresas para desarrollar habilidades en dirección y administración.',
+    key: 'miscBusinessAdmin',
     imgSrc: '/images/350x200.svg',
-    alt: 'Misceláneo: Administración de Empresas',
     link: '#',
-    tags: ['Programas de Cursos', 'Misceláneo'],
+    tagKeys: ['coursePrograms', 'misc'],
   },
   {
-    title: 'Misceláneo: Asistencia Administrativa',
-    description:
-      'Curso orientado a la formación de asistentes administrativos con herramientas y conocimientos clave.',
+    key: 'miscAdminAssistant',
     imgSrc: '/images/350x200.svg',
-    alt: 'Misceláneo: Asistencia Administrativa',
     link: '#',
-    tags: ['Programas de Cursos', 'Misceláneo'],
+    tagKeys: ['coursePrograms', 'misc'],
   },
   {
-    title: 'Misceláneo: Formador de Formadores',
-    description:
-      'Curso para capacitar a formadores en la creación de programas de enseñanza efectivos.',
+    key: 'miscTrainerOfTrainers',
     imgSrc: '/images/350x200.svg',
-    alt: 'Misceláneo: Formador de Formadores',
     link: '#',
-    tags: ['Programas de Cursos', 'Misceláneo'],
+    tagKeys: ['coursePrograms', 'misc'],
   },
   {
-    title: 'Misceláneo: Gestión del Talento Humano',
-    description:
-      'Curso para entender y aplicar conceptos clave en la gestión del talento dentro de las organizaciones.',
+    key: 'miscHumanTalent',
     imgSrc: '/images/350x200.svg',
-    alt: 'Misceláneo: Gestión del Talento Humano',
     link: '#',
-    tags: ['Programas de Cursos', 'Misceláneo'],
+    tagKeys: ['coursePrograms', 'misc'],
   },
 ];

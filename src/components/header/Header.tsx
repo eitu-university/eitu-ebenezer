@@ -4,7 +4,8 @@ import { navigationItems } from '@/data';
 import { cn } from '@/lib/utils';
 import { RiMenu5Line, RiCloseLine } from 'react-icons/ri';
 import ThemeToggle from '@/components/ThemeToggle';
-import Link from 'next/link';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
+import { Link } from '@/i18n/navigation';
 import Logo from '../Logo';
 import MobileMenu from './MobileMenu';
 import { HeaderTopInfo } from './HeaderTopInfo';
@@ -63,6 +64,7 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-3">
+            <LocaleSwitcher />
             <ThemeToggle />
             {/* Mobile Menu Button */}
             <button

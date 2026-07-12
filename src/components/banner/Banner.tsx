@@ -2,10 +2,13 @@
 import styles from './Banner.module.scss';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { FiArrowDown } from 'react-icons/fi';
 import { SvgWave } from './SvgWave';
 
 export default function Banner() {
+  const t = useTranslations('Banner');
+  const tCommon = useTranslations('Common');
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -41,14 +44,14 @@ export default function Banner() {
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white sm:px-6 lg:px-8">
           <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-5xl">
-            Escuela ministerial de los{' '}
-            <mark className={`${styles.scribble}`}>Obreros Aprobados</mark>
+            {t('titlePrefix')}{' '}
+            <mark className={`${styles.scribble}`}>{t('titleHighlight')}</mark>
           </h1>
           <p className="mb-8 text-xl font-light text-gray-200 sm:text-2xl lg:text-3xl">
-            Universidad Internacional Teológica Ebenezer
+            {t('subtitle')}
           </p>
           <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-300 sm:text-xl">
-            Una comunidad teológica con el ideal de educarte y servirte
+            {t('description')}
           </p>
 
           {/* CTA Buttons */}
@@ -57,7 +60,7 @@ export default function Banner() {
               onClick={scrollToContent}
               className="bg-blue-600 px-8 py-3 font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-blue-700 hover:shadow-xl"
             >
-              Conoce Más
+              {t('cta')}
             </button>
             <button
               onClick={() => {
@@ -68,7 +71,7 @@ export default function Banner() {
               }}
               className="border border-white px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-white hover:text-gray-900"
             >
-              Contáctanos
+              {tCommon('getInTouch')}
             </button>
           </div>
         </div>

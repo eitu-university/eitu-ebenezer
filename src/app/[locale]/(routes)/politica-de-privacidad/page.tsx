@@ -1,19 +1,47 @@
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { contactInfo } from '@/data';
-import React from 'react';
 
-export default function PrivacyPolicyPage() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SEO' });
+
+  return {
+    title: t('privacy.title'),
+    description: t('privacy.description'),
+    alternates: {
+      canonical:
+        locale === 'es'
+          ? '/politica-de-privacidad'
+          : `/${locale}/politica-de-privacidad`,
+    },
+  };
+}
+
+export default async function PrivacyPolicyPage() {
+  const t = await getTranslations('PrivacyPolicy');
+  const dataCollectedItems = t.raw('dataCollected.items') as string[];
+  const purposeItems = t.raw('purpose.items') as string[];
+  const legalBasisItems = t.raw('legalBasis.items') as string[];
+  const sharingItems = t.raw('sharing.items') as string[];
+  const rightsItems = t.raw('rights.items') as string[];
+
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900">
       <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <header className="mb-10 text-center">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
-            Política de Privacidad
+            {t('title')}
           </h1>
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-            Universidad Cristiana Evangélica Pentecostal EituEbenezer
+            {t('subtitle')}
           </p>
           <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
-            Última actualización: 3 de septiembre de 2025
+            {t('lastUpdated')}
           </p>
         </header>
 
@@ -23,16 +51,10 @@ export default function PrivacyPolicyPage() {
               id="intro"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              1. Introducción
+              {t('intro.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              En la Universidad Cristiana Evangélica Pentecostal EituEbenezer
-              (en adelante, “EituEbenezer”), valoramos y respetamos la
-              privacidad de nuestros visitantes, miembros, colaboradores y
-              usuarios de nuestro sitio web. Esta Política de Privacidad explica
-              cómo recopilamos, usamos, almacenamos y protegemos sus datos
-              personales. Al utilizar nuestro sitio web o compartir sus datos
-              con nosotros, usted acepta los términos de esta política.
+              {t('intro.text')}
             </p>
           </section>
 
@@ -41,21 +63,12 @@ export default function PrivacyPolicyPage() {
               id="datos"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              2. Datos que recopilamos
+              {t('dataCollected.heading')}
             </h2>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
-              <li>Nombre completo</li>
-              <li>Dirección de correo electrónico</li>
-              <li>Número de teléfono</li>
-              <li>Dirección postal (si aplica)</li>
-              <li>
-                Información de contacto para actividades, eventos o donaciones
-              </li>
-              <li>Mensajes enviados a través de formularios de contacto</li>
-              <li>
-                Datos técnicos como dirección IP, tipo de navegador y
-                estadísticas de uso del sitio (cookies)
-              </li>
+              {dataCollectedItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </section>
 
@@ -64,27 +77,12 @@ export default function PrivacyPolicyPage() {
               id="finalidad"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              3. Finalidad del tratamiento de los datos
+              {t('purpose.heading')}
             </h2>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
-              <li>
-                Gestionar la comunicación con nuestros miembros y visitantes
-              </li>
-              <li>
-                Enviar boletines informativos, devocionales y anuncios de
-                eventos
-              </li>
-              <li>
-                Administrar registros de actividades, reuniones, cultos y
-                servicios
-              </li>
-              <li>
-                Gestionar donaciones y emitir comprobantes cuando corresponda
-              </li>
-              <li>
-                Responder a solicitudes o preguntas realizadas por los usuarios
-              </li>
-              <li>Mejorar la experiencia de navegación en nuestro sitio web</li>
+              {purposeItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </section>
 
@@ -93,15 +91,12 @@ export default function PrivacyPolicyPage() {
               id="base-legal"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              4. Base legal para el tratamiento de datos
+              {t('legalBasis.heading')}
             </h2>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
-              <li>Consentimiento expreso del titular</li>
-              <li>Cumplimiento de obligaciones legales o fiscales</li>
-              <li>
-                Interés legítimo de EituEbenezer con fines pastorales,
-                administrativos o de comunicación
-              </li>
+              {legalBasisItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </section>
 
@@ -110,22 +105,15 @@ export default function PrivacyPolicyPage() {
               id="comparticion"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              5. Compartición de datos
+              {t('sharing.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              EituEbenezer no vende, alquila ni comparte los datos personales
-              con terceros, salvo en los siguientes casos:
+              {t('sharing.intro')}
             </p>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
-              <li>
-                Cuando sea requerido por ley o por una autoridad competente
-              </li>
-              <li>
-                Con proveedores de servicios tecnológicos que nos ayudan a
-                operar el sitio web (por ejemplo, alojamiento o envío de correos
-                electrónicos), siempre bajo acuerdos de confidencialidad
-              </li>
-              <li>Con su consentimiento explícito</li>
+              {sharingItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </section>
 
@@ -134,13 +122,10 @@ export default function PrivacyPolicyPage() {
               id="cookies"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              6. Cookies y tecnologías similares
+              {t('cookies.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Nuestro sitio web puede utilizar cookies para mejorar la
-              navegación y obtener estadísticas anónimas de uso. Usted puede
-              configurar su navegador para bloquear o eliminar las cookies en
-              cualquier momento.
+              {t('cookies.text')}
             </p>
           </section>
 
@@ -149,24 +134,18 @@ export default function PrivacyPolicyPage() {
               id="derechos"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              7. Derechos del usuario
+              {t('rights.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
-              Usted tiene derecho a:
+              {t('rights.intro')}
             </p>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
-              <li>Acceder a sus datos personales</li>
-              <li>Rectificar datos inexactos o incompletos</li>
-              <li>
-                Solicitar la eliminación de sus datos cuando ya no sean
-                necesarios
-              </li>
-              <li>Oponerse al tratamiento o solicitar su limitación</li>
-              <li>Retirar su consentimiento en cualquier momento</li>
+              {rightsItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Para ejercer estos derechos, puede comunicarse con nosotros a
-              través del correo electrónico{' '}
+              {t('rights.contactText')}{' '}
               <a
                 className="text-blue-600 underline dark:text-blue-400"
                 href={contactInfo.emailLink}
@@ -182,12 +161,10 @@ export default function PrivacyPolicyPage() {
               id="conservacion"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              8. Conservación de los datos
+              {t('retention.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Conservaremos sus datos personales únicamente durante el tiempo
-              necesario para cumplir con los fines descritos y con las
-              obligaciones legales aplicables.
+              {t('retention.text')}
             </p>
           </section>
 
@@ -196,11 +173,11 @@ export default function PrivacyPolicyPage() {
               id="contacto"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              9. Contacto
+              {t('contact.heading')}
             </h2>
             <div className="mt-3 space-y-1 text-gray-700 dark:text-gray-300">
               <p>
-                📧 Email:{' '}
+                📧 {t('contact.emailLabel')}:{' '}
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
                   href={contactInfo.emailLink}
@@ -209,7 +186,7 @@ export default function PrivacyPolicyPage() {
                 </a>
               </p>
               <p>
-                📞 Teléfono:{' '}
+                📞 {t('contact.phoneLabel')}:{' '}
                 <a
                   className="text-blue-600 underline dark:text-blue-400"
                   href={contactInfo.whatsappLink}
@@ -217,7 +194,10 @@ export default function PrivacyPolicyPage() {
                   {contactInfo.phone}
                 </a>
               </p>
-              <p>📍 Dirección: {contactInfo.address.country}, {contactInfo.address.city}</p>
+              <p>
+                📍 {t('contact.addressLabel')}: {contactInfo.address.country},{' '}
+                {contactInfo.address.city}
+              </p>
             </div>
           </section>
 
@@ -226,12 +206,10 @@ export default function PrivacyPolicyPage() {
               id="seguridad"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              10. Seguridad de los datos
+              {t('security.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Implementamos medidas técnicas y organizativas apropiadas para
-              proteger sus datos personales contra pérdida, mal uso, acceso no
-              autorizado, divulgación o destrucción.
+              {t('security.text')}
             </p>
           </section>
 
@@ -240,12 +218,10 @@ export default function PrivacyPolicyPage() {
               id="cambios"
               className="text-xl font-semibold text-gray-900 dark:text-gray-100"
             >
-              11. Cambios en esta política
+              {t('changes.heading')}
             </h2>
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-              Nos reservamos el derecho de modificar esta Política de Privacidad
-              en cualquier momento. Los cambios serán publicados en esta misma
-              página con su fecha de actualización.
+              {t('changes.text')}
             </p>
           </section>
         </div>

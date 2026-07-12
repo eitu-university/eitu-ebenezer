@@ -1,0 +1,424 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "ministries": "Ministries",
+    "events": "Events",
+    "nations": "Nations",
+    "postgraduates": "Postgraduate Studies",
+    "programs": "Programs",
+    "studyPrograms": "Study Programs",
+    "coursePrograms": "Course Programs",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "Banner": {
+    "titlePrefix": "Ministerial school of",
+    "titleHighlight": "Approved Workers",
+    "subtitle": "Ebenezer International Theological University",
+    "description": "A theological community with the ideal of educating and serving you",
+    "cta": "Learn More"
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "description": "EituEbenezer is an international Pentecostal evangelical Christian university dedicated to sharing the love of Christ and transforming lives through the power of the Holy Spirit.",
+    "historyTitle": "Our History",
+    "historyText": "What was once known as Maranatha Bible Seminary, Inc., founded in 1973, has today become EituEbenezer Theological College and University, Inc. It was established in 2015 as the official body of the Christian Education Department of the EituEbenezer Pentecostal Council, Inc., to bring Theological Education to a higher level of academic excellence.",
+    "missionTitle": "Our Mission",
+    "missionText": "Our mission is to train men and women who pursue a life of service to the Lord through the biblical standards of the Christian faith. This will be achieved by providing our students with a higher, multidimensional and pluralistic Christian theological education.",
+    "visionTitle": "Our Vision",
+    "visionText": "To strive to be a model institution that will contribute to the betterment of our society, training specialized and spiritual Christian leaders who will carry out our mission by promoting moral values based on the biblical foundations of the Christian faith.",
+    "values": {
+      "love": {
+        "title": "The Love of Christ",
+        "description": "We share the unconditional love of Jesus Christ with everyone."
+      },
+      "community": {
+        "title": "Community",
+        "description": "We build a community united in faith and purpose."
+      },
+      "globalMission": {
+        "title": "Global Mission",
+        "description": "We carry the gospel to every nation in the world."
+      },
+      "teaching": {
+        "title": "Biblical Teaching",
+        "description": "We ground our lives in the truth of the Word of God."
+      }
+    }
+  },
+  "Staff": {
+    "title": "Our Team",
+    "description": "Meet the leaders God has placed at the head of our University to guide and serve our community with love and wisdom.",
+    "empty": "No members available",
+    "cta": {
+      "title": "Would you like to join our team?",
+      "description": "If you feel God's call to serve in ministry, we would love to hear your testimony and how we can work together for the glory of God.",
+      "button": "Contact Us"
+    },
+    "members": {
+      "1": {
+        "position": "Director",
+        "description": "God has allowed me to develop as a worship minister, and to be a student and teacher at our institution for more than 10 years. I am convinced that in God's heart, EITU is exactly what our motto declares: The ministerial school of approved workers."
+      },
+      "2": {
+        "position": "Bachelor's Degree in Christian Theology",
+        "description": "I am deeply committed to the mission of Ebenezer International Theological University, and I firmly believe in the vision of preparing, training, and empowering individuals for service in the Kingdom of God."
+      },
+      "3": {
+        "position": "Secretary | Missionary | Professor",
+        "description": "If I had to recommend anything, it would be this university, because it is incredible. I love what I have learned and the wonderful unity found within it. I love every aspect of this university, and it has helped me build my foundations."
+      },
+      "4": {
+        "position": "Master's in Clinical Counseling and Theology | Pastor",
+        "description": "At the university, God has called me to be a Professor and Director of the Chaplaincy department. The greatest calling is to be a servant of the Most High God. EITU has been a great blessing to me."
+      }
+    }
+  },
+  "Ministries": {
+    "title": "Chaplaincy",
+    "description": "Each ministry is designed to serve different aspects of Christian life and to reach people at every stage of their faith.",
+    "cta": {
+      "title": "Would you like to serve in a chaplaincy ministry?",
+      "description": "God has given unique gifts to each of us. Discover how you can use your talents to glorify God and bless others.",
+      "button": "Contact Us"
+    },
+    "items": {
+      "youth": {
+        "title": "Youth Ministry",
+        "description": "Guiding the next generation in their walk with Christ through dynamic and relevant activities."
+      },
+      "worship": {
+        "title": "Worship Ministry",
+        "description": "Worshiping God with excellence through music and the creative arts."
+      },
+      "women": {
+        "title": "Women's Ministry",
+        "description": "Empowering and equipping women to live out their purpose in Christ."
+      },
+      "bibleSchool": {
+        "title": "Bible School",
+        "description": "Forming disciples through the in-depth study of the Word of God."
+      },
+      "missions": {
+        "title": "Missions",
+        "description": "Carrying the gospel to the nations and serving communities in need."
+      },
+      "family": {
+        "title": "Family Ministry",
+        "description": "Strengthening families and building homes centered on Christ."
+      }
+    }
+  },
+  "Nations": {
+    "title": "Nations",
+    "description": "In obedience to Jesus' command to carry His message to the ends of the earth, our mission extends beyond borders, preaching and teaching the gospel of Jesus Christ with passion, grounded in truth and love.",
+    "notFoundTitle": "Nation not found",
+    "notFoundDescription": "The nation you are looking for is not available."
+  },
+  "Programs": {
+    "title": "Our Programs",
+    "description": "At EituEbenezer we provide solid biblical training for spiritual growth, Christian leadership and ministerial preparation, centered on the Word of God.",
+    "postgrados": {
+      "title": "Postgraduate Studies",
+      "subtitle": "Equipping today's leaders for tomorrow's mission."
+    },
+    "studyPrograms": {
+      "title": "Study Programs",
+      "subtitle": "Equipping today's leaders for tomorrow's mission."
+    },
+    "coursePrograms": {
+      "title": "Course Programs",
+      "subtitle": "More than knowledge, a life dedicated to service."
+    },
+    "tags": {
+      "studyPrograms": "Study Programs",
+      "firstYear": "First Year",
+      "secondYear": "Second Year",
+      "thirdYear": "Third Year",
+      "fourthYear": "Fourth Year",
+      "coursePrograms": "Course Programs",
+      "diplomas": "Diplomas",
+      "expressCourses": "Express Courses",
+      "misc": "Miscellaneous"
+    },
+    "items": {
+      "bachelorYear1": {
+        "title": "Bachelor's in [Program Name] - First Year",
+        "description": "Description of the first year of the bachelor's program, focused on introductory subjects and basic foundations."
+      },
+      "bachelorYear2": {
+        "title": "Bachelor's in [Program Name] - Second Year",
+        "description": "Description of the second year, delving deeper into the program's key areas."
+      },
+      "bachelorYear3": {
+        "title": "Bachelor's in [Program Name] - Third Year",
+        "description": "Description of the third year, with further specialization in the subjects of the study area."
+      },
+      "bachelorYear4": {
+        "title": "Bachelor's in [Program Name] - Fourth Year",
+        "description": "Description of the fourth year, where students apply their knowledge in final projects."
+      },
+      "diploma": {
+        "title": "Diploma in [Course Name]",
+        "description": "This diploma offers advanced training in [diploma topic], with a practical approach."
+      },
+      "expressCourse": {
+        "title": "Express Course in [Course Name]",
+        "description": "A short, effective course that will let you learn [express course topic] in a reduced amount of time."
+      },
+      "miscLeadership": {
+        "title": "Miscellaneous: Executive Leadership",
+        "description": "Course focused on developing leadership skills for executives in corporate settings."
+      },
+      "miscBusinessAdmin": {
+        "title": "Miscellaneous: Business Administration",
+        "description": "Business management and administration course to develop skills in direction and administration."
+      },
+      "miscAdminAssistant": {
+        "title": "Miscellaneous: Administrative Assistance",
+        "description": "Course aimed at training administrative assistants with key tools and knowledge."
+      },
+      "miscTrainerOfTrainers": {
+        "title": "Miscellaneous: Trainer of Trainers",
+        "description": "Course to train trainers in creating effective teaching programs."
+      },
+      "miscHumanTalent": {
+        "title": "Miscellaneous: Human Talent Management",
+        "description": "Course to understand and apply key concepts in talent management within organizations."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "description": "Listen to the stories of transformation and how God has worked in the lives of our members.",
+    "items": {
+      "1": {
+        "role": "Member since 2018",
+        "content": "EituEbenezer has been a place where I found my purpose in Christ. The community here is truly a family that has supported me through the hardest moments of my life."
+      },
+      "2": {
+        "role": "Youth Leader",
+        "content": "Watching God transform the lives of young people through our ministry is an incredible experience. Every day I see the power of the gospel in action."
+      },
+      "3": {
+        "role": "Member since 2020",
+        "content": "When I arrived at EituEbenezer, I was lost and without direction. Today I can say that I have found my identity in Christ and a clear purpose for my life."
+      },
+      "4": {
+        "role": "Missions Volunteer",
+        "content": "Being part of the missions team has allowed me to see how God works in different cultures and contexts. It's an experience that has transformed my perspective on the gospel."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "We are here to serve you. Feel free to contact us with any questions or to learn more about our University.",
+    "info": {
+      "title": "Contact Information",
+      "description": "Our doors are open to you. Come and join our spiritual family, where you will find love, acceptance and purpose.",
+      "addressLabel": "Address",
+      "hoursLabel": "Service Hours",
+      "hoursSunday": "Sundays: 9:00 AM - 12:00 PM",
+      "hoursWednesday": "Wednesdays: 7:00 PM - 9:00 PM"
+    },
+    "form": {
+      "title": "Contact Us",
+      "subtitle": "Do you have a question or want to learn more about us?",
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "additionalInfoTitle": "Information",
+      "emailPrefix": "Email",
+      "phonePrefix": "Phone",
+      "toastSuccessTitle": "All set!",
+      "toastSuccessMessage": "Thank you, we will contact you soon.",
+      "toastErrorTitle": "Something went wrong!",
+      "toastErrorGeneric": "There was an error sending your message. Please try again.",
+      "errors": {
+        "nameMin": "Name must be at least 2 characters long",
+        "emailInvalid": "Please enter a valid email",
+        "messageMin": "Message must be at least 10 characters long"
+      }
+    }
+  },
+  "Footer": {
+    "description": "We are a Christian theological university committed to forming leaders with purpose. Our mission is to educate you with excellence and serve you with vocation.",
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  },
+  "Common": {
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "learnMore": "Learn more →",
+    "getInTouch": "Contact Us"
+  },
+  "NotFound": {
+    "title": "404 - Page not found",
+    "backHome": "Back to the home page"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "EituEbenezer Pentecostal Evangelical Christian University",
+    "lastUpdated": "Last updated: September 3, 2025",
+    "intro": {
+      "heading": "1. Introduction",
+      "text": "At EituEbenezer Pentecostal Evangelical Christian University (hereinafter, \"EituEbenezer\"), we value and respect the privacy of our visitors, members, collaborators and website users. This Privacy Policy explains how we collect, use, store and protect your personal data. By using our website or sharing your data with us, you accept the terms of this policy."
+    },
+    "dataCollected": {
+      "heading": "2. Data we collect",
+      "items": [
+        "Full name",
+        "Email address",
+        "Phone number",
+        "Mailing address (if applicable)",
+        "Contact information for activities, events or donations",
+        "Messages sent through contact forms",
+        "Technical data such as IP address, browser type and site usage statistics (cookies)"
+      ]
+    },
+    "purpose": {
+      "heading": "3. Purpose of data processing",
+      "items": [
+        "Managing communication with our members and visitors",
+        "Sending newsletters, devotionals and event announcements",
+        "Managing records of activities, meetings, services and worship gatherings",
+        "Managing donations and issuing receipts when applicable",
+        "Responding to requests or questions made by users",
+        "Improving the browsing experience on our website"
+      ]
+    },
+    "legalBasis": {
+      "heading": "4. Legal basis for data processing",
+      "items": [
+        "Express consent of the data subject",
+        "Compliance with legal or tax obligations",
+        "EituEbenezer's legitimate interest for pastoral, administrative or communication purposes"
+      ]
+    },
+    "sharing": {
+      "heading": "5. Data sharing",
+      "intro": "EituEbenezer does not sell, rent or share personal data with third parties, except in the following cases:",
+      "items": [
+        "When required by law or by a competent authority",
+        "With technology service providers who help us operate the website (for example, hosting or email delivery), always under confidentiality agreements",
+        "With your explicit consent"
+      ]
+    },
+    "cookies": {
+      "heading": "6. Cookies and similar technologies",
+      "text": "Our website may use cookies to improve navigation and gather anonymous usage statistics. You can configure your browser to block or delete cookies at any time."
+    },
+    "rights": {
+      "heading": "7. User rights",
+      "intro": "You have the right to:",
+      "items": [
+        "Access your personal data",
+        "Rectify inaccurate or incomplete data",
+        "Request the deletion of your data when it is no longer necessary",
+        "Object to processing or request its limitation",
+        "Withdraw your consent at any time"
+      ],
+      "contactText": "To exercise these rights, you can contact us through the email"
+    },
+    "retention": {
+      "heading": "8. Data retention",
+      "text": "We will retain your personal data only for as long as necessary to fulfill the purposes described and to comply with applicable legal obligations."
+    },
+    "contact": {
+      "heading": "9. Contact",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "addressLabel": "Address"
+    },
+    "security": {
+      "heading": "10. Data security",
+      "text": "We implement appropriate technical and organizational measures to protect your personal data against loss, misuse, unauthorized access, disclosure or destruction."
+    },
+    "changes": {
+      "heading": "11. Changes to this policy",
+      "text": "We reserve the right to modify this Privacy Policy at any time. Changes will be posted on this same page along with their update date."
+    }
+  },
+  "TermsOfService": {
+    "title": "Terms of Service",
+    "subtitle": "EituEbenezer Pentecostal Evangelical Christian University",
+    "lastUpdated": "Last updated: September 3, 2025",
+    "siteUse": {
+      "heading": "1. Use of the website",
+      "text1": "The website of EituEbenezer Pentecostal Evangelical Christian University is intended to share information about our activities, Christian teachings, and spiritual content.",
+      "text2": "Use of this site implies acceptance of these Terms of Service."
+    },
+    "contentOwnership": {
+      "heading": "2. Content ownership",
+      "text": "All published content (text, images, videos, audio, documents) belongs to EituEbenezer, unless otherwise indicated. Its reproduction or distribution without prior authorization is prohibited, especially for commercial purposes."
+    },
+    "properUse": {
+      "heading": "3. Proper use",
+      "text": "Use of this site is expected to be respectful and in line with Christian principles. Use of the content for mockery, defamation, or any purpose contrary to the faith and values we promote is not permitted."
+    },
+    "externalLinks": {
+      "heading": "4. External links",
+      "text": "This site may include links to external pages. We are not responsible for the content of third-party sites."
+    },
+    "contact": {
+      "heading": "5. Contact",
+      "intro": "For any inquiries regarding the use of the site, you can contact us at:",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "addressLabel": "Address"
+    },
+    "changes": {
+      "heading": "6. Changes to these terms",
+      "text": "We may modify these Terms at any time. Modifications will be posted on this same page along with their update date."
+    }
+  },
+  "SEO": {
+    "title": "EituEbenezer | Ebenezer International Theological University",
+    "description": "Theological community with the ideal of educating and serving you",
+    "keywords": "christian, evangelical, pentecostal, church, faith, gospel, prayer, worship",
+    "home": {
+      "title": "EituEbenezer - Pentecostal Evangelical Christian University",
+      "description": "International Pentecostal evangelical Christian university dedicated to teaching in the love of Christ and transforming lives through the gospel."
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "description": "Learn about our team, values and approach to advancing your project."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Tell us about yourself and we will get back to you shortly."
+    },
+    "ministries": {
+      "title": "Ministries",
+      "description": "Learn about our ministries."
+    },
+    "postgrados": {
+      "title": "Postgraduate Studies",
+      "description": "Equipping today's leaders for tomorrow's mission."
+    },
+    "programasDeCurso": {
+      "title": "Course Programs",
+      "description": "More than knowledge, a life dedicated to service."
+    },
+    "programasDeEstudio": {
+      "title": "Study Programs",
+      "description": "Equipping today's leaders for tomorrow's mission."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Learn how EituEbenezer collects, uses and protects your personal data."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms of use for the EituEbenezer website."
+    }
+  }
+}

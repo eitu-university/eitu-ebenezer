@@ -1,9 +1,12 @@
 import { NavItem } from '@/types';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { FiChevronDown } from 'react-icons/fi';
 
 // TODO: use React.memo for optimization
 export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] }) => {
+  const t = useTranslations('Navigation');
+
   return (
     <nav className="hidden items-center space-x-8 md:flex">
       {navigationItems.map((item) => {
@@ -12,21 +15,20 @@ export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] })
             <Link
               key={item.href}
               href={item.href}
-              // onClick={() => scrollToSection(item.href)}
               className="navLink font-medium text-gray-200 dark:text-gray-100"
             >
-              {item.label}
+              {t(item.labelKey)}
             </Link>
           );
         else if (item.options) {
           return (
-            <div key={item.label} className="group relative">
+            <div key={item.labelKey} className="group relative">
               <button
                 className="navLink inline-flex items-center gap-1 font-medium text-gray-200 dark:text-gray-100"
                 aria-haspopup="menu"
                 aria-expanded="false"
               >
-                <span>{item.label}</span>
+                <span>{t(item.labelKey)}</span>
                 <FiChevronDown className="mt-[1px] h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
               </button>
 
@@ -42,7 +44,7 @@ export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] })
               >
                 {item.options.map((opt) => (
                   <Link
-                    key={opt.href ?? opt.label}
+                    key={opt.href ?? opt.labelKey}
                     href={opt.href ?? '#'}
                     className={[
                       'flex items-center gap-3 rounded-md px-3 py-2 text-sm',
@@ -52,7 +54,7 @@ export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] })
                     ].join(' ')}
                   >
                     {opt.icon ? <opt.icon /> : null}
-                    <span>{opt.label}</span>
+                    <span>{t(opt.labelKey)}</span>
                   </Link>
                 ))}
               </div>

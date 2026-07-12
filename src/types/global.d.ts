@@ -1,91 +1,216 @@
-import { locales } from '@/i18n';
-
 declare global {
-  // Use type safe message keys with `next-intl`
   interface IntlMessages {
     Navigation: {
       home: string;
-      about: string;
+      aboutUs: string;
       contact: string;
+      ministries: string;
+      events: string;
+      nations: string;
+      postgraduates: string;
+      programs: string;
+      studyPrograms: string;
+      coursePrograms: string;
       privacy: string;
       terms: string;
     };
-    Homepage: {
-      title: string;
-      subtitle: string;
-      description: string;
-    };
     Banner: {
-      title: string;
+      titlePrefix: string;
+      titleHighlight: string;
       subtitle: string;
       description: string;
       cta: string;
     };
     AboutUs: {
       title: string;
-      subtitle: string;
       description: string;
-      mission: string;
+      historyTitle: string;
+      historyText: string;
+      missionTitle: string;
       missionText: string;
-      vision: string;
+      visionTitle: string;
       visionText: string;
+      values: Record<
+        'love' | 'community' | 'globalMission' | 'teaching',
+        { title: string; description: string }
+      >;
     };
     Staff: {
       title: string;
-      subtitle: string;
       description: string;
+      empty: string;
+      cta: { title: string; description: string; button: string };
+      members: Record<
+        '1' | '2' | '3' | '4',
+        { position: string; description: string }
+      >;
     };
     Ministries: {
       title: string;
-      subtitle: string;
       description: string;
+      cta: { title: string; description: string; button: string };
+      items: Record<
+        | 'youth'
+        | 'worship'
+        | 'women'
+        | 'bibleSchool'
+        | 'missions'
+        | 'family',
+        { title: string; description: string }
+      >;
+    };
+    Nations: {
+      title: string;
+      description: string;
+      notFoundTitle: string;
+      notFoundDescription: string;
+    };
+    Programs: {
+      title: string;
+      description: string;
+      postgrados: { title: string; subtitle: string };
+      studyPrograms: { title: string; subtitle: string };
+      coursePrograms: { title: string; subtitle: string };
+      tags: Record<
+        | 'studyPrograms'
+        | 'firstYear'
+        | 'secondYear'
+        | 'thirdYear'
+        | 'fourthYear'
+        | 'coursePrograms'
+        | 'diplomas'
+        | 'expressCourses'
+        | 'misc',
+        string
+      >;
+      items: Record<
+        | 'bachelorYear1'
+        | 'bachelorYear2'
+        | 'bachelorYear3'
+        | 'bachelorYear4'
+        | 'diploma'
+        | 'expressCourse'
+        | 'miscLeadership'
+        | 'miscBusinessAdmin'
+        | 'miscAdminAssistant'
+        | 'miscTrainerOfTrainers'
+        | 'miscHumanTalent',
+        { title: string; description: string }
+      >;
     };
     Testimonials: {
       title: string;
-      subtitle: string;
       description: string;
+      items: Record<'1' | '2' | '3' | '4', { role: string; content: string }>;
     };
     Contact: {
       title: string;
-      subtitle: string;
       description: string;
-      form: {
-        name: string;
-        email: string;
-        phone: string;
-        message: string;
-        submit: string;
-        success: string;
-        error: string;
-      };
       info: {
-        address: string;
-        phone: string;
-        email: string;
-        hours: string;
+        title: string;
+        description: string;
+        addressLabel: string;
+        hoursLabel: string;
+        hoursSunday: string;
+        hoursWednesday: string;
+      };
+      form: {
+        title: string;
+        subtitle: string;
+        nameLabel: string;
+        namePlaceholder: string;
+        emailLabel: string;
+        emailPlaceholder: string;
+        messageLabel: string;
+        messagePlaceholder: string;
+        submit: string;
+        submitting: string;
+        additionalInfoTitle: string;
+        emailPrefix: string;
+        phonePrefix: string;
+        toastSuccessTitle: string;
+        toastSuccessMessage: string;
+        toastErrorTitle: string;
+        toastErrorGeneric: string;
+        errors: {
+          nameMin: string;
+          emailInvalid: string;
+          messageMin: string;
+        };
       };
     };
     Footer: {
       description: string;
-      quickLinks: string;
-      contactInfo: string;
-      followUs: string;
+      quickLinksTitle: string;
+      contactTitle: string;
       rights: string;
     };
     Common: {
       readMore: string;
+      readLess: string;
       learnMore: string;
       getInTouch: string;
-      joinUs: string;
-      prayer: string;
-      worship: string;
-      fellowship: string;
-      service: string;
+    };
+    NotFound: {
+      title: string;
+      backHome: string;
+    };
+    PrivacyPolicy: {
+      title: string;
+      subtitle: string;
+      lastUpdated: string;
+      intro: { heading: string; text: string };
+      dataCollected: { heading: string; items: string[] };
+      purpose: { heading: string; items: string[] };
+      legalBasis: { heading: string; items: string[] };
+      sharing: { heading: string; intro: string; items: string[] };
+      cookies: { heading: string; text: string };
+      rights: {
+        heading: string;
+        intro: string;
+        items: string[];
+        contactText: string;
+      };
+      retention: { heading: string; text: string };
+      contact: {
+        heading: string;
+        emailLabel: string;
+        phoneLabel: string;
+        addressLabel: string;
+      };
+      security: { heading: string; text: string };
+      changes: { heading: string; text: string };
+    };
+    TermsOfService: {
+      title: string;
+      subtitle: string;
+      lastUpdated: string;
+      siteUse: { heading: string; text1: string; text2: string };
+      contentOwnership: { heading: string; text: string };
+      properUse: { heading: string; text: string };
+      externalLinks: { heading: string; text: string };
+      contact: {
+        heading: string;
+        intro: string;
+        emailLabel: string;
+        phoneLabel: string;
+        addressLabel: string;
+      };
+      changes: { heading: string; text: string };
     };
     SEO: {
       title: string;
       description: string;
       keywords: string;
+      home: { title: string; description: string };
+      aboutUs: { title: string; description: string };
+      contact: { title: string; description: string };
+      ministries: { title: string; description: string };
+      postgrados: { title: string; description: string };
+      programasDeCurso: { title: string; description: string };
+      programasDeEstudio: { title: string; description: string };
+      privacy: { title: string; description: string };
+      terms: { title: string; description: string };
     };
   }
 }

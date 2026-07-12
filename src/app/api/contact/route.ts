@@ -1,9 +1,15 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { ContactEmail } from '@/components/email/ContacEmail';
-import { contactFormSchema } from '@/zod/schemas';
+import { getContactFormSchema } from '@/zod/schemas';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+const contactFormSchema = getContactFormSchema({
+  nameMin: 'Name must be at least 2 characters long',
+  emailInvalid: 'Please enter a valid email',
+  messageMin: 'Message must be at least 10 characters long',
+});
 
 export async function POST(req: Request) {
   try {

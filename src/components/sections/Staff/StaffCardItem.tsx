@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import { StaffMember } from '@/types';
 import Image from 'next/image';
 import { FiMail, FiLinkedin } from 'react-icons/fi';
@@ -9,8 +10,10 @@ type Prop = {
 
 const maxLenth = 120;
 
-const StaffCardItem = ({ member }: Prop) => {
-  const description = member.description || '';
+const StaffCardItem = async ({ member }: Prop) => {
+  const t = await getTranslations('Staff.members');
+  const position = t(`${member.id}.position`);
+  const description = t(`${member.id}.description`);
 
   return (
     <div className="group overflow-hidden rounded-b-3xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl dark:bg-gray-800">
@@ -33,7 +36,7 @@ const StaffCardItem = ({ member }: Prop) => {
           {member.name}
         </h3>
         <p className="mb-3 font-semibold text-blue-600 dark:text-blue-400">
-          {member.position}
+          {position}
         </p>
         <TextToggle text={description} maxLength={maxLenth} />
 
