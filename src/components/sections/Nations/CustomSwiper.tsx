@@ -54,7 +54,7 @@ const CustomSwiper = () => {
         {nations.map((nation, idx) => (
           <SwiperSlide key={idx} className={styles.swiperSlide}>
             <Link href={nation.slug} className={styles.slideContent}>
-              <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl">
                 <img
                   src={nation.imgThumb}
                   alt={nation.name}
@@ -64,7 +64,7 @@ const CustomSwiper = () => {
                 <img
                   src={nation.flagSvg}
                   alt={`${nation.name} flag`}
-                  className={styles.miniFlag}
+                  className={`${styles.miniFlag} ring-2 ring-white`}
                 />
 
                 <div className="absolute inset-x-0 bottom-0 rounded-2xl bg-gradient-to-t from-black/85 to-transparent p-4 pt-10 text-white">

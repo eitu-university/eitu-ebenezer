@@ -58,7 +58,7 @@ export default function Banner() {
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <button
               onClick={scrollToContent}
-              className="bg-blue-600 px-8 py-3 font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-blue-700 hover:shadow-xl"
+              className="rounded-full bg-blue-600 px-8 py-3.5 font-semibold text-white shadow-lg shadow-blue-900/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl"
             >
               {t('cta')}
             </button>
@@ -69,7 +69,7 @@ export default function Banner() {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="border border-white px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-white hover:text-gray-900"
+              className="rounded-full border border-white/70 px-8 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white hover:text-gray-900"
             >
               {tCommon('getInTouch')}
             </button>

@@ -12,9 +12,10 @@ const Nations = async () => {
   return (
     <div className={`${styles.carouselContainer} bg-white dark:bg-gray-900`}>
       <div className="mx-auto mb-16 max-w-4xl text-center">
-        <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+        <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
           {t('title')}
         </h2>
+        <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-blue-600" />
         <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
           {t('description')}
         </p>

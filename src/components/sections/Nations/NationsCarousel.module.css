@@ -41,6 +41,11 @@
 .img {
   width: 100%;
   border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.slideContent:hover .img {
+  transform: scale(1.04);
 }
 .miniFlag {
   @apply absolute right-2 top-2 h-10 w-10 rounded-full shadow-xl;

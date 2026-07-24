@@ -85,7 +85,7 @@ export default function ContactForm() {
 
   return (
     <div
-      className={`rounded-2xl bg-white p-8 shadow-lg dark:bg-gray-700 ${isSubmitting ? 'pointer-events-none opacity-50' : 'opacity-100'}`}
+      className={`rounded-2xl border border-gray-100 bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-700 ${isSubmitting ? 'pointer-events-none opacity-50' : 'opacity-100'}`}
     >
       <div className="mb-8 text-center">
         <h3 className="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">
@@ -111,7 +111,7 @@ export default function ContactForm() {
               {...register('name')}
               type="text"
               id="name"
-              className="block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+              className="block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
               placeholder={t('namePlaceholder')}
             />
           </div>
@@ -136,7 +136,7 @@ export default function ContactForm() {
               {...register('email')}
               type="email"
               id="email"
-              className="block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+              className="block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
               placeholder={t('emailPlaceholder')}
             />
           </div>
@@ -161,7 +161,7 @@ export default function ContactForm() {
               {...register('message')}
               id="message"
               rows={5}
-              className="block w-full resize-none rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+              className="block w-full resize-none rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
               placeholder={t('messagePlaceholder')}
             />
           </div>
@@ -176,7 +176,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="flex w-full items-center justify-center space-x-2 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors duration-200 hover:bg-blue-700 disabled:bg-blue-400"
+          className="flex w-full items-center justify-center space-x-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white shadow-md transition-all duration-200 hover:shadow-lg hover:from-blue-700 hover:to-indigo-700 disabled:from-blue-400 disabled:to-blue-400"
         >
           {isSubmitting ? (
             <>
@@ -193,7 +193,7 @@ export default function ContactForm() {
       </form>
 
       {/* Información de contacto adicional */}
-      <div className="mt-8 border-t border-gray-200 pt-8">
+      <div className="mt-8 border-t border-gray-200 pt-8 dark:border-gray-600">
         <div className="grid gap-6 text-sm text-gray-600 sm:grid-cols-2">
           <div>
             <h4 className="mb-2 font-semibold text-gray-900 dark:text-gray-300">

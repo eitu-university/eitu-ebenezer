@@ -8,12 +8,18 @@ export default async function Contact() {
   const t = await getTranslations('Contact');
 
   return (
-    <section id="contact" className="bg-gray-50 py-28 dark:bg-gray-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-gray-50 py-28 dark:bg-gray-800"
+    >
+      <div className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-blue-100 opacity-60 blur-3xl dark:bg-blue-900/20" />
+
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
-          <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
             {t('title')}
           </h2>
+          <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-blue-600" />
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
             {t('description')}
           </p>
@@ -31,10 +37,10 @@ export default async function Contact() {
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                  <FiMapPin className="h-6 w-6 text-blue-600" />
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-900">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-600">
+                  <FiMapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">
@@ -50,9 +56,9 @@ export default async function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                  <FiClock className="h-6 w-6 text-blue-600" />
+              <div className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-900">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-600">
+                  <FiClock className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900 dark:text-gray-100">

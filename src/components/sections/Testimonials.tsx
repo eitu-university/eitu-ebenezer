@@ -24,16 +24,17 @@ export default function Testimonials() {
     <section className="bg-white py-28 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
-          <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
             {t('title')}
           </h2>
+          <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-blue-600" />
           <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
             {t('description')}
           </p>
         </div>
 
         <div className="mx-auto max-w-4xl">
-          <div className="relative rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 dark:from-gray-800 dark:to-gray-700 sm:p-12">
+          <div className="relative rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 shadow-lg dark:border-gray-700 dark:from-gray-800 dark:to-gray-700 sm:p-12">
             {/* Quote Icon */}
             <div className="absolute left-8 top-8 text-blue-200">
               <svg
@@ -63,7 +64,7 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-md">
                   <span className="text-xl font-bold text-white">
                     {currentTestimonial.name
                       .split(' ')
@@ -109,8 +110,10 @@ export default function Testimonials() {
                 aria-label="dot indicator button"
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-3 w-3 rounded-full transition-colors duration-200 ${
-                  index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
+                className={`h-3 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? 'w-8 bg-blue-600'
+                    : 'w-3 bg-gray-300 dark:bg-gray-600'
                 }`}
               />
             ))}

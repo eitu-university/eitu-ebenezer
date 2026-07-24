@@ -4,6 +4,7 @@ import type { CSSProperties } from 'react';
 import { useTranslations } from 'next-intl';
 import { ProgramList } from '@/data/programs';
 import Image from 'next/image';
+import { FiArrowRight } from 'react-icons/fi';
 
 export const Programs = () => {
   const t = useTranslations('Programs');
@@ -12,11 +13,12 @@ export const Programs = () => {
   const itemGap = 32;
 
   return (
-    <div className="grid min-h-screen place-items-center bg-gray-100 p-4 text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
+    <div className="grid min-h-screen place-items-center bg-gray-50 p-4 text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+        <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
           {t('title')}
         </h2>
+        <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-blue-600" />
         <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
           {t('description')}
         </p>
@@ -50,7 +52,7 @@ export const Programs = () => {
               } as CSSProperties
             }
           >
-            <div className="grid h-full w-full grid-rows-[200px_auto_1fr_auto] gap-1 rounded-xl border border-gray-200 bg-white text-gray-800 shadow-lg transition-transform duration-300 ease-in-out group-hover:-translate-y-2 group-hover:shadow-xl dark:border-white/15 dark:bg-gray-800/50 dark:text-white">
+            <div className="grid h-full w-full grid-rows-[200px_auto_1fr_auto] gap-1 rounded-xl border border-gray-200 bg-white text-gray-800 shadow-sm transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:shadow-xl dark:border-white/15 dark:bg-gray-800/50 dark:text-white">
               {/* Image section */}
               <Image
                 src={item.imgSrc}
@@ -85,8 +87,9 @@ export const Programs = () => {
               </div>
 
               {/* CTA Button - uses custom styling from the style block */}
-              <button className="flex justify-start p-4 pt-0 font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <button className="group/btn flex items-center justify-start gap-1.5 p-4 pt-0 font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
                 {tCommon('learnMore')}
+                <FiArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
               </button>
             </div>
           </article>
