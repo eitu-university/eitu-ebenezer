@@ -2,7 +2,7 @@
 .banner {
   background-image:
     linear-gradient(to left, rgb(1 7 26 / 10%), rgb(0 10 39 / 110%)),
-    url(/images/banner/postgrado.webp); /* Gradiente azul oscuro de derecha a izquierda */
+    url(/images/banner/programas-estudio.webp); /* Gradiente azul oscuro de derecha a izquierda */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Efecto parallax */
@@ -15,9 +15,8 @@
   overflow: hidden;
 }
 
-
-.containerAnimate {
-  animation: fadeInRight 600ms ease-in-out;
+.animteFadeInRight {
+  animation: fadeInRight 500ms ease-in-out;
   will-change: transform, opacity, blur;
 }
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { SvgWave } from '@/components/banner/SvgWave';
-import styles from './ProgramasDeEstudio.module.scss';
+import styles from './Associates.module.scss';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -12,19 +12,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'SEO' });
 
   return {
-    title: t('programasDeEstudio.title'),
-    description: t('programasDeEstudio.description'),
+    title: t('associates.title'),
+    description: t('associates.description'),
     alternates: {
       canonical:
         locale === 'es'
-          ? '/programas-de-estudio'
-          : `/${locale}/programas-de-estudio`,
+          ? '/programs/study-programs/associates'
+          : `/${locale}/programs/study-programs/associates`,
     },
   };
 }
 
-const ProgramasDeEstudio = async () => {
-  const t = await getTranslations('Programs.studyPrograms');
+const Associates = async () => {
+  const t = await getTranslations('Programs.associates');
 
   return (
     <div className="relative">
@@ -47,4 +47,4 @@ const ProgramasDeEstudio = async () => {
   );
 };
 
-export default ProgramasDeEstudio;
+export default Associates;

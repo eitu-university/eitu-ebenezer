@@ -6,10 +6,13 @@
     "ministries": "Ministerios",
     "events": "Eventos",
     "nations": "Naciones",
-    "postgraduates": "Postgrados",
     "programs": "Programas",
     "studyPrograms": "Programas de estudio",
     "coursePrograms": "Programas de curso",
+    "associates": "Asociado",
+    "degree": "Licenciatura",
+    "postgraduate": "Postgrados",
+    "diploma": "Diplomados",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
   },
@@ -122,7 +125,15 @@
     "description": "En EituEbenezer damos formación bíblica sólida para el crecimiento espiritual, liderazgo cristiano y preparación ministerial, centrados en la Palabra de Dios.",
     "postgrados": {
       "title": "Postgrados",
-      "subtitle": "Equipando a los líderes de hoy para la misión de mañana."
+      "subtitle": "Equipando a los líderes de hoy para la misión de mañana.",
+      "masters": {
+        "title": "Maestrías",
+        "description": "Programas de posgrado enfocados en la profundización teológica y el desarrollo de competencias para el liderazgo ministerial avanzado."
+      },
+      "doctorates": {
+        "title": "Doctorados",
+        "description": "Formación académica de más alto nivel, orientada a la investigación teológica y la excelencia en la enseñanza y el servicio ministerial."
+      }
     },
     "studyPrograms": {
       "title": "Programas de Estudio",
@@ -130,7 +141,51 @@
     },
     "coursePrograms": {
       "title": "Programas de Curso",
-      "subtitle": "Más que conocimiento, una vida dedicada al servicio."
+      "subtitle": "Más que conocimiento, una vida dedicada al servicio.",
+      "comingSoon": {
+        "title": "Próximamente",
+        "description": "Estamos trabajando para traerte estos programas muy pronto. Vuelve a visitarnos."
+      }
+    },
+    "diploma": {
+      "title": "Diplomados",
+      "subtitle": "Formación práctica y especializada para el servicio ministerial."
+    },
+    "associates": {
+      "title": "Asociado",
+      "subtitle": "Una base sólida para iniciar tu formación ministerial."
+    },
+    "degree": {
+      "title": "Licenciatura",
+      "subtitle": "Formación integral para el liderazgo cristiano.",
+      "programTitle": "Licenciatura General en Teología y Estudios Bíblicos",
+      "durationLabel": "Duración",
+      "duration": "4 años",
+      "creditsTotalLabel": "Créditos totales",
+      "creditsTotal": "126 créditos",
+      "creditsLabel": "créditos",
+      "objectivesTitle": "Objetivo del programa",
+      "objectives": "Preparar ministros y obreros laicos con una base bíblica y teológica sólida para el servicio efectivo en la obra de Dios.",
+      "requirementsTitle": "Requisitos de ingreso",
+      "requirements": "Experiencia ministerial evaluada por la institución.",
+      "curriculumTitle": "Plan de Estudios",
+      "curriculumDescription": "Conoce las materias, códigos y créditos de cada año para entender la formación que recibirás.",
+      "pendingConfirmation": "Plan de estudios en revisión. Muy pronto publicaremos el detalle de materias de este año.",
+      "ctaTitle": "¿Listo para comenzar tu formación ministerial?",
+      "ctaDescription": "Inscríbete hoy y da el siguiente paso en tu preparación para el servicio a Dios.",
+      "ctaButton": "Inscríbete ahora",
+      "years": {
+        "year1": { "title": "Primer Año", "focus": "Fundamentos" },
+        "year2": { "title": "Segundo Año", "focus": "Profundización" },
+        "year3": {
+          "title": "Tercer Año",
+          "focus": "Teología Sistemática"
+        },
+        "year4": {
+          "title": "Cuarto Año",
+          "focus": "Aplicación y Profesionalización"
+        }
+      }
     },
     "tags": {
       "studyPrograms": "Programas de Estudio",
@@ -404,13 +459,29 @@
       "title": "Postgrados",
       "description": "Equipando a los líderes de hoy para la misión de mañana."
     },
-    "programasDeCurso": {
+    "CoursePrograms": {
       "title": "Programas de Curso",
       "description": "Más que conocimiento, una vida dedicada al servicio."
     },
     "programasDeEstudio": {
       "title": "Programas de Estudio",
       "description": "Equipando a los líderes de hoy para la misión de mañana."
+    },
+    "programs": {
+      "title": "Nuestros Programas",
+      "description": "En EituEbenezer damos formación bíblica sólida para el crecimiento espiritual, liderazgo cristiano y preparación ministerial, centrados en la Palabra de Dios."
+    },
+    "diploma": {
+      "title": "Diplomados",
+      "description": "Formación práctica y especializada para el servicio ministerial."
+    },
+    "associates": {
+      "title": "Asociado",
+      "description": "Una base sólida para iniciar tu formación ministerial."
+    },
+    "degree": {
+      "title": "Licenciatura General en Teología y Estudios Bíblicos",
+      "description": "Programa de 4 años y 126 créditos que prepara ministros y obreros laicos con una base bíblica y teológica sólida."
     },
     "privacy": {
       "title": "Política de Privacidad",

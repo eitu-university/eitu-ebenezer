@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { SvgWave } from '@/components/banner/SvgWave';
+import { FiAward, FiBookOpen } from 'react-icons/fi';
 import styles from './Postgrados.module.scss';
 
 type Props = {
@@ -15,13 +16,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('postgrados.title'),
     description: t('postgrados.description'),
     alternates: {
-      canonical: locale === 'es' ? '/postgrados' : `/${locale}/postgrados`,
+      canonical:
+        locale === 'es'
+          ? '/programs/study-programs/postgraduate'
+          : `/${locale}/programs/study-programs/postgraduate`,
     },
   };
 }
 
-const Postgrados = async () => {
+const Postgraduate = async () => {
   const t = await getTranslations('Programs.postgrados');
+
+  const sections = [
+    { key: 'masters', icon: FiBookOpen },
+    { key: 'doctorates', icon: FiAward },
+  ] as const;
 
   return (
     <div className="relative">
@@ -40,8 +49,27 @@ const Postgrados = async () => {
         </div>
         <SvgWave />
       </section>
+
+      <section className="mx-auto max-w-4xl px-4 py-16">
+        <div className="grid gap-6 sm:grid-cols-2">
+          {sections.map(({ key, icon: Icon }) => (
+            <div
+              key={key}
+              className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+            >
+              <Icon className="mb-4 h-10 w-10 text-blue-600 dark:text-blue-400" />
+              <h2 className="mb-3 text-xl font-bold text-gray-900 dark:text-gray-100">
+                {t(`${key}.title`)}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300">
+                {t(`${key}.description`)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
 
-export default Postgrados;
+export default Postgraduate;

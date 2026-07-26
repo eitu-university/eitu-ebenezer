@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { SvgWave } from '@/components/banner/SvgWave';
-import styles from './ProgramasDeCurso.module.scss';
+import styles from './Diploma.module.scss';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -12,19 +12,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'SEO' });
 
   return {
-    title: t('programasDeCurso.title'),
-    description: t('programasDeCurso.description'),
+    title: t('diploma.title'),
+    description: t('diploma.description'),
     alternates: {
       canonical:
         locale === 'es'
-          ? '/programas-de-curso'
-          : `/${locale}/programas-de-curso`,
+          ? '/programs/study-programs/diploma'
+          : `/${locale}/programs/study-programs/diploma`,
     },
   };
 }
 
-const ProgramasDeCurso = async () => {
-  const t = await getTranslations('Programs.coursePrograms');
+const Diploma = async () => {
+  const t = await getTranslations('Programs.diploma');
 
   return (
     <div className="relative">
@@ -47,4 +47,4 @@ const ProgramasDeCurso = async () => {
   );
 };
 
-export default ProgramasDeCurso;
+export default Diploma;

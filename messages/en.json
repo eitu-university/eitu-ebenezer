@@ -6,10 +6,13 @@
     "ministries": "Ministries",
     "events": "Events",
     "nations": "Nations",
-    "postgraduates": "Postgraduate Studies",
     "programs": "Programs",
     "studyPrograms": "Study Programs",
     "coursePrograms": "Course Programs",
+    "associates": "Associate",
+    "degree": "Bachelor's Degree",
+    "postgraduate": "Postgraduate Studies",
+    "diploma": "Diplomas",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -122,7 +125,15 @@
     "description": "At EituEbenezer we provide solid biblical training for spiritual growth, Christian leadership and ministerial preparation, centered on the Word of God.",
     "postgrados": {
       "title": "Postgraduate Studies",
-      "subtitle": "Equipping today's leaders for tomorrow's mission."
+      "subtitle": "Equipping today's leaders for tomorrow's mission.",
+      "masters": {
+        "title": "Master's Degrees",
+        "description": "Graduate programs focused on deepening theological knowledge and developing advanced ministerial leadership skills."
+      },
+      "doctorates": {
+        "title": "Doctoral Programs",
+        "description": "The highest level of academic training, focused on theological research and excellence in teaching and ministerial service."
+      }
     },
     "studyPrograms": {
       "title": "Study Programs",
@@ -130,7 +141,51 @@
     },
     "coursePrograms": {
       "title": "Course Programs",
-      "subtitle": "More than knowledge, a life dedicated to service."
+      "subtitle": "More than knowledge, a life dedicated to service.",
+      "comingSoon": {
+        "title": "Coming Soon",
+        "description": "We're working hard to bring you these programs soon. Check back with us."
+      }
+    },
+    "diploma": {
+      "title": "Diplomas",
+      "subtitle": "Practical, specialized training for ministerial service."
+    },
+    "associates": {
+      "title": "Associate",
+      "subtitle": "A solid foundation to begin your ministerial training."
+    },
+    "degree": {
+      "title": "Bachelor's Degree",
+      "subtitle": "Comprehensive training for Christian leadership.",
+      "programTitle": "General Bachelor's Degree in Theology and Biblical Studies",
+      "durationLabel": "Duration",
+      "duration": "4 years",
+      "creditsTotalLabel": "Total credits",
+      "creditsTotal": "126 credits",
+      "creditsLabel": "credits",
+      "objectivesTitle": "Program objective",
+      "objectives": "To prepare ministers and lay workers with a solid biblical and theological foundation for effective service in God's work.",
+      "requirementsTitle": "Admission requirements",
+      "requirements": "Ministerial experience evaluated by the institution.",
+      "curriculumTitle": "Curriculum",
+      "curriculumDescription": "Explore the courses, codes, and credits for each year to understand the training you will receive.",
+      "pendingConfirmation": "Curriculum under review. We'll publish this year's course details soon.",
+      "ctaTitle": "Ready to begin your ministerial training?",
+      "ctaDescription": "Enroll today and take the next step in your preparation to serve God.",
+      "ctaButton": "Enroll Now",
+      "years": {
+        "year1": { "title": "First Year", "focus": "Fundamentals" },
+        "year2": { "title": "Second Year", "focus": "Deepening" },
+        "year3": {
+          "title": "Third Year",
+          "focus": "Systematic Theology"
+        },
+        "year4": {
+          "title": "Fourth Year",
+          "focus": "Application and Professionalization"
+        }
+      }
     },
     "tags": {
       "studyPrograms": "Study Programs",
@@ -404,13 +459,29 @@
       "title": "Postgraduate Studies",
       "description": "Equipping today's leaders for tomorrow's mission."
     },
-    "programasDeCurso": {
+    "CoursePrograms": {
       "title": "Course Programs",
       "description": "More than knowledge, a life dedicated to service."
     },
     "programasDeEstudio": {
       "title": "Study Programs",
       "description": "Equipping today's leaders for tomorrow's mission."
+    },
+    "programs": {
+      "title": "Our Programs",
+      "description": "At EituEbenezer we provide solid biblical training for spiritual growth, Christian leadership and ministerial preparation, centered on the Word of God."
+    },
+    "diploma": {
+      "title": "Diplomas",
+      "description": "Practical, specialized training for ministerial service."
+    },
+    "associates": {
+      "title": "Associate",
+      "description": "A solid foundation to begin your ministerial training."
+    },
+    "degree": {
+      "title": "General Bachelor's Degree in Theology and Biblical Studies",
+      "description": "A 4-year, 126-credit program that prepares ministers and lay workers with a solid biblical and theological foundation."
     },
     "privacy": {
       "title": "Privacy Policy",

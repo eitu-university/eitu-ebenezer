@@ -42,3 +42,15 @@ export interface ProgramItem {
   link: string;
   tagKeys?: (keyof IntlMessages['Programs']['tags'])[];
 }
+
+export interface DegreeCourse {
+  code: string;
+  credits: number;
+  name: { es: string; en: string };
+}
+
+export interface DegreeYear {
+  key: 'year1' | 'year2' | 'year3' | 'year4';
+  confirmed: boolean;
+  courses: DegreeCourse[];
+}

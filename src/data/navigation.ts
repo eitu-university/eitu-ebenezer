@@ -18,22 +18,38 @@ export const navigationItems: NavItem[] = [
     icon: FiMail,
   },
   {
-    labelKey: 'postgraduates',
-    href: '/postgrados',
-    icon: FiZap,
-  },
-  {
     labelKey: 'programs',
     icon: FiZap,
     options: [
       {
         labelKey: 'studyPrograms',
-        href: '/programas-de-estudio',
         icon: FiZap,
+        options: [
+          {
+            labelKey: 'associates',
+            href: '/programs/study-programs/associates',
+            icon: FiZap,
+          },
+          {
+            labelKey: 'degree',
+            href: '/programs/study-programs/degree',
+            icon: FiZap,
+          },
+          {
+            labelKey: 'postgraduate',
+            href: '/programs/study-programs/postgraduate',
+            icon: FiZap,
+          },
+          {
+            labelKey: 'diploma',
+            href: '/programs/study-programs/diploma',
+            icon: FiZap,
+          },
+        ],
       },
       {
         labelKey: 'coursePrograms',
-        href: '/programas-de-curso',
+        href: '/programs/course-programs',
         icon: FiZap,
       },
     ],

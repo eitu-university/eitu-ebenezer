@@ -7,10 +7,13 @@ declare global {
       ministries: string;
       events: string;
       nations: string;
-      postgraduates: string;
       programs: string;
       studyPrograms: string;
       coursePrograms: string;
+      associates: string;
+      degree: string;
+      postgraduate: string;
+      diploma: string;
       privacy: string;
       terms: string;
     };
@@ -68,9 +71,44 @@ declare global {
     Programs: {
       title: string;
       description: string;
-      postgrados: { title: string; subtitle: string };
+      postgrados: {
+        title: string;
+        subtitle: string;
+        masters: { title: string; description: string };
+        doctorates: { title: string; description: string };
+      };
       studyPrograms: { title: string; subtitle: string };
-      coursePrograms: { title: string; subtitle: string };
+      coursePrograms: {
+        title: string;
+        subtitle: string;
+        comingSoon: { title: string; description: string };
+      };
+      diploma: { title: string; subtitle: string };
+      associates: { title: string; subtitle: string };
+      degree: {
+        title: string;
+        subtitle: string;
+        programTitle: string;
+        durationLabel: string;
+        duration: string;
+        creditsTotalLabel: string;
+        creditsTotal: string;
+        creditsLabel: string;
+        objectivesTitle: string;
+        objectives: string;
+        requirementsTitle: string;
+        requirements: string;
+        curriculumTitle: string;
+        curriculumDescription: string;
+        pendingConfirmation: string;
+        ctaTitle: string;
+        ctaDescription: string;
+        ctaButton: string;
+        years: Record<
+          'year1' | 'year2' | 'year3' | 'year4',
+          { title: string; focus: string }
+        >;
+      };
       tags: Record<
         | 'studyPrograms'
         | 'firstYear'
@@ -209,6 +247,10 @@ declare global {
       postgrados: { title: string; description: string };
       programasDeCurso: { title: string; description: string };
       programasDeEstudio: { title: string; description: string };
+      programs: { title: string; description: string };
+      diploma: { title: string; description: string };
+      associates: { title: string; description: string };
+      degree: { title: string; description: string };
       privacy: { title: string; description: string };
       terms: { title: string; description: string };
     };

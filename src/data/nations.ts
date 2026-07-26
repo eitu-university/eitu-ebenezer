@@ -11,7 +11,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/ecuador.webp',
     slug: '/naciones/ec',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'Servimos en Ecuador llevando el mensaje del evangelio y formando líderes comprometidos con la obra de Dios.',
   },
   {
     code: 'RD',
@@ -23,7 +23,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/rd.webp',
     slug: '/naciones/rd',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'En República Dominicana impulsamos la formación ministerial y el crecimiento de la iglesia en el Caribe.',
   },
   {
     code: 'PE',
@@ -35,7 +35,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/pe.webp',
     slug: '/naciones/pe',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'Presentes en Perú, equipando obreros aprobados para servir con excelencia en el ministerio.',
   },
   {
     code: 'SV',
@@ -47,7 +47,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/sv.webp',
     slug: '/naciones/sv',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'En El Salvador acompañamos a líderes locales en su preparación teológica y vocación de servicio.',
   },
   {
     code: 'CO',
@@ -59,7 +59,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/colombia.webp',
     slug: '/naciones/co',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'En Colombia formamos hombres y mujeres para el ministerio con una sólida base bíblica.',
   },
   {
     code: 'ES',
@@ -71,7 +71,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/es.webp',
     slug: '/naciones/es',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'En España extendemos nuestra misión formando líderes que impactan Europa con el evangelio.',
   },
   {
     code: 'US',
@@ -83,7 +83,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/eu.webp',
     slug: '/naciones/us',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'In the United States, we equip approved workers to serve with excellence across diverse communities.',
   },
   {
     code: 'MX',
@@ -95,7 +95,7 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/mx.webp',
     slug: '/naciones/mx',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'En México preparamos líderes ministeriales comprometidos con la enseñanza fiel de la Palabra.',
   },
   {
     code: 'AR',
@@ -107,6 +107,6 @@ export const nations: NationsData[] = [
     imgThumb: '/images/nations-min/argentina.webp',
     slug: '/naciones/ar',
     description:
-      'Lorem ipsum dolor nostrum exercitationem ipsum dicta magnam deleniti. Nisi id voluptate nostrum dolor.',
+      'En Argentina impulsamos la formación teológica para fortalecer el liderazgo cristiano local.',
   },
 ];

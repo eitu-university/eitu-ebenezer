@@ -1,7 +1,7 @@
 import { NavItem } from '@/types';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { FiChevronDown } from 'react-icons/fi';
+import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
 // TODO: use React.memo for optimization
 export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] }) => {
@@ -42,21 +42,74 @@ export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] })
                   'dark:border-gray-700 dark:bg-[#0b1220]/95',
                 ].join(' ')}
               >
-                {item.options.map((opt) => (
-                  <Link
-                    key={opt.href ?? opt.labelKey}
-                    href={opt.href ?? '#'}
-                    className={[
-                      'flex items-center gap-3 rounded-md px-3 py-2 text-sm',
-                      'text-gray-700 hover:bg-gray-50 hover:text-blue-600',
-                      'dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400',
-                      'transition-colors',
-                    ].join(' ')}
-                  >
-                    {opt.icon ? <opt.icon /> : null}
-                    <span>{t(opt.labelKey)}</span>
-                  </Link>
-                ))}
+                {item.options.map((opt) => {
+                  if (opt.options) {
+                    return (
+                      <div key={opt.labelKey} className="group/sub relative">
+                        <button
+                          type="button"
+                          className={[
+                            'flex w-full items-center justify-between gap-3 rounded-md px-3 py-2 text-left text-sm',
+                            'text-gray-700 hover:bg-gray-50 hover:text-blue-600',
+                            'dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400',
+                            'transition-colors',
+                          ].join(' ')}
+                          aria-haspopup="menu"
+                          aria-expanded="false"
+                        >
+                          <span className="flex items-center gap-3">
+                            {opt.icon ? <opt.icon /> : null}
+                            <span>{t(opt.labelKey)}</span>
+                          </span>
+                          <FiChevronRight className="h-4 w-4" />
+                        </button>
+
+                        {/* Nested flyout */}
+                        <div
+                          role="menu"
+                          className={[
+                            'invisible absolute left-full top-0 z-[10000] ml-1 min-w-[220px] rounded-lg border border-gray-200 bg-white/95 p-2 shadow-xl backdrop-blur-sm',
+                            'translate-x-2 opacity-0 transition-all duration-200 ease-out',
+                            'group-hover/sub:visible group-hover/sub:translate-x-0 group-hover/sub:opacity-100',
+                            'dark:border-gray-700 dark:bg-[#0b1220]/95',
+                          ].join(' ')}
+                        >
+                          {opt.options.map((subOpt) => (
+                            <Link
+                              key={subOpt.href ?? subOpt.labelKey}
+                              href={subOpt.href ?? '#'}
+                              className={[
+                                'flex items-center gap-3 rounded-md px-3 py-2 text-sm',
+                                'text-gray-700 hover:bg-gray-50 hover:text-blue-600',
+                                'dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400',
+                                'transition-colors',
+                              ].join(' ')}
+                            >
+                              {subOpt.icon ? <subOpt.icon /> : null}
+                              <span>{t(subOpt.labelKey)}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <Link
+                      key={opt.href ?? opt.labelKey}
+                      href={opt.href ?? '#'}
+                      className={[
+                        'flex items-center gap-3 rounded-md px-3 py-2 text-sm',
+                        'text-gray-700 hover:bg-gray-50 hover:text-blue-600',
+                        'dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400',
+                        'transition-colors',
+                      ].join(' ')}
+                    >
+                      {opt.icon ? <opt.icon /> : null}
+                      <span>{t(opt.labelKey)}</span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           );
@@ -65,5 +118,4 @@ export const DesktopMenu = ({ navigationItems }: { navigationItems: NavItem[] })
     </nav>
   );
 };
-
 
