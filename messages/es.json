@@ -171,19 +171,26 @@
       "curriculumTitle": "Plan de Estudios",
       "curriculumDescription": "Conoce las materias, códigos y créditos de cada año para entender la formación que recibirás.",
       "pendingConfirmation": "Plan de estudios en revisión. Muy pronto publicaremos el detalle de materias de este año.",
+      "creditsPending": "Créditos por confirmar",
       "ctaTitle": "¿Listo para comenzar tu formación ministerial?",
       "ctaDescription": "Inscríbete hoy y da el siguiente paso en tu preparación para el servicio a Dios.",
       "ctaButton": "Inscríbete ahora",
       "years": {
-        "year1": { "title": "Primer Año", "focus": "Fundamentos" },
-        "year2": { "title": "Segundo Año", "focus": "Profundización" },
+        "year1": {
+          "title": "Primer Año",
+          "focus": "Fundamentos Bíblicos y Discipulado Global"
+        },
+        "year2": {
+          "title": "Segundo Año",
+          "focus": "Historia, Hermenéutica y Praxis Ministerial"
+        },
         "year3": {
           "title": "Tercer Año",
-          "focus": "Teología Sistemática"
+          "focus": "Teología Sistemática: Fundamento Doctrinal"
         },
         "year4": {
           "title": "Cuarto Año",
-          "focus": "Aplicación y Profesionalización"
+          "focus": "Profesionalización y Especialización Ministerial"
         }
       }
     },

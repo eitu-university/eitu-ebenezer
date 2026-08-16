@@ -171,19 +171,26 @@
       "curriculumTitle": "Curriculum",
       "curriculumDescription": "Explore the courses, codes, and credits for each year to understand the training you will receive.",
       "pendingConfirmation": "Curriculum under review. We'll publish this year's course details soon.",
+      "creditsPending": "Credits to be confirmed",
       "ctaTitle": "Ready to begin your ministerial training?",
       "ctaDescription": "Enroll today and take the next step in your preparation to serve God.",
       "ctaButton": "Enroll Now",
       "years": {
-        "year1": { "title": "First Year", "focus": "Fundamentals" },
-        "year2": { "title": "Second Year", "focus": "Deepening" },
+        "year1": {
+          "title": "First Year",
+          "focus": "Biblical Foundations and Global Discipleship"
+        },
+        "year2": {
+          "title": "Second Year",
+          "focus": "History, Hermeneutics, and Ministerial Practice"
+        },
         "year3": {
           "title": "Third Year",
-          "focus": "Systematic Theology"
+          "focus": "Systematic Theology: Doctrinal Foundation"
         },
         "year4": {
           "title": "Fourth Year",
-          "focus": "Application and Professionalization"
+          "focus": "Ministerial Professionalization and Specialization"
         }
       }
     },

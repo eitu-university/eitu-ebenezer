@@ -45,12 +45,12 @@ export interface ProgramItem {
 
 export interface DegreeCourse {
   code: string;
-  credits: number;
+  credits: number | null;
   name: { es: string; en: string };
+  description: { es: string; en: string };
 }
 
 export interface DegreeYear {
   key: 'year1' | 'year2' | 'year3' | 'year4';
-  confirmed: boolean;
   courses: DegreeCourse[];
 }

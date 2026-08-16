@@ -111,6 +111,7 @@ const Degree = async () => {
           <DegreeCurriculumAccordion
             yearLabels={yearLabels}
             creditsLabel={t('creditsLabel')}
+            creditsPendingLabel={t('creditsPending')}
             pendingMessage={t('pendingConfirmation')}
           />
         </div>

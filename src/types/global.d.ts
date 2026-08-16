@@ -101,6 +101,7 @@ declare global {
         curriculumTitle: string;
         curriculumDescription: string;
         pendingConfirmation: string;
+        creditsPending: string;
         ctaTitle: string;
         ctaDescription: string;
         ctaButton: string;
