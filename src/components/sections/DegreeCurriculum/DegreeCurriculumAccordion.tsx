@@ -3,31 +3,36 @@
 import { useState } from 'react';
 import { useLocale } from 'next-intl';
 import { FiChevronDown } from 'react-icons/fi';
-import { degreeCurriculum } from '@/data/degreeCurriculum';
 import { DegreeYear } from '@/types';
 
-type YearLabel = { title: string; focus: string };
+type YearItem = DegreeYear & {
+  title: string;
+  focus: string;
+};
 
 type Props = {
-  yearLabels: Record<DegreeYear['key'], YearLabel>;
+  years: YearItem[];
+  defaultOpenKey?: string;
   creditsLabel: string;
   creditsPendingLabel: string;
   pendingMessage: string;
 };
 
 export const DegreeCurriculumAccordion = ({
-  yearLabels,
+  years,
+  defaultOpenKey,
   creditsLabel,
   creditsPendingLabel,
   pendingMessage,
 }: Props) => {
   const locale = useLocale() as 'es' | 'en';
-  const [openYear, setOpenYear] = useState<DegreeYear['key'] | null>('year1');
+  const [openYear, setOpenYear] = useState<string | null>(
+    defaultOpenKey ?? years[0]?.key ?? null
+  );
 
   return (
     <div className="space-y-4">
-      {degreeCurriculum.map((year) => {
-        const label = yearLabels[year.key];
+      {years.map((year) => {
         const allCreditsKnown =
           year.courses.length > 0 &&
           year.courses.every((course) => course.credits !== null);
@@ -49,10 +54,10 @@ export const DegreeCurriculumAccordion = ({
             >
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-                  {label.title}
+                  {year.title}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  {label.focus}
+                  {year.focus}
                 </p>
               </div>
               <div className="flex shrink-0 items-center gap-3">

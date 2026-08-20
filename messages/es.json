@@ -153,25 +153,24 @@
     },
     "associates": {
       "title": "Asociado",
-      "subtitle": "Una base sólida para iniciar tu formación ministerial."
-    },
-    "degree": {
-      "title": "Licenciatura",
-      "subtitle": "Formación integral para el liderazgo cristiano.",
-      "programTitle": "Licenciatura General en Teología y Estudios Bíblicos",
+      "subtitle": "Una base sólida para iniciar tu formación ministerial.",
+      "programTitle": "Programa Asociado en Teología y Estudios Bíblicos",
       "durationLabel": "Duración",
-      "duration": "4 años",
+      "duration": "3 años",
       "creditsTotalLabel": "Créditos totales",
-      "creditsTotal": "126 créditos",
+      "creditsTotal": "84 créditos",
       "creditsLabel": "créditos",
       "objectivesTitle": "Objetivo del programa",
-      "objectives": "Preparar ministros y obreros laicos con una base bíblica y teológica sólida para el servicio efectivo en la obra de Dios.",
+      "objectives": "Brindar una formación bíblica y ministerial inicial, preparando obreros laicos para el servicio práctico en la iglesia local.",
       "requirementsTitle": "Requisitos de ingreso",
       "requirements": "Experiencia ministerial evaluada por la institución.",
       "curriculumTitle": "Plan de Estudios",
-      "curriculumDescription": "Conoce las materias, códigos y créditos de cada año para entender la formación que recibirás.",
+      "curriculumDescription": "Conoce las materias, códigos y créditos de los tres años que conforman el Programa Asociado.",
       "pendingConfirmation": "Plan de estudios en revisión. Muy pronto publicaremos el detalle de materias de este año.",
       "creditsPending": "Créditos por confirmar",
+      "continuationTitle": "¿Y después del Asociado?",
+      "continuationDescription": "Al culminar los tres años del Asociado, puedes continuar directamente al cuarto año y obtener la Licenciatura, sin perder créditos.",
+      "continuationLink": "Ver Licenciatura",
       "ctaTitle": "¿Listo para comenzar tu formación ministerial?",
       "ctaDescription": "Inscríbete hoy y da el siguiente paso en tu preparación para el servicio a Dios.",
       "ctaButton": "Inscríbete ahora",
@@ -187,7 +186,33 @@
         "year3": {
           "title": "Tercer Año",
           "focus": "Teología Sistemática: Fundamento Doctrinal"
-        },
+        }
+      }
+    },
+    "degree": {
+      "title": "Licenciatura",
+      "subtitle": "Formación integral para el liderazgo cristiano.",
+      "programTitle": "Licenciatura General en Teología y Estudios Bíblicos",
+      "durationLabel": "Duración total",
+      "duration": "4 años",
+      "creditsTotalLabel": "Créditos totales",
+      "creditsTotal": "126 créditos",
+      "creditsLabel": "créditos",
+      "objectivesTitle": "Objetivo del programa",
+      "objectives": "Preparar ministros y obreros laicos con una base bíblica y teológica sólida para el servicio efectivo en la obra de Dios.",
+      "requirementsTitle": "Requisitos de ingreso",
+      "requirements": "Haber completado el Programa Asociado (Primer a Tercer Año) con sus créditos correspondientes.",
+      "continuationTitle": "Continuación del Programa Asociado",
+      "continuationDescription": "La Licenciatura suma el cuarto año de profesionalización a los tres años del Asociado, completando así los 126 créditos del programa.",
+      "continuationLink": "Ver Programa Asociado",
+      "curriculumTitle": "Cuarto Año",
+      "curriculumDescription": "Materias de profesionalización y especialización ministerial que completan tu Licenciatura.",
+      "pendingConfirmation": "Plan de estudios en revisión. Muy pronto publicaremos el detalle de materias de este año.",
+      "creditsPending": "Créditos por confirmar",
+      "ctaTitle": "¿Listo para comenzar tu formación ministerial?",
+      "ctaDescription": "Inscríbete hoy y da el siguiente paso en tu preparación para el servicio a Dios.",
+      "ctaButton": "Inscríbete ahora",
+      "years": {
         "year4": {
           "title": "Cuarto Año",
           "focus": "Profesionalización y Especialización Ministerial"
@@ -483,8 +508,8 @@
       "description": "Formación práctica y especializada para el servicio ministerial."
     },
     "associates": {
-      "title": "Asociado",
-      "description": "Una base sólida para iniciar tu formación ministerial."
+      "title": "Programa Asociado en Teología y Estudios Bíblicos",
+      "description": "Programa de 3 años y 84 créditos que brinda una formación bíblica y ministerial inicial."
     },
     "degree": {
       "title": "Licenciatura General en Teología y Estudios Bíblicos",

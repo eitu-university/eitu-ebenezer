@@ -84,8 +84,7 @@ declare global {
         comingSoon: { title: string; description: string };
       };
       diploma: { title: string; subtitle: string };
-      associates: { title: string; subtitle: string };
-      degree: {
+      associates: {
         title: string;
         subtitle: string;
         programTitle: string;
@@ -102,13 +101,38 @@ declare global {
         curriculumDescription: string;
         pendingConfirmation: string;
         creditsPending: string;
+        continuationTitle: string;
+        continuationDescription: string;
+        continuationLink: string;
         ctaTitle: string;
         ctaDescription: string;
         ctaButton: string;
-        years: Record<
-          'year1' | 'year2' | 'year3' | 'year4',
-          { title: string; focus: string }
-        >;
+        years: Record<'year1' | 'year2' | 'year3', { title: string; focus: string }>;
+      };
+      degree: {
+        title: string;
+        subtitle: string;
+        programTitle: string;
+        durationLabel: string;
+        duration: string;
+        creditsTotalLabel: string;
+        creditsTotal: string;
+        creditsLabel: string;
+        objectivesTitle: string;
+        objectives: string;
+        requirementsTitle: string;
+        requirements: string;
+        continuationTitle: string;
+        continuationDescription: string;
+        continuationLink: string;
+        curriculumTitle: string;
+        curriculumDescription: string;
+        pendingConfirmation: string;
+        creditsPending: string;
+        ctaTitle: string;
+        ctaDescription: string;
+        ctaButton: string;
+        years: Record<'year4', { title: string; focus: string }>;
       };
       tags: Record<
         | 'studyPrograms'

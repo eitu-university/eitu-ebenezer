@@ -51,6 +51,6 @@ export interface DegreeCourse {
 }
 
 export interface DegreeYear {
-  key: 'year1' | 'year2' | 'year3' | 'year4';
+  key: string;
   courses: DegreeCourse[];
 }

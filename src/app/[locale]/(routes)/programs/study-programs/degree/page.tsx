@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { SvgWave } from '@/components/banner/SvgWave';
 import { Link } from '@/i18n/navigation';
-import { FiTarget, FiClipboard } from 'react-icons/fi';
+import { FiTarget, FiClipboard, FiArrowRight } from 'react-icons/fi';
 import { DegreeCurriculumAccordion } from '@/components/sections/DegreeCurriculum/DegreeCurriculumAccordion';
+import { degreeCurriculum } from '@/data/degreeCurriculum';
 import styles from './Degree.module.scss';
 
 type Props = {
@@ -29,12 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const Degree = async () => {
   const t = await getTranslations('Programs.degree');
 
-  const yearLabels = {
-    year1: { title: t('years.year1.title'), focus: t('years.year1.focus') },
-    year2: { title: t('years.year2.title'), focus: t('years.year2.focus') },
-    year3: { title: t('years.year3.title'), focus: t('years.year3.focus') },
-    year4: { title: t('years.year4.title'), focus: t('years.year4.focus') },
-  };
+  const years = degreeCurriculum.map((year) => ({
+    ...year,
+    title: t('years.year4.title'),
+    focus: t('years.year4.focus'),
+  }));
 
   return (
     <div className="relative">
@@ -76,7 +76,7 @@ const Degree = async () => {
         </div>
 
         {/* Objectives & Requirements */}
-        <div className="mb-16 grid gap-6 sm:grid-cols-2">
+        <div className="mb-8 grid gap-6 sm:grid-cols-2">
           <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-gray-800">
             <FiTarget className="mb-4 h-10 w-10 text-blue-600 dark:text-blue-400" />
             <h2 className="mb-3 text-xl font-bold text-gray-900 dark:text-gray-100">
@@ -97,6 +97,25 @@ const Degree = async () => {
           </div>
         </div>
 
+        {/* Continuation of Associates */}
+        <Link
+          href="/programs/study-programs/associates"
+          className="mb-16 flex items-center justify-between gap-4 rounded-2xl border border-blue-100 bg-blue-50 p-6 transition-colors hover:bg-blue-100 dark:border-blue-900/40 dark:bg-blue-900/20 dark:hover:bg-blue-900/30"
+        >
+          <div>
+            <h2 className="mb-1 font-bold text-blue-900 dark:text-blue-200">
+              {t('continuationTitle')}
+            </h2>
+            <p className="text-sm text-blue-800 dark:text-blue-300">
+              {t('continuationDescription')}
+            </p>
+          </div>
+          <span className="flex shrink-0 items-center gap-1 text-sm font-semibold text-blue-700 dark:text-blue-300">
+            {t('continuationLink')}
+            <FiArrowRight className="h-4 w-4" />
+          </span>
+        </Link>
+
         {/* Curriculum */}
         <div className="mb-16">
           <div className="mb-8 text-center">
@@ -109,7 +128,7 @@ const Degree = async () => {
           </div>
 
           <DegreeCurriculumAccordion
-            yearLabels={yearLabels}
+            years={years}
             creditsLabel={t('creditsLabel')}
             creditsPendingLabel={t('creditsPending')}
             pendingMessage={t('pendingConfirmation')}

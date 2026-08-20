@@ -153,25 +153,24 @@
     },
     "associates": {
       "title": "Associate",
-      "subtitle": "A solid foundation to begin your ministerial training."
-    },
-    "degree": {
-      "title": "Bachelor's Degree",
-      "subtitle": "Comprehensive training for Christian leadership.",
-      "programTitle": "General Bachelor's Degree in Theology and Biblical Studies",
+      "subtitle": "A solid foundation to begin your ministerial training.",
+      "programTitle": "Associate Program in Theology and Biblical Studies",
       "durationLabel": "Duration",
-      "duration": "4 years",
+      "duration": "3 years",
       "creditsTotalLabel": "Total credits",
-      "creditsTotal": "126 credits",
+      "creditsTotal": "84 credits",
       "creditsLabel": "credits",
       "objectivesTitle": "Program objective",
-      "objectives": "To prepare ministers and lay workers with a solid biblical and theological foundation for effective service in God's work.",
+      "objectives": "To provide initial biblical and ministerial training, preparing lay workers for practical service in the local church.",
       "requirementsTitle": "Admission requirements",
       "requirements": "Ministerial experience evaluated by the institution.",
       "curriculumTitle": "Curriculum",
-      "curriculumDescription": "Explore the courses, codes, and credits for each year to understand the training you will receive.",
+      "curriculumDescription": "Explore the courses, codes, and credits for the three years that make up the Associate Program.",
       "pendingConfirmation": "Curriculum under review. We'll publish this year's course details soon.",
       "creditsPending": "Credits to be confirmed",
+      "continuationTitle": "What comes after the Associate?",
+      "continuationDescription": "After completing the three years of the Associate Program, you can continue directly into the fourth year and earn your Bachelor's Degree, without losing any credits.",
+      "continuationLink": "View Bachelor's Degree",
       "ctaTitle": "Ready to begin your ministerial training?",
       "ctaDescription": "Enroll today and take the next step in your preparation to serve God.",
       "ctaButton": "Enroll Now",
@@ -187,7 +186,33 @@
         "year3": {
           "title": "Third Year",
           "focus": "Systematic Theology: Doctrinal Foundation"
-        },
+        }
+      }
+    },
+    "degree": {
+      "title": "Bachelor's Degree",
+      "subtitle": "Comprehensive training for Christian leadership.",
+      "programTitle": "General Bachelor's Degree in Theology and Biblical Studies",
+      "durationLabel": "Total duration",
+      "duration": "4 years",
+      "creditsTotalLabel": "Total credits",
+      "creditsTotal": "126 credits",
+      "creditsLabel": "credits",
+      "objectivesTitle": "Program objective",
+      "objectives": "To prepare ministers and lay workers with a solid biblical and theological foundation for effective service in God's work.",
+      "requirementsTitle": "Admission requirements",
+      "requirements": "Completion of the Associate Program (First through Third Year) with its corresponding credits.",
+      "continuationTitle": "A continuation of the Associate Program",
+      "continuationDescription": "The Bachelor's Degree adds the fourth, professionalization year to the three years of the Associate Program, completing the program's 126 credits.",
+      "continuationLink": "View Associate Program",
+      "curriculumTitle": "Fourth Year",
+      "curriculumDescription": "Professionalization and ministerial specialization courses that complete your Bachelor's Degree.",
+      "pendingConfirmation": "Curriculum under review. We'll publish this year's course details soon.",
+      "creditsPending": "Credits to be confirmed",
+      "ctaTitle": "Ready to begin your ministerial training?",
+      "ctaDescription": "Enroll today and take the next step in your preparation to serve God.",
+      "ctaButton": "Enroll Now",
+      "years": {
         "year4": {
           "title": "Fourth Year",
           "focus": "Ministerial Professionalization and Specialization"
@@ -483,8 +508,8 @@
       "description": "Practical, specialized training for ministerial service."
     },
     "associates": {
-      "title": "Associate",
-      "description": "A solid foundation to begin your ministerial training."
+      "title": "Associate Program in Theology and Biblical Studies",
+      "description": "A 3-year, 84-credit program that provides initial biblical and ministerial training."
     },
     "degree": {
       "title": "General Bachelor's Degree in Theology and Biblical Studies",
