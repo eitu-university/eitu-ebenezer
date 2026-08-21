@@ -143,9 +143,14 @@ const Degree = async () => {
           <p className="mx-auto mb-6 max-w-xl text-gray-600 dark:text-gray-300">
             {t('ctaDescription')}
           </p>
-          <Link href="/contacto" className="btn btn-1 hover-filled-slide-right">
+          <a
+            href="https://pci.jotform.com/form/252967003920153"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-1 hover-filled-slide-right"
+          >
             <span>{t('ctaButton')}</span>
-          </Link>
+          </a>
         </div>
       </section>
     </div>
