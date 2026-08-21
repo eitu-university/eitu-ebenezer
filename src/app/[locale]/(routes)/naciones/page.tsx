@@ -1,10 +1,9 @@
-import Nations from '@/components/sections/Nations/Nations'
-import React from 'react'
+import NationsGrid from '@/components/sections/Nations/NationsGrid'
 
 const NacionesPage = () => {
   return (
     <div>
-      <Nations />
+      <NationsGrid />
     </div>
   )
 }

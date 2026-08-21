@@ -155,7 +155,7 @@ const Associates = async () => {
           <p className="mx-auto mb-6 max-w-xl text-gray-600 dark:text-gray-300">
             {t('ctaDescription')}
           </p>
-          <Link href="/contacto" className="btn btn-1 hover-filled-slide-right">
+          <Link href="/naciones" className="btn btn-1 hover-filled-slide-right">
             <span>{t('ctaButton')}</span>
           </Link>
         </div>
