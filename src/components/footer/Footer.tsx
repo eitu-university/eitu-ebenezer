@@ -14,6 +14,7 @@ export default async function Footer() {
   return (
     <div className="relative">
       {/* SvgWave colocado sobre el footer */}
+      <div className="mb-20"></div>
       <SvgWave />
       <footer className="relative bg-gray-900">
         <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -133,24 +134,6 @@ export default async function Footer() {
     </div>
   );
 }
-
-const SvgWave2 = () => (
-  <div className="absolute left-0 right-0 top-0 z-0 -translate-y-full">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-      className="mb-[-2px] h-auto w-full"
-      preserveAspectRatio="none"
-    >
-      <path
-        fill="currentColor"
-        className="text-gray-900"
-        fillOpacity="1"
-        d="M0,192L80,213.3C160,235,320,277,480,298.7C640,320,800,320,960,298.7C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-      ></path>
-    </svg>
-  </div>
-);
 
 const SvgWave = () => (
   <div className="absolute left-0 right-0 top-0 z-0 -translate-y-full">
