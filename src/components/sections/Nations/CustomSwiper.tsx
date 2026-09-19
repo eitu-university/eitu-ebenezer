@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Autoplay } from 'swiper/modules';
 import { Link } from '@/i18n/navigation';
@@ -6,6 +7,8 @@ import { nations } from '@/data/nations';
 import styles from './NationsCarousel.module.css';
 
 const CustomSwiper = () => {
+  const t = useTranslations('Nations');
+
   return (
     <>
       <Swiper
@@ -69,7 +72,9 @@ const CustomSwiper = () => {
 
                 <div className="absolute inset-x-0 bottom-0 rounded-2xl bg-gradient-to-t from-black/85 to-transparent p-4 pt-10 text-white">
                   <h3 className="mb-1 text-2xl font-bold">{nation.name}</h3>
-                  <p className="line-clamp-2 text-sm">{nation.description}</p>
+                  <p className="line-clamp-2 text-sm">
+                    {t(`descriptions.${nation.code}`)}
+                  </p>
                 </div>
               </div>
             </Link>

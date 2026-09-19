@@ -8,9 +8,14 @@ const StaffCardList = async () => {
   return (
     <>
       {staffMembers.length > 0 ? (
-        <div className="mx-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+        <div className="mx-4 flex flex-wrap justify-center gap-8">
           {staffMembers.map((member) => (
-            <StaffCardItem key={member.id} member={member} />
+            <div
+              key={member.id}
+              className="w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.334rem)] xl:w-[calc(25%-1.5rem)]"
+            >
+              <StaffCardItem member={member} />
+            </div>
           ))}
         </div>
       ) : (

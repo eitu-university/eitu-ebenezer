@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
+import NationRegistrationForm from '@/components/sections/Nations/NationRegistrationForm';
 
 interface NationsPageProps {
   params: Promise<{ locale: string; country: string }>;
@@ -49,6 +50,8 @@ export default async function NationsPage({ params }: NationsPageProps) {
 
   if (!nation) return notFound();
 
+  const t = await getTranslations('Nations');
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
@@ -66,9 +69,17 @@ export default async function NationsPage({ params }: NationsPageProps) {
             className="h-28 w-28 rounded-full shadow-xl"
           />
           <h1 className="text-4xl font-bold">{nation.name}</h1>
-          <p className="mt-2 text-lg">{nation.description}</p>
+          <p className="mt-2 text-lg">
+            {t(`descriptions.${nation.code}`)}
+          </p>
         </div>
       </div>
+
+      <section className="w-full bg-gray-50 px-4 py-16 dark:bg-gray-800 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl">
+          <NationRegistrationForm nation={nation} />
+        </div>
+      </section>
     </div>
   );
 }

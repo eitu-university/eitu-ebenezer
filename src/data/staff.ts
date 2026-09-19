@@ -21,4 +21,9 @@ export const staffMembers: StaffMember[] = [
     name: 'Mary Bell Rosario',
     image: '/images/directiva/maribell.webp',
   },
+  {
+    id: '5',
+    name: 'Cesar Madrid',
+    image: '/images/directiva/cesar.webp',
+  },
 ];

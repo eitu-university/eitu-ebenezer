@@ -62,7 +62,7 @@
     },
     "members": {
       "1": {
-        "position": "Director",
+        "position": "General International Director EITU",
         "description": "God has allowed me to develop as a worship minister, and to be a student and teacher at our institution for more than 10 years. I am convinced that in God's heart, EITU is exactly what our motto declares: The ministerial school of approved workers."
       },
       "2": {
@@ -74,8 +74,12 @@
         "description": "If I had to recommend anything, it would be this university, because it is incredible. I love what I have learned and the wonderful unity found within it. I love every aspect of this university, and it has helped me build my foundations."
       },
       "4": {
-        "position": "Master's in Clinical Counseling and Theology | Pastor",
+        "position": "General Director of Chaplaincy",
         "description": "At the university, God has called me to be a Professor and Director of the Chaplaincy department. The greatest calling is to be a servant of the Most High God. EITU has been a great blessing to me."
+      },
+      "5": {
+        "position": "A leader with a vision of eternity.",
+        "description": "Pastor and teacher at Ebenezer University. 16 years on the council, with passion and divine guidance. Master's degree in Administration and currently pursuing a Master's degree in Educational Management to strengthen the institution. I leave a legacy that transcends generations, promoting the Great Commission. Glory to Jesus Christ!"
       }
     }
   },
@@ -118,7 +122,59 @@
     "title": "Nations",
     "description": "In obedience to Jesus' command to carry His message to the ends of the earth, our mission extends beyond borders, preaching and teaching the gospel of Jesus Christ with passion, grounded in truth and love.",
     "notFoundTitle": "Nation not found",
-    "notFoundDescription": "The nation you are looking for is not available."
+    "notFoundDescription": "The nation you are looking for is not available.",
+    "descriptions": {
+      "EC": "We serve in Ecuador, carrying the message of the gospel and forming leaders committed to God's work.",
+      "RD": "In the Dominican Republic, we drive ministerial training and church growth throughout the Caribbean.",
+      "PE": "Present in Peru, equipping approved workers to serve with excellence in ministry.",
+      "SV": "In El Salvador, we walk alongside local leaders in their theological training and calling to serve.",
+      "CO": "In Colombia, we form men and women for ministry with a solid biblical foundation.",
+      "ES": "In Spain, we extend our mission by forming leaders who impact Europe with the gospel.",
+      "US": "In the United States, we equip approved workers to serve with excellence across diverse communities.",
+      "MX": "In Mexico, we prepare ministerial leaders committed to the faithful teaching of the Word.",
+      "AR": "In Argentina, we drive theological training to strengthen local Christian leadership."
+    },
+    "registrationForm": {
+      "title": "Register",
+      "subtitle": "Fill out the form below to register.",
+      "firstNameLabel": "First name",
+      "firstNamePlaceholder": "Your first name",
+      "lastNameLabel": "Last name",
+      "lastNamePlaceholder": "Your last name",
+      "birthDateLabel": "Date of birth",
+      "phoneLabel": "Phone number",
+      "phonePlaceholder": "Phone number",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@email.com",
+      "addressLabel": "Home address",
+      "addressPlaceholder": "Street, number, apartment...",
+      "cityLabel": "City",
+      "cityPlaceholder": "Your city",
+      "stateLabel": "State / Province",
+      "statePlaceholder": "Your state or province",
+      "postalCodeLabel": "Postal / Zip code",
+      "postalCodePlaceholder": "Postal or zip code",
+      "submit": "Submit registration",
+      "submitting": "Submitting...",
+      "toastSuccessTitle": "All set!",
+      "toastSuccessMessage": "Your registration was submitted successfully.",
+      "toastErrorTitle": "Something went wrong!",
+      "toastErrorGeneric": "There was an error submitting your registration. Please try again.",
+      "errors": {
+        "firstNameMin": "First name must be at least 2 characters long",
+        "lastNameMin": "Last name must be at least 2 characters long",
+        "birthDateRequired": "Date of birth is required",
+        "birthDateInvalid": "Please enter a valid date",
+        "birthDateFuture": "Date of birth cannot be in the future",
+        "birthDateMinAge": "You must be between 16 and 100 years old to register",
+        "phoneInvalid": "Please enter a valid phone number",
+        "emailInvalid": "Please enter a valid email",
+        "addressMin": "Address must be at least 5 characters long",
+        "cityMin": "City must be at least 2 characters long",
+        "stateMin": "State/Province must be at least 2 characters long",
+        "postalCodeInvalid": "Please enter a valid postal/zip code"
+      }
+    }
   },
   "Programs": {
     "title": "Our Programs",

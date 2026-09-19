@@ -31,9 +31,9 @@ export interface NationsData {
   flagSvg: string;
   img: string;
   imgThumb: string;
-  description: string;
   slug: string;
   lang: 'es' | 'en';
+  dialCode: string;
 }
 
 export interface ProgramItem {

@@ -10,8 +10,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/ecuador.webp',
     imgThumb: '/images/nations-min/ecuador.webp',
     slug: '/naciones/ec',
-    description:
-      'Servimos en Ecuador llevando el mensaje del evangelio y formando líderes comprometidos con la obra de Dios.',
+    dialCode: '593',
   },
   {
     code: 'RD',
@@ -22,8 +21,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/rd.webp',
     imgThumb: '/images/nations-min/rd.webp',
     slug: '/naciones/rd',
-    description:
-      'En República Dominicana impulsamos la formación ministerial y el crecimiento de la iglesia en el Caribe.',
+    dialCode: '1',
   },
   {
     code: 'PE',
@@ -34,8 +32,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/pe.webp',
     imgThumb: '/images/nations-min/pe.webp',
     slug: '/naciones/pe',
-    description:
-      'Presentes en Perú, equipando obreros aprobados para servir con excelencia en el ministerio.',
+    dialCode: '51',
   },
   {
     code: 'SV',
@@ -46,8 +43,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/sv.webp',
     imgThumb: '/images/nations-min/sv.webp',
     slug: '/naciones/sv',
-    description:
-      'En El Salvador acompañamos a líderes locales en su preparación teológica y vocación de servicio.',
+    dialCode: '503',
   },
   {
     code: 'CO',
@@ -58,8 +54,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/colombia.webp',
     imgThumb: '/images/nations-min/colombia.webp',
     slug: '/naciones/co',
-    description:
-      'En Colombia formamos hombres y mujeres para el ministerio con una sólida base bíblica.',
+    dialCode: '57',
   },
   {
     code: 'ES',
@@ -70,8 +65,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/es.webp',
     imgThumb: '/images/nations-min/es.webp',
     slug: '/naciones/es',
-    description:
-      'En España extendemos nuestra misión formando líderes que impactan Europa con el evangelio.',
+    dialCode: '34',
   },
   {
     code: 'US',
@@ -82,8 +76,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/eu.webp',
     imgThumb: '/images/nations-min/eu.webp',
     slug: '/naciones/us',
-    description:
-      'In the United States, we equip approved workers to serve with excellence across diverse communities.',
+    dialCode: '1',
   },
   {
     code: 'MX',
@@ -94,8 +87,7 @@ export const nations: NationsData[] = [
     img: '/images/nations/mx.webp',
     imgThumb: '/images/nations-min/mx.webp',
     slug: '/naciones/mx',
-    description:
-      'En México preparamos líderes ministeriales comprometidos con la enseñanza fiel de la Palabra.',
+    dialCode: '52',
   },
   {
     code: 'AR',
@@ -106,7 +98,6 @@ export const nations: NationsData[] = [
     img: '/images/nations/argentina.webp',
     imgThumb: '/images/nations-min/argentina.webp',
     slug: '/naciones/ar',
-    description:
-      'En Argentina impulsamos la formación teológica para fortalecer el liderazgo cristiano local.',
+    dialCode: '54',
   },
 ];

@@ -44,7 +44,7 @@ declare global {
       empty: string;
       cta: { title: string; description: string; button: string };
       members: Record<
-        '1' | '2' | '3' | '4',
+        '1' | '2' | '3' | '4' | '5',
         { position: string; description: string }
       >;
     };
@@ -67,6 +67,51 @@ declare global {
       description: string;
       notFoundTitle: string;
       notFoundDescription: string;
+      descriptions: Record<
+        'EC' | 'RD' | 'PE' | 'SV' | 'CO' | 'ES' | 'US' | 'MX' | 'AR',
+        string
+      >;
+      registrationForm: {
+        title: string;
+        subtitle: string;
+        firstNameLabel: string;
+        firstNamePlaceholder: string;
+        lastNameLabel: string;
+        lastNamePlaceholder: string;
+        birthDateLabel: string;
+        phoneLabel: string;
+        phonePlaceholder: string;
+        emailLabel: string;
+        emailPlaceholder: string;
+        addressLabel: string;
+        addressPlaceholder: string;
+        cityLabel: string;
+        cityPlaceholder: string;
+        stateLabel: string;
+        statePlaceholder: string;
+        postalCodeLabel: string;
+        postalCodePlaceholder: string;
+        submit: string;
+        submitting: string;
+        toastSuccessTitle: string;
+        toastSuccessMessage: string;
+        toastErrorTitle: string;
+        toastErrorGeneric: string;
+        errors: {
+          firstNameMin: string;
+          lastNameMin: string;
+          birthDateRequired: string;
+          birthDateInvalid: string;
+          birthDateFuture: string;
+          birthDateMinAge: string;
+          phoneInvalid: string;
+          emailInvalid: string;
+          addressMin: string;
+          cityMin: string;
+          stateMin: string;
+          postalCodeInvalid: string;
+        };
+      };
     };
     Programs: {
       title: string;
