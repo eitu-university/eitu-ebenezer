@@ -136,7 +136,7 @@
     },
     "registrationForm": {
       "title": "Register",
-      "subtitle": "Fill out the form below to register.",
+      "subtitle": "Complete the following form to register for the associate program.",
       "firstNameLabel": "First name",
       "firstNamePlaceholder": "Your first name",
       "lastNameLabel": "Last name",
