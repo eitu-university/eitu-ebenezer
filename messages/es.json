@@ -162,16 +162,22 @@
       "toastErrorGeneric": "Hubo un error al enviar tu registro. Por favor, inténtalo de nuevo.",
       "errors": {
         "firstNameMin": "Los nombres deben tener al menos 2 caracteres",
+        "firstNameMax": "Los nombres deben tener máximo 20 caracteres",
         "lastNameMin": "Los apellidos deben tener al menos 2 caracteres",
+        "lastNameMax": "Los apellidos deben tener máximo 20 caracteres",
         "birthDateRequired": "La fecha de nacimiento es obligatoria",
         "birthDateInvalid": "Ingresa una fecha válida",
         "birthDateFuture": "La fecha de nacimiento no puede ser futura",
         "birthDateMinAge": "Debes tener entre 16 y 100 años para registrarte",
         "phoneInvalid": "Ingresa un número telefónico válido",
         "emailInvalid": "Ingresa un correo electrónico válido",
+        "emailMax": "El correo electrónico debe tener máximo 100 caracteres",
         "addressMin": "La dirección debe tener al menos 5 caracteres",
+        "addressMax": "La dirección debe tener máximo 100 caracteres",
         "cityMin": "La ciudad debe tener al menos 2 caracteres",
+        "cityMax": "La ciudad debe tener máximo 50 caracteres",
         "stateMin": "El estado/provincia debe tener al menos 2 caracteres",
+        "stateMax": "El estado/provincia debe tener máximo 50 caracteres",
         "postalCodeInvalid": "Ingresa un código postal válido"
       }
     }
@@ -373,6 +379,8 @@
       "namePlaceholder": "Tu nombre completo",
       "emailLabel": "Correo electrónico",
       "emailPlaceholder": "tu@email.com",
+      "ministryLabel": "Capellanía",
+      "ministryPlaceholder": "Selecciona una capellanía",
       "messageLabel": "Mensaje",
       "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
       "submit": "Enviar Mensaje",
@@ -386,8 +394,12 @@
       "toastErrorGeneric": "Error al enviar el mensaje. Por favor, intenta de nuevo.",
       "errors": {
         "nameMin": "El nombre debe tener al menos 2 caracteres",
+        "nameMax": "El nombre debe tener máximo 20 caracteres",
         "emailInvalid": "Ingrese un email válido",
-        "messageMin": "El mensaje debe tener al menos 10 caracteres"
+        "emailMax": "El email debe tener máximo 100 caracteres",
+        "ministryRequired": "Selecciona una capellanía",
+        "messageMin": "El mensaje debe tener al menos 10 caracteres",
+        "messageMax": "El mensaje debe tener máximo 500 caracteres"
       }
     }
   },

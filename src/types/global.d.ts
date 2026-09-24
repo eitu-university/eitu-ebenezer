@@ -99,16 +99,22 @@ declare global {
         toastErrorGeneric: string;
         errors: {
           firstNameMin: string;
+          firstNameMax: string;
           lastNameMin: string;
+          lastNameMax: string;
           birthDateRequired: string;
           birthDateInvalid: string;
           birthDateFuture: string;
           birthDateMinAge: string;
           phoneInvalid: string;
           emailInvalid: string;
+          emailMax: string;
           addressMin: string;
+          addressMax: string;
           cityMin: string;
+          cityMax: string;
           stateMin: string;
+          stateMax: string;
           postalCodeInvalid: string;
         };
       };
@@ -229,6 +235,8 @@ declare global {
         namePlaceholder: string;
         emailLabel: string;
         emailPlaceholder: string;
+        ministryLabel: string;
+        ministryPlaceholder: string;
         messageLabel: string;
         messagePlaceholder: string;
         submit: string;
@@ -242,8 +250,12 @@ declare global {
         toastErrorGeneric: string;
         errors: {
           nameMin: string;
+          nameMax: string;
           emailInvalid: string;
+          emailMax: string;
+          ministryRequired: string;
           messageMin: string;
+          messageMax: string;
         };
       };
     };

@@ -4,22 +4,31 @@ import { useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
-import { getContactFormSchema, type ContactFormSchema } from '@/zod/schemas';
-import { FiSend, FiUser, FiMail, FiMessageSquare } from 'react-icons/fi';
+import {
+  getContactFormSchema,
+  ministryOptions,
+  type ContactFormSchema,
+} from '@/zod/schemas';
+import { FiSend, FiUser, FiMail, FiUsers, FiMessageSquare } from 'react-icons/fi';
 import { toast } from 'sonner';
 import { contactInfo } from '@/data';
 
 export default function ContactForm() {
   const tContact = useTranslations('Contact');
   const t = useTranslations('Contact.form');
+  const tMinistries = useTranslations('Ministries.items');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const contactFormSchema = useMemo(
     () =>
       getContactFormSchema({
         nameMin: t('errors.nameMin'),
+        nameMax: t('errors.nameMax'),
         emailInvalid: t('errors.emailInvalid'),
+        emailMax: t('errors.emailMax'),
+        ministryRequired: t('errors.ministryRequired'),
         messageMin: t('errors.messageMin'),
+        messageMax: t('errors.messageMax'),
       }),
     [t]
   );
@@ -111,7 +120,8 @@ export default function ContactForm() {
               {...register('name')}
               type="text"
               id="name"
-              className="block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
+              maxLength={20}
+              className="outline-none block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
               placeholder={t('namePlaceholder')}
             />
           </div>
@@ -136,12 +146,48 @@ export default function ContactForm() {
               {...register('email')}
               type="email"
               id="email"
-              className="block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
+              maxLength={100}
+              className="outline-none block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
               placeholder={t('emailPlaceholder')}
             />
           </div>
           {errors.email && (
             <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+          )}
+        </div>
+
+        {/* Capellanía */}
+        <div>
+          <label
+            htmlFor="ministry"
+            className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            {t('ministryLabel')}
+          </label>
+          <div className="relative">
+            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+              <FiUsers className="h-5 w-5 text-gray-400" />
+            </div>
+            <select
+              {...register('ministry')}
+              id="ministry"
+              defaultValue=""
+              className="outline-none block w-full appearance-none rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+            >
+              <option value="" disabled>
+                {t('ministryPlaceholder')}
+              </option>
+              {ministryOptions.map((option) => (
+                <option key={option} value={option}>
+                  {tMinistries(`${option}.title`)}
+                </option>
+              ))}
+            </select>
+          </div>
+          {errors.ministry && (
+            <p className="mt-1 text-sm text-red-600">
+              {errors.ministry.message}
+            </p>
           )}
         </div>
 
@@ -161,7 +207,8 @@ export default function ContactForm() {
               {...register('message')}
               id="message"
               rows={5}
-              className="block w-full resize-none rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
+              maxLength={500}
+              className="outline-none block w-full resize-none rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
               placeholder={t('messagePlaceholder')}
             />
           </div>

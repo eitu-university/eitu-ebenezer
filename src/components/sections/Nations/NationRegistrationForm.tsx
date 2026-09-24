@@ -42,16 +42,22 @@ export default function NationRegistrationForm({
     () =>
       getNationRegistrationFormSchema({
         firstNameMin: t('errors.firstNameMin'),
+        firstNameMax: t('errors.firstNameMax'),
         lastNameMin: t('errors.lastNameMin'),
+        lastNameMax: t('errors.lastNameMax'),
         birthDateRequired: t('errors.birthDateRequired'),
         birthDateInvalid: t('errors.birthDateInvalid'),
         birthDateFuture: t('errors.birthDateFuture'),
         birthDateMinAge: t('errors.birthDateMinAge'),
         phoneInvalid: t('errors.phoneInvalid'),
         emailInvalid: t('errors.emailInvalid'),
+        emailMax: t('errors.emailMax'),
         addressMin: t('errors.addressMin'),
+        addressMax: t('errors.addressMax'),
         cityMin: t('errors.cityMin'),
+        cityMax: t('errors.cityMax'),
         stateMin: t('errors.stateMin'),
+        stateMax: t('errors.stateMax'),
         postalCodeInvalid: t('errors.postalCodeInvalid'),
       }),
     [t]
@@ -140,6 +146,7 @@ export default function NationRegistrationForm({
                 {...register('firstName')}
                 type="text"
                 id="firstName"
+                maxLength={20}
                 className={inputClasses}
                 placeholder={t('firstNamePlaceholder')}
               />
@@ -163,6 +170,7 @@ export default function NationRegistrationForm({
                 {...register('lastName')}
                 type="text"
                 id="lastName"
+                maxLength={20}
                 className={inputClasses}
                 placeholder={t('lastNamePlaceholder')}
               />
@@ -211,6 +219,7 @@ export default function NationRegistrationForm({
                 {...register('phone')}
                 type="tel"
                 id="phone"
+                maxLength={12}
                 className="outline-none block w-full rounded-r-lg border border-gray-300 bg-white py-3 px-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
                 placeholder={t('phonePlaceholder')}
               />
@@ -236,6 +245,7 @@ export default function NationRegistrationForm({
               {...register('email')}
               type="email"
               id="email"
+              maxLength={100}
               className={inputClasses}
               placeholder={t('emailPlaceholder')}
             />
@@ -258,6 +268,7 @@ export default function NationRegistrationForm({
               {...register('address')}
               type="text"
               id="address"
+              maxLength={100}
               className={inputClasses}
               placeholder={t('addressPlaceholder')}
             />
@@ -283,6 +294,7 @@ export default function NationRegistrationForm({
                 {...register('city')}
                 type="text"
                 id="city"
+                maxLength={50}
                 className={inputClasses}
                 placeholder={t('cityPlaceholder')}
               />
@@ -306,6 +318,7 @@ export default function NationRegistrationForm({
                 {...register('state')}
                 type="text"
                 id="state"
+                maxLength={50}
                 className={inputClasses}
                 placeholder={t('statePlaceholder')}
               />
@@ -329,6 +342,7 @@ export default function NationRegistrationForm({
                 {...register('postalCode')}
                 type="text"
                 id="postalCode"
+                maxLength={12}
                 className={inputClasses}
                 placeholder={t('postalCodePlaceholder')}
               />

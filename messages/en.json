@@ -162,16 +162,22 @@
       "toastErrorGeneric": "There was an error submitting your registration. Please try again.",
       "errors": {
         "firstNameMin": "First name must be at least 2 characters long",
+        "firstNameMax": "First name must be at most 20 characters long",
         "lastNameMin": "Last name must be at least 2 characters long",
+        "lastNameMax": "Last name must be at most 20 characters long",
         "birthDateRequired": "Date of birth is required",
         "birthDateInvalid": "Please enter a valid date",
         "birthDateFuture": "Date of birth cannot be in the future",
         "birthDateMinAge": "You must be between 16 and 100 years old to register",
         "phoneInvalid": "Please enter a valid phone number",
         "emailInvalid": "Please enter a valid email",
+        "emailMax": "Email must be at most 100 characters long",
         "addressMin": "Address must be at least 5 characters long",
+        "addressMax": "Address must be at most 100 characters long",
         "cityMin": "City must be at least 2 characters long",
+        "cityMax": "City must be at most 50 characters long",
         "stateMin": "State/Province must be at least 2 characters long",
+        "stateMax": "State/Province must be at most 50 characters long",
         "postalCodeInvalid": "Please enter a valid postal/zip code"
       }
     }
@@ -373,6 +379,8 @@
       "namePlaceholder": "Your full name",
       "emailLabel": "Email address",
       "emailPlaceholder": "you@email.com",
+      "ministryLabel": "Chaplaincy",
+      "ministryPlaceholder": "Select a chaplaincy",
       "messageLabel": "Message",
       "messagePlaceholder": "Tell us how we can help you...",
       "submit": "Send Message",
@@ -386,8 +394,12 @@
       "toastErrorGeneric": "There was an error sending your message. Please try again.",
       "errors": {
         "nameMin": "Name must be at least 2 characters long",
+        "nameMax": "Name must be at most 20 characters long",
         "emailInvalid": "Please enter a valid email",
-        "messageMin": "Message must be at least 10 characters long"
+        "emailMax": "Email must be at most 100 characters long",
+        "ministryRequired": "Please select a chaplaincy",
+        "messageMin": "Message must be at least 10 characters long",
+        "messageMax": "Message must be at most 500 characters long"
       }
     }
   },

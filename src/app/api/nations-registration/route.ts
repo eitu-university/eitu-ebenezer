@@ -9,16 +9,22 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const nationRegistrationFormSchema = getNationRegistrationFormSchema({
   firstNameMin: 'First name must be at least 2 characters long',
+  firstNameMax: 'First name must be at most 20 characters long',
   lastNameMin: 'Last name must be at least 2 characters long',
+  lastNameMax: 'Last name must be at most 20 characters long',
   birthDateRequired: 'Date of birth is required',
   birthDateInvalid: 'Please enter a valid date',
   birthDateFuture: 'Date of birth cannot be in the future',
   birthDateMinAge: 'You must be between 16 and 100 years old to register',
   phoneInvalid: 'Please enter a valid phone number',
   emailInvalid: 'Please enter a valid email',
+  emailMax: 'Email must be at most 100 characters long',
   addressMin: 'Address must be at least 5 characters long',
+  addressMax: 'Address must be at most 100 characters long',
   cityMin: 'City must be at least 2 characters long',
+  cityMax: 'City must be at most 50 characters long',
   stateMin: 'State/Province must be at least 2 characters long',
+  stateMax: 'State/Province must be at most 50 characters long',
   postalCodeInvalid: 'Please enter a valid postal/zip code',
 });
 
@@ -62,8 +68,8 @@ export async function POST(req: Request) {
 
     const { error } = await resend.emails.send({
       from: process.env.EMAIL_FROM || '',
-      to: process.env.NATIONS_REGISTRATION_EMAIL_TO || process.env.EMAIL_TO!,
-      subject: `Nuevo registro - ${nation.name}`,
+      to: process.env.EMAIL_TO!,
+      subject: `Nuevo registro de asociado - ${nation.name}`,
       replyTo: validatedData.email,
       react: NationRegistrationEmail({
         firstName: validatedData.firstName,
@@ -76,6 +82,7 @@ export async function POST(req: Request) {
         state: validatedData.state,
         postalCode: validatedData.postalCode,
         nationName: nation.name,
+        nationFlag: nation.flag,
       }),
     });
 

@@ -1,14 +1,39 @@
 import { z } from 'zod';
 
+export const ministryOptions = [
+  'youth',
+  'worship',
+  'women',
+  'bibleSchool',
+  'missions',
+  'family',
+] as const;
+
+export type MinistryOption = (typeof ministryOptions)[number];
+
 export function getContactFormSchema(messages: {
   nameMin: string;
+  nameMax: string;
   emailInvalid: string;
+  emailMax: string;
+  ministryRequired: string;
   messageMin: string;
+  messageMax: string;
 }) {
   return z.object({
-    name: z.string().min(2, messages.nameMin),
-    email: z.string().email(messages.emailInvalid),
-    message: z.string().min(10, messages.messageMin),
+    name: z.string().min(2, messages.nameMin).max(20, messages.nameMax),
+    email: z
+      .string()
+      .email(messages.emailInvalid)
+      .max(100, messages.emailMax),
+    ministry: z
+      .string()
+      .min(1, messages.ministryRequired)
+      .refine(
+        (val) => ministryOptions.includes(val as MinistryOption),
+        messages.ministryRequired
+      ),
+    message: z.string().min(10, messages.messageMin).max(500, messages.messageMax),
   });
 }
 
@@ -33,16 +58,22 @@ function getAge(birthDate: Date): number {
 
 export function getNationRegistrationFormSchema(messages: {
   firstNameMin: string;
+  firstNameMax: string;
   lastNameMin: string;
+  lastNameMax: string;
   birthDateRequired: string;
   birthDateInvalid: string;
   birthDateFuture: string;
   birthDateMinAge: string;
   phoneInvalid: string;
   emailInvalid: string;
+  emailMax: string;
   addressMin: string;
+  addressMax: string;
   cityMin: string;
+  cityMax: string;
   stateMin: string;
+  stateMax: string;
   postalCodeInvalid: string;
 }) {
   return z.object({
@@ -50,12 +81,12 @@ export function getNationRegistrationFormSchema(messages: {
       .string()
       .trim()
       .min(2, messages.firstNameMin)
-      .max(100, messages.firstNameMin),
+      .max(20, messages.firstNameMax),
     lastName: z
       .string()
       .trim()
       .min(2, messages.lastNameMin)
-      .max(100, messages.lastNameMin),
+      .max(20, messages.lastNameMax),
     birthDate: z
       .string()
       .trim()
@@ -82,18 +113,22 @@ export function getNationRegistrationFormSchema(messages: {
       .trim()
       .toLowerCase()
       .email(messages.emailInvalid)
-      .max(254),
+      .max(100, messages.emailMax),
     address: z
       .string()
       .trim()
       .min(5, messages.addressMin)
-      .max(200, messages.addressMin),
-    city: z.string().trim().min(2, messages.cityMin).max(100, messages.cityMin),
+      .max(100, messages.addressMax),
+    city: z
+      .string()
+      .trim()
+      .min(2, messages.cityMin)
+      .max(50, messages.cityMax),
     state: z
       .string()
       .trim()
       .min(2, messages.stateMin)
-      .max(100, messages.stateMin),
+      .max(50, messages.stateMax),
     postalCode: z
       .string()
       .trim()
