@@ -21,16 +21,12 @@ import {
 } from 'react-icons/fi';
 import { toast } from 'sonner';
 import type { NationsData } from '@/types';
+import Button from '@/components/ui/Button';
+import { Field, pillClasses } from '@/components/ui/Input';
 
 interface NationRegistrationFormProps {
   nation: NationsData;
 }
-
-const inputClasses =
-  'outline-none block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500';
-
-const labelClasses =
-  'mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300';
 
 export default function NationRegistrationForm({
   nation,
@@ -88,7 +84,19 @@ export default function NationRegistrationForm({
           description: t('toastSuccessMessage'),
           duration: 5000,
         });
-        reset({ countryCode: nation.code });
+        reset({
+          countryCode: nation.code,
+          firstName: '',
+          lastName: '',
+          birthDate: '',
+          phone: '',
+          email: '',
+          address: '',
+          city: '',
+          state: '',
+          postalCode: '',
+          website: '',
+        });
       } else {
         toast.error(t('toastErrorTitle'), {
           description: t('toastErrorGeneric'),
@@ -108,13 +116,13 @@ export default function NationRegistrationForm({
 
   return (
     <div
-      className={`rounded-2xl border border-gray-100 bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-700 ${isSubmitting ? 'pointer-events-none opacity-50' : 'opacity-100'}`}
+      className={`rounded-card border border-taupe bg-paper p-8 shadow-float dark:border-[#3f3f46] dark:bg-[#27272a] ${isSubmitting ? 'pointer-events-none opacity-50' : 'opacity-100'}`}
     >
       <div className="mb-8 text-center">
-        <h3 className="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">
+        <h3 className="font-display mb-2 text-2xl font-normal text-ink dark:text-paper">
           {t('title')}
         </h3>
-        <p className="text-gray-600 dark:text-gray-300">{t('subtitle')}</p>
+        <p className="text-graphite dark:text-[#a1a1aa]">{t('subtitle')}</p>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -134,85 +142,66 @@ export default function NationRegistrationForm({
 
         {/* Nombre y apellido */}
         <div className="grid gap-6 sm:grid-cols-2">
-          <div>
-            <label htmlFor="firstName" className={labelClasses}>
-              {t('firstNameLabel')}
-            </label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <FiUser className="h-5 w-5 text-gray-400" />
-              </div>
-              <input
-                {...register('firstName')}
-                type="text"
-                id="firstName"
-                maxLength={20}
-                className={inputClasses}
-                placeholder={t('firstNamePlaceholder')}
-              />
-            </div>
-            {errors.firstName && (
-              <p className="mt-1 text-sm text-red-600">
-                {errors.firstName.message}
-              </p>
-            )}
-          </div>
+          <Field
+            label={t('firstNameLabel')}
+            htmlFor="firstName"
+            icon={<FiUser className="h-5 w-5" />}
+            error={errors.firstName?.message}
+          >
+            <input
+              {...register('firstName')}
+              type="text"
+              id="firstName"
+              maxLength={20}
+              autoComplete="off"
+              className={pillClasses()}
+              placeholder={t('firstNamePlaceholder')}
+            />
+          </Field>
 
-          <div>
-            <label htmlFor="lastName" className={labelClasses}>
-              {t('lastNameLabel')}
-            </label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <FiUser className="h-5 w-5 text-gray-400" />
-              </div>
-              <input
-                {...register('lastName')}
-                type="text"
-                id="lastName"
-                maxLength={20}
-                className={inputClasses}
-                placeholder={t('lastNamePlaceholder')}
-              />
-            </div>
-            {errors.lastName && (
-              <p className="mt-1 text-sm text-red-600">
-                {errors.lastName.message}
-              </p>
-            )}
-          </div>
+          <Field
+            label={t('lastNameLabel')}
+            htmlFor="lastName"
+            icon={<FiUser className="h-5 w-5" />}
+            error={errors.lastName?.message}
+          >
+            <input
+              {...register('lastName')}
+              type="text"
+              id="lastName"
+              maxLength={20}
+              autoComplete="off"
+              className={pillClasses()}
+              placeholder={t('lastNamePlaceholder')}
+            />
+          </Field>
         </div>
 
         {/* Fecha de nacimiento y teléfono */}
         <div className="grid gap-6 sm:grid-cols-2">
-          <div>
-            <label htmlFor="birthDate" className={labelClasses}>
-              {t('birthDateLabel')}
-            </label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <FiCalendar className="h-5 w-5 text-gray-400" />
-              </div>
-              <input
-                {...register('birthDate')}
-                type="date"
-                id="birthDate"
-                className={inputClasses}
-              />
-            </div>
-            {errors.birthDate && (
-              <p className="mt-1 text-sm text-red-600">
-                {errors.birthDate.message}
-              </p>
-            )}
-          </div>
+          <Field
+            label={t('birthDateLabel')}
+            htmlFor="birthDate"
+            icon={<FiCalendar className="h-5 w-5" />}
+            error={errors.birthDate?.message}
+          >
+            <input
+              {...register('birthDate')}
+              type="date"
+              id="birthDate"
+              className={pillClasses()}
+            />
+          </Field>
 
           <div>
-            <label htmlFor="phone" className={labelClasses}>
+            <label
+              htmlFor="phone"
+              className="mb-2 block text-sm font-medium text-charcoal dark:text-[#a1a1aa]"
+            >
               {t('phoneLabel')}
             </label>
             <div className="flex">
-              <span className="inline-flex items-center gap-1 rounded-l-lg border border-r-0 border-gray-300 bg-gray-100 px-3 text-gray-600 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300">
+              <span className="rounded-l-input inline-flex items-center gap-1 border border-r-0 border-ash bg-paper px-4 text-charcoal dark:border-[#52525b] dark:bg-[#27272a] dark:text-[#a1a1aa]">
                 <FiPhone className="h-4 w-4" />+{nation.dialCode}
               </span>
               <input
@@ -220,12 +209,13 @@ export default function NationRegistrationForm({
                 type="tel"
                 id="phone"
                 maxLength={12}
-                className="outline-none block w-full rounded-r-lg border border-gray-300 bg-white py-3 px-3 text-gray-900 placeholder-gray-400 transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500"
+                autoComplete="off"
+                className="rounded-r-input block w-full border border-ash bg-paper px-3 py-3 text-charcoal outline-none transition-colors duration-200 placeholder-graphite focus:border-terracotta focus:shadow-[0_0_0_3px_rgba(255,90,0,0.2)] dark:border-[#52525b] dark:bg-[#27272a] dark:text-[#f4f4f5] dark:placeholder-[#a1a1aa]"
                 placeholder={t('phonePlaceholder')}
               />
             </div>
             {errors.phone && (
-              <p className="mt-1 text-sm text-red-600">
+              <p className="mt-1.5 text-sm text-red-600">
                 {errors.phone.message}
               </p>
             )}
@@ -233,137 +223,100 @@ export default function NationRegistrationForm({
         </div>
 
         {/* Email */}
-        <div>
-          <label htmlFor="email" className={labelClasses}>
-            {t('emailLabel')}
-          </label>
-          <div className="relative">
-            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-              <FiMail className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              {...register('email')}
-              type="email"
-              id="email"
-              maxLength={100}
-              className={inputClasses}
-              placeholder={t('emailPlaceholder')}
-            />
-          </div>
-          {errors.email && (
-            <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
-          )}
-        </div>
+        <Field
+          label={t('emailLabel')}
+          htmlFor="email"
+          icon={<FiMail className="h-5 w-5" />}
+          error={errors.email?.message}
+        >
+          <input
+            {...register('email')}
+            type="email"
+            id="email"
+            maxLength={100}
+            autoComplete="off"
+            className={pillClasses()}
+            placeholder={t('emailPlaceholder')}
+          />
+        </Field>
 
         {/* Dirección */}
-        <div>
-          <label htmlFor="address" className={labelClasses}>
-            {t('addressLabel')}
-          </label>
-          <div className="relative">
-            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-              <FiMapPin className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              {...register('address')}
-              type="text"
-              id="address"
-              maxLength={100}
-              className={inputClasses}
-              placeholder={t('addressPlaceholder')}
-            />
-          </div>
-          {errors.address && (
-            <p className="mt-1 text-sm text-red-600">
-              {errors.address.message}
-            </p>
-          )}
-        </div>
+        <Field
+          label={t('addressLabel')}
+          htmlFor="address"
+          icon={<FiMapPin className="h-5 w-5" />}
+          error={errors.address?.message}
+        >
+          <input
+            {...register('address')}
+            type="text"
+            id="address"
+            maxLength={100}
+            autoComplete="off"
+            className={pillClasses()}
+            placeholder={t('addressPlaceholder')}
+          />
+        </Field>
 
         {/* Ciudad, estado/provincia y código postal */}
         <div className="grid gap-6 sm:grid-cols-3">
-          <div>
-            <label htmlFor="city" className={labelClasses}>
-              {t('cityLabel')}
-            </label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <FiHome className="h-5 w-5 text-gray-400" />
-              </div>
-              <input
-                {...register('city')}
-                type="text"
-                id="city"
-                maxLength={50}
-                className={inputClasses}
-                placeholder={t('cityPlaceholder')}
-              />
-            </div>
-            {errors.city && (
-              <p className="mt-1 text-sm text-red-600">
-                {errors.city.message}
-              </p>
-            )}
-          </div>
+          <Field
+            label={t('cityLabel')}
+            htmlFor="city"
+            icon={<FiHome className="h-5 w-5" />}
+            error={errors.city?.message}
+          >
+            <input
+              {...register('city')}
+              type="text"
+              id="city"
+              maxLength={50}
+              autoComplete="off"
+              className={pillClasses()}
+              placeholder={t('cityPlaceholder')}
+            />
+          </Field>
 
-          <div>
-            <label htmlFor="state" className={labelClasses}>
-              {t('stateLabel')}
-            </label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <FiFlag className="h-5 w-5 text-gray-400" />
-              </div>
-              <input
-                {...register('state')}
-                type="text"
-                id="state"
-                maxLength={50}
-                className={inputClasses}
-                placeholder={t('statePlaceholder')}
-              />
-            </div>
-            {errors.state && (
-              <p className="mt-1 text-sm text-red-600">
-                {errors.state.message}
-              </p>
-            )}
-          </div>
+          <Field
+            label={t('stateLabel')}
+            htmlFor="state"
+            icon={<FiFlag className="h-5 w-5" />}
+            error={errors.state?.message}
+          >
+            <input
+              {...register('state')}
+              type="text"
+              id="state"
+              maxLength={50}
+              autoComplete="off"
+              className={pillClasses()}
+              placeholder={t('statePlaceholder')}
+            />
+          </Field>
 
-          <div>
-            <label htmlFor="postalCode" className={labelClasses}>
-              {t('postalCodeLabel')}
-            </label>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <FiHash className="h-5 w-5 text-gray-400" />
-              </div>
-              <input
-                {...register('postalCode')}
-                type="text"
-                id="postalCode"
-                maxLength={12}
-                className={inputClasses}
-                placeholder={t('postalCodePlaceholder')}
-              />
-            </div>
-            {errors.postalCode && (
-              <p className="mt-1 text-sm text-red-600">
-                {errors.postalCode.message}
-              </p>
-            )}
-          </div>
+          <Field
+            label={t('postalCodeLabel')}
+            htmlFor="postalCode"
+            icon={<FiHash className="h-5 w-5" />}
+            error={errors.postalCode?.message}
+          >
+            <input
+              {...register('postalCode')}
+              type="text"
+              id="postalCode"
+              maxLength={12}
+              autoComplete="off"
+              className={pillClasses()}
+              placeholder={t('postalCodePlaceholder')}
+            />
+          </Field>
         </div>
 
         {/* Submit */}
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="flex w-full items-center justify-center space-x-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white shadow-md transition-all duration-200 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg disabled:from-blue-400 disabled:to-blue-400"
-        >
+        <Button type="submit" disabled={isSubmitting} className="w-full">
           {isSubmitting ? (
             <>
-              <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
+              <div className="h-5 w-5 animate-spin rounded-full border-2 border-parchment border-t-transparent" />
               <span>{t('submitting')}</span>
             </>
           ) : (
@@ -372,7 +325,7 @@ export default function NationRegistrationForm({
               <span>{t('submit')}</span>
             </>
           )}
-        </button>
+        </Button>
       </form>
     </div>
   );

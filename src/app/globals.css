@@ -2,9 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --canvas: #f4f4f5;
+  --surface: #ffffff;
+  --border: #ececee;
+  --text-primary: #09090b;
+  --text-body: #18181b;
+  --text-muted: #71717a;
+  --input-border: #a1a1aa;
+  --accent: #ff5a00;
+}
+
+.dark {
+  --canvas: #18181b;
+  --surface: #27272a;
+  --border: #3f3f46;
+  --text-primary: #f4f4f5;
+  --text-body: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --input-border: #52525b;
+  --accent: #ff5a00;
+}
+
 /* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: normal;
+}
+
+.font-display {
+  font-family: var(--font-dm-sans);
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 /* Custom scrollbar */
@@ -13,16 +45,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--canvas);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: var(--border);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: var(--accent);
 }
 
 /* Focus styles for better accessibility */
@@ -49,26 +81,6 @@ html {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Button hover effects */
-.btn-hover {
-  transition: all 0.3s ease;
-}
-
-.btn-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* Card hover effects */
-.card-hover {
-  transition: all 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
 .navLink {
   position: relative;
   white-space: nowrap;
@@ -92,54 +104,4 @@ html {
 }
 .navLink:hover::after {
   width: 100%;
-}
-
-/* styles/globals.css */
-
-.btn {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  margin: 0px 25px 15px;
-  min-width: 150px;
-}
-.btn span {
-  position: relative;
-  display: inline-block;
-  font-size: 17px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 30px;
-  transition: 0.3s;
-}
-.btn-1::before {
-  background-color: #2563eb;
-  transition: 0.3s ease-out;
-}
-.btn-1 span {
-  color: rgb(255, 255, 255);
-  /* border: 1px solid #2563eb; */
-  transition: 0.2s 0.1s;
-}
-.btn-1 span:hover {
-  color: #2563eb;
-  transition: 0.2s 0.1s;
-}
-.btn.hover-filled-slide-right::before {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-.btn.hover-filled-slide-right:hover::before {
-  width: 0%;
 }

@@ -31,16 +31,16 @@ export default async function PrivacyPolicyPage() {
   const rightsItems = t.raw('rights.items') as string[];
 
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-900">
+    <main className="min-h-screen bg-parchment dark:bg-[#18181b]">
       <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <header className="mb-10 text-center">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+          <h1 className="font-display text-3xl font-normal text-ink dark:text-paper sm:text-4xl lg:text-5xl">
             {t('title')}
           </h1>
-          <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-3 text-sm text-graphite dark:text-[#a1a1aa]">
             {t('subtitle')}
           </p>
-          <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
+          <p className="mt-1 text-xs text-graphite/80 dark:text-[#a1a1aa]/80">
             {t('lastUpdated')}
           </p>
         </header>
@@ -49,11 +49,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="intro">
             <h2
               id="intro"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('intro.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
               {t('intro.text')}
             </p>
           </section>
@@ -61,11 +61,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="datos">
             <h2
               id="datos"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('dataCollected.heading')}
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
               {dataCollectedItems.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -75,11 +75,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="finalidad">
             <h2
               id="finalidad"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('purpose.heading')}
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
               {purposeItems.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -89,11 +89,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="base-legal">
             <h2
               id="base-legal"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('legalBasis.heading')}
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
               {legalBasisItems.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -103,14 +103,14 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="comparticion">
             <h2
               id="comparticion"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('sharing.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa]">
               {t('sharing.intro')}
             </p>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
               {sharingItems.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -120,11 +120,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="cookies">
             <h2
               id="cookies"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('cookies.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
               {t('cookies.text')}
             </p>
           </section>
@@ -132,22 +132,22 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="derechos">
             <h2
               id="derechos"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('rights.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa]">
               {t('rights.intro')}
             </p>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300 text-justify">
+            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
               {rightsItems.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
               {t('rights.contactText')}{' '}
               <a
-                className="text-blue-600 underline dark:text-blue-400"
+                className="text-terracotta underline hover:text-terracotta/80"
                 href={contactInfo.emailLink}
               >
                 {contactInfo.email}
@@ -159,11 +159,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="conservacion">
             <h2
               id="conservacion"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('retention.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
               {t('retention.text')}
             </p>
           </section>
@@ -171,15 +171,15 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="contacto">
             <h2
               id="contacto"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('contact.heading')}
             </h2>
-            <div className="mt-3 space-y-1 text-gray-700 dark:text-gray-300">
+            <div className="mt-3 space-y-1 text-charcoal dark:text-[#a1a1aa]">
               <p>
                 📧 {t('contact.emailLabel')}:{' '}
                 <a
-                  className="text-blue-600 underline dark:text-blue-400"
+                  className="text-terracotta underline hover:text-terracotta/80"
                   href={contactInfo.emailLink}
                 >
                   {contactInfo.email}
@@ -188,7 +188,7 @@ export default async function PrivacyPolicyPage() {
               <p>
                 📞 {t('contact.phoneLabel')}:{' '}
                 <a
-                  className="text-blue-600 underline dark:text-blue-400"
+                  className="text-terracotta underline hover:text-terracotta/80"
                   href={contactInfo.whatsappLink}
                 >
                   {contactInfo.phone}
@@ -204,11 +204,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="seguridad">
             <h2
               id="seguridad"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('security.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
               {t('security.text')}
             </p>
           </section>
@@ -216,11 +216,11 @@ export default async function PrivacyPolicyPage() {
           <section aria-labelledby="cambios">
             <h2
               id="cambios"
-              className="text-xl font-semibold text-gray-900 dark:text-gray-100"
+              className="font-display text-xl font-normal text-ink dark:text-paper"
             >
               {t('changes.heading')}
             </h2>
-            <p className="mt-3 leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
               {t('changes.text')}
             </p>
           </section>

@@ -7,14 +7,14 @@ const NationsGrid = async () => {
   const t = await getTranslations('Nations');
 
   return (
-    <section className="bg-white py-28 dark:bg-gray-900">
+    <section className="bg-parchment py-28 dark:bg-[#18181b]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-4xl text-center">
-          <h1 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+          <h1 className="font-display mb-4 text-3xl font-normal text-ink dark:text-paper sm:text-4xl lg:text-5xl">
             {t('title')}
           </h1>
-          <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-blue-600" />
-          <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
+          <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-terracotta" />
+          <p className="text-lg leading-relaxed text-graphite dark:text-[#a1a1aa] sm:text-xl">
             {t('description')}
           </p>
         </div>
@@ -24,7 +24,7 @@ const NationsGrid = async () => {
             <Link
               key={nation.code}
               href={nation.slug}
-              className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
+              className="group overflow-hidden rounded-card border border-taupe bg-paper shadow-glow transition-all duration-300 hover:-translate-y-2 hover:shadow-float dark:border-[#3f3f46] dark:bg-[#27272a]"
             >
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
@@ -47,7 +47,7 @@ const NationsGrid = async () => {
                   </h3>
                 </div>
               </div>
-              <p className="line-clamp-2 p-4 text-sm text-gray-600 dark:text-gray-300">
+              <p className="line-clamp-2 p-4 text-sm text-graphite dark:text-[#a1a1aa]">
                 {t(`descriptions.${nation.code}`)}
               </p>
             </Link>

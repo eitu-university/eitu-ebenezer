@@ -33,11 +33,11 @@ const ProgramasDeCurso = async () => {
         {/* CONTENIDO */}
         <div className="relative z-10 mx-auto flex justify-center px-4">
           <div className={styles.animteFadeInRight}>
-            <h1 className="mb-6 flex flex-col items-center justify-center text-5xl font-bold leading-tight text-white md:text-7xl">
+            <h1 className="font-display mb-6 flex flex-col items-center justify-center text-5xl font-normal leading-tight text-parchment md:text-7xl">
               {t('title')}
             </h1>
 
-            <p className="text-small mb-8 leading-relaxed text-gray-200 md:text-xl">
+            <p className="text-small mb-8 leading-relaxed text-parchment/80 md:text-xl">
               {t('subtitle')}
             </p>
           </div>
@@ -45,13 +45,13 @@ const ProgramasDeCurso = async () => {
         <SvgWave />
       </section>
 
-      <section className="mx-auto max-w-2xl px-4 py-16 text-center">
-        <div className="rounded-2xl border border-gray-100 bg-white p-10 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-          <FiClock className="mx-auto mb-4 h-10 w-10 text-blue-600 dark:text-blue-400" />
-          <h2 className="mb-3 text-2xl font-bold text-gray-900 dark:text-gray-100">
+      <section className="mx-auto max-w-2xl bg-parchment px-4 py-16 text-center dark:bg-[#18181b]">
+        <div className="rounded-card border border-taupe bg-paper p-10 shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]">
+          <FiClock className="mx-auto mb-4 h-10 w-10 text-terracotta" />
+          <h2 className="font-display mb-3 text-2xl font-normal text-ink dark:text-paper">
             {t('comingSoon.title')}
           </h2>
-          <p className="text-gray-600 dark:text-gray-300">
+          <p className="text-graphite dark:text-[#a1a1aa]">
             {t('comingSoon.description')}
           </p>
         </div>

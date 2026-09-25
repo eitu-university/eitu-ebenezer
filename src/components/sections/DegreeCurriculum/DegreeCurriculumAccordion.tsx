@@ -44,7 +44,7 @@ export const DegreeCurriculumAccordion = ({
         return (
           <div
             key={year.key}
-            className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800"
+            className="overflow-hidden rounded-card border border-taupe bg-paper shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]"
           >
             <button
               type="button"
@@ -53,10 +53,10 @@ export const DegreeCurriculumAccordion = ({
               className="flex w-full items-center justify-between gap-4 p-6 text-left"
             >
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                <h3 className="font-display text-xl font-normal text-ink dark:text-paper">
                   {year.title}
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-graphite dark:text-[#a1a1aa]">
                   {year.focus}
                 </p>
               </div>
@@ -65,8 +65,8 @@ export const DegreeCurriculumAccordion = ({
                   <span
                     className={
                       allCreditsKnown
-                        ? 'rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300'
-                        : 'rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-500 dark:bg-gray-700 dark:text-gray-400'
+                        ? 'rounded-full bg-terracotta/10 px-3 py-1 text-xs font-semibold text-terracotta'
+                        : 'rounded-full bg-parchment px-3 py-1 text-xs font-semibold text-graphite dark:bg-[#18181b] dark:text-[#a1a1aa]'
                     }
                   >
                     {allCreditsKnown
@@ -75,7 +75,7 @@ export const DegreeCurriculumAccordion = ({
                   </span>
                 )}
                 <FiChevronDown
-                  className={`h-5 w-5 text-gray-500 transition-transform duration-200 dark:text-gray-400 ${
+                  className={`h-5 w-5 text-terracotta transition-transform duration-200 ${
                     isOpen ? 'rotate-180' : ''
                   }`}
                 />
@@ -89,30 +89,30 @@ export const DegreeCurriculumAccordion = ({
             >
               <div className="min-h-0 overflow-hidden">
                 {year.courses.length > 0 ? (
-                  <ul className="divide-y divide-gray-100 border-t border-gray-100 dark:divide-gray-700 dark:border-gray-700">
+                  <ul className="divide-y divide-taupe border-t border-taupe dark:divide-[#3f3f46] dark:border-[#3f3f46]">
                     {year.courses.map((course) => (
                       <li key={course.code} className="px-6 py-3 text-sm">
                         <div className="flex items-center justify-between gap-4">
-                          <span className="font-medium text-gray-800 dark:text-gray-100">
-                            <span className="mr-2 font-mono text-xs text-gray-400 dark:text-gray-500">
+                          <span className="font-medium text-ink dark:text-paper">
+                            <span className="mr-2 font-mono text-xs text-graphite dark:text-[#a1a1aa]">
                               {course.code}
                             </span>
                             {course.name[locale]}
                           </span>
-                          <span className="shrink-0 font-semibold text-gray-500 dark:text-gray-400">
+                          <span className="shrink-0 font-semibold text-graphite dark:text-[#a1a1aa]">
                             {course.credits !== null
                               ? `${course.credits} ${creditsLabel}`
                               : creditsPendingLabel}
                           </span>
                         </div>
-                        <p className="mt-1 text-gray-500 dark:text-gray-400">
+                        <p className="mt-1 text-graphite dark:text-[#a1a1aa]">
                           {course.description[locale]}
                         </p>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="border-t border-gray-100 px-6 py-4 text-sm text-gray-500 dark:border-gray-700 dark:text-gray-400">
+                  <p className="border-t border-taupe px-6 py-4 text-sm text-graphite dark:border-[#3f3f46] dark:text-[#a1a1aa]">
                     {pendingMessage}
                   </p>
                 )}

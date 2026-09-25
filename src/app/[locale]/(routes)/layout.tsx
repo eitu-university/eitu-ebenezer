@@ -10,7 +10,7 @@ export default function RoutesLayout({
     <>
       <Toaster position="top-center" />
       <Header />
-      <div className="h-36 bg-gray-700 md:h-44"></div>
+      <div className="h-28 bg-parchment dark:bg-[#18181b] md:h-36"></div>
       {children}
     </>
   );

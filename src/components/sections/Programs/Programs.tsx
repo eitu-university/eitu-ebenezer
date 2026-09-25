@@ -13,13 +13,13 @@ export const Programs = () => {
   const itemGap = 32;
 
   return (
-    <div className="grid min-h-screen place-items-center bg-gray-50 p-4 text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100">
+    <div className="grid min-h-screen place-items-center bg-parchment p-4 text-charcoal antialiased dark:bg-[#18181b] dark:text-[#f4f4f5]">
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl lg:text-5xl">
+        <h2 className="font-display mb-4 text-3xl font-normal text-ink dark:text-paper sm:text-4xl lg:text-5xl">
           {t('title')}
         </h2>
-        <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-blue-600" />
-        <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 sm:text-xl">
+        <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-terracotta" />
+        <p className="text-lg leading-relaxed text-graphite dark:text-[#a1a1aa] sm:text-xl">
           {t('description')}
         </p>
       </div>
@@ -35,7 +35,7 @@ export const Programs = () => {
             '--carousel-item-height': '450px',
             '--carousel-item-width': `${itemWidth}px`,
             '--carousel-item-gap': `${itemGap}px`,
-            '--clr-cta': 'rgb(0, 132, 209)',
+            '--clr-cta': '#ff5a00',
             '--items': ProgramList.length.toString(),
           } as CSSProperties
         }
@@ -52,14 +52,14 @@ export const Programs = () => {
               } as CSSProperties
             }
           >
-            <div className="grid h-full w-full grid-rows-[200px_auto_1fr_auto] gap-1 rounded-xl border border-gray-200 bg-white text-gray-800 shadow-sm transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:shadow-xl dark:border-white/15 dark:bg-gray-800/50 dark:text-white">
+            <div className="grid h-full w-full grid-rows-[200px_auto_1fr_auto] gap-1 rounded-card border border-taupe bg-paper text-charcoal shadow-glow transition-all duration-300 ease-in-out group-hover:-translate-y-2 group-hover:shadow-float dark:border-[#3f3f46] dark:bg-[#27272a] dark:text-[#f4f4f5]">
               {/* Image section */}
               <Image
                 src={item.imgSrc}
                 alt={t(`items.${item.key}.title`)}
                 width={itemWidth}
                 height={200}
-                className="h-full w-full rounded-t-xl object-cover"
+                className="h-full w-full rounded-t-card object-cover"
                 loading='lazy'
               />
               {/* TAGS AQUI */}
@@ -68,7 +68,7 @@ export const Programs = () => {
                   {item.tagKeys.map((tagKey) => (
                     <span
                       key={tagKey}
-                      className="rounded-full border border-gray-300 bg-gray-50 px-2 py-0.5 text-[10px] font-medium text-gray-700 shadow-lg dark:border-white/15 dark:bg-white/5 dark:text-gray-200"
+                      className="rounded-full border border-taupe bg-parchment px-2 py-0.5 text-[10px] font-medium text-charcoal dark:border-[#3f3f46] dark:bg-[#18181b] dark:text-[#a1a1aa]"
                     >
                       {t(`tags.${tagKey}`)}
                     </span>
@@ -80,14 +80,16 @@ export const Programs = () => {
 
               {/* Content area - uses custom padding set in the style block */}
               <div className="p-4 py-0 text-justify">
-                <h2 className="mb-2 !p-0 text-lg">{t(`items.${item.key}.title`)}</h2>
-                <p className="m-0 text-sm text-gray-600 dark:text-gray-300">
+                <h2 className="font-display mb-2 !p-0 text-lg font-normal">
+                  {t(`items.${item.key}.title`)}
+                </h2>
+                <p className="m-0 text-sm text-graphite dark:text-[#a1a1aa]">
                   {t(`items.${item.key}.description`)}
                 </p>
               </div>
 
               {/* CTA Button - uses custom styling from the style block */}
-              <button className="group/btn flex items-center justify-start gap-1.5 p-4 pt-0 font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+              <button className="group/btn flex items-center justify-start gap-1.5 p-4 pt-0 font-semibold text-terracotta transition-colors duration-200 hover:text-terracotta/80">
                 {tCommon('learnMore')}
                 <FiArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
               </button>

@@ -62,20 +62,20 @@ export default async function NationsPage({ params }: NationsPageProps) {
           className="h-52 w-80 object-cover shadow-lg"
         />
         {/* Contenido centrado sobre la imagen */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 text-center text-white">
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 text-center text-parchment">
           <img
             src={nation.flagSvg}
             alt={`${nation.name} flag`}
             className="h-28 w-28 rounded-full shadow-xl"
           />
-          <h1 className="text-4xl font-bold">{nation.name}</h1>
+          <h1 className="font-display text-4xl font-normal">{nation.name}</h1>
           <p className="mt-2 text-lg">
             {t(`descriptions.${nation.code}`)}
           </p>
         </div>
       </div>
 
-      <section className="w-full bg-gray-50 px-4 py-16 dark:bg-gray-800 sm:px-6 lg:px-8">
+      <section className="w-full bg-paper px-4 py-16 dark:bg-[#18181b] sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <NationRegistrationForm nation={nation} />
         </div>

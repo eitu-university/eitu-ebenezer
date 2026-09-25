@@ -32,11 +32,11 @@ const Diploma = async () => {
         {/* CONTENIDO */}
         <div className="relative z-10 mx-auto flex justify-center px-4">
           <div className={styles.animteFadeInRight}>
-            <h1 className="mb-6 flex flex-col items-center justify-center text-5xl font-bold leading-tight text-white md:text-7xl">
+            <h1 className="font-display mb-6 flex flex-col items-center justify-center text-5xl font-normal leading-tight text-parchment md:text-7xl">
               {t('title')}
             </h1>
 
-            <p className="text-small mb-8 leading-relaxed text-gray-200 md:text-xl">
+            <p className="text-small mb-8 leading-relaxed text-parchment/80 md:text-xl">
               {t('subtitle')}
             </p>
           </div>

@@ -18,12 +18,12 @@ const TextToggle = ({ text, maxLength }: Props) => {
     isExpanded || !isLongText ? text : text.slice(0, maxLength) + '...';
 
   return (
-    <p className="mb-4 text-justify text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+    <p className="mb-4 text-justify text-sm leading-relaxed text-graphite dark:text-[#a1a1aa]">
       {displayText}
       {isLongText && (
         <button
           onClick={toggleText}
-          className="ml-1 text-blue-500 hover:underline"
+          className="ml-1 text-terracotta hover:underline"
         >
           {isExpanded ? t('readLess') : t('readMore')}
         </button>

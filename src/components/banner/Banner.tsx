@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { FiArrowDown } from 'react-icons/fi';
 import { SvgWave } from './SvgWave';
+import Button from '@/components/ui/Button';
 
 export default function Banner() {
   const t = useTranslations('Banner');
@@ -42,37 +43,35 @@ export default function Banner() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white sm:px-6 lg:px-8">
-          <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-5xl">
+        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-parchment sm:px-6 lg:px-8">
+          <h1 className="font-display mb-6 text-4xl font-normal leading-tight sm:text-5xl lg:text-5xl">
             {t('titlePrefix')}{' '}
-            <mark className={`${styles.scribble}`}>{t('titleHighlight')}</mark>
+            <mark className={`font-display ${styles.scribble}`}>
+              {t('titleHighlight')}
+            </mark>
           </h1>
-          <p className="mb-8 text-xl font-light text-gray-200 sm:text-2xl lg:text-3xl">
+          <p className="mb-8 text-xl font-light text-parchment/85 sm:text-2xl lg:text-3xl">
             {t('subtitle')}
           </p>
-          <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-300 sm:text-xl">
+          <p className="mx-auto mb-12 max-w-2xl text-lg text-parchment/70 sm:text-xl">
             {t('description')}
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button
-              onClick={scrollToContent}
-              className="rounded-full bg-blue-600 px-8 py-3.5 font-semibold text-white shadow-lg shadow-blue-900/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl"
-            >
-              {t('cta')}
-            </button>
-            <button
+            <Button onClick={scrollToContent}>{t('cta')}</Button>
+            <Button
+              variant="outline"
+              className="border-parchment/70 text-parchment hover:bg-parchment hover:text-ink"
               onClick={() => {
                 const element = document.querySelector('#contact');
                 if (element) {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="rounded-full border border-white/70 px-8 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white hover:text-gray-900"
             >
               {tCommon('getInTouch')}
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -81,7 +80,7 @@ export default function Banner() {
           <button
             aria-label="explore more button"
             onClick={scrollToContent}
-            className="text-white transition-colors duration-200 hover:text-blue-300"
+            className="text-parchment transition-colors duration-200 hover:text-terracotta-light"
           >
             <FiArrowDown size={24} />
           </button>

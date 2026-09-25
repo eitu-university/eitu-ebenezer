@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { FiTarget, FiClipboard, FiArrowRight } from 'react-icons/fi';
 import { DegreeCurriculumAccordion } from '@/components/sections/DegreeCurriculum/DegreeCurriculumAccordion';
 import { degreeCurriculum } from '@/data/degreeCurriculum';
+import Button from '@/components/ui/Button';
 import styles from './Degree.module.scss';
 
 type Props = {
@@ -42,11 +43,11 @@ const Degree = async () => {
         {/* CONTENIDO */}
         <div className="relative z-10 mx-auto flex justify-center px-4">
           <div className={styles.animteFadeInRight}>
-            <h1 className="mb-6 flex flex-col items-center justify-center text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="font-display mb-6 flex flex-col items-center justify-center text-4xl font-normal leading-tight text-parchment md:text-6xl">
               {t('programTitle')}
             </h1>
 
-            <p className="text-small mb-8 leading-relaxed text-gray-200 md:text-xl">
+            <p className="text-small mb-8 leading-relaxed text-parchment/80 md:text-xl">
               {t('subtitle')}
             </p>
           </div>
@@ -54,22 +55,22 @@ const Degree = async () => {
         <SvgWave />
       </section>
 
-      <section className="mx-auto max-w-4xl px-4 py-16">
+      <section className="mx-auto max-w-4xl bg-parchment px-4 py-16 dark:bg-[#18181b]">
         {/* Stats */}
         <div className="mb-12 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-gray-100 bg-white p-6 text-center shadow-sm dark:border-gray-700 dark:bg-gray-800">
-            <p className="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
+          <div className="rounded-card border border-taupe bg-paper p-6 text-center shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]">
+            <p className="text-sm font-semibold uppercase tracking-wide text-terracotta">
               {t('durationLabel')}
             </p>
-            <p className="mt-1 text-2xl font-bold text-gray-900 dark:text-gray-100">
+            <p className="mt-1 text-2xl font-semibold text-ink dark:text-paper">
               {t('duration')}
             </p>
           </div>
-          <div className="rounded-2xl border border-gray-100 bg-white p-6 text-center shadow-sm dark:border-gray-700 dark:bg-gray-800">
-            <p className="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
+          <div className="rounded-card border border-taupe bg-paper p-6 text-center shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]">
+            <p className="text-sm font-semibold uppercase tracking-wide text-terracotta">
               {t('creditsTotalLabel')}
             </p>
-            <p className="mt-1 text-2xl font-bold text-gray-900 dark:text-gray-100">
+            <p className="mt-1 text-2xl font-semibold text-ink dark:text-paper">
               {t('creditsTotal')}
             </p>
           </div>
@@ -77,21 +78,21 @@ const Degree = async () => {
 
         {/* Objectives & Requirements */}
         <div className="mb-8 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-            <FiTarget className="mb-4 h-10 w-10 text-blue-600 dark:text-blue-400" />
-            <h2 className="mb-3 text-xl font-bold text-gray-900 dark:text-gray-100">
+          <div className="rounded-card border border-taupe bg-paper p-8 shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]">
+            <FiTarget className="mb-4 h-10 w-10 text-terracotta" />
+            <h2 className="font-display mb-3 text-xl font-normal text-ink dark:text-paper">
               {t('objectivesTitle')}
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-graphite dark:text-[#a1a1aa]">
               {t('objectives')}
             </p>
           </div>
-          <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-            <FiClipboard className="mb-4 h-10 w-10 text-blue-600 dark:text-blue-400" />
-            <h2 className="mb-3 text-xl font-bold text-gray-900 dark:text-gray-100">
+          <div className="rounded-card border border-taupe bg-paper p-8 shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]">
+            <FiClipboard className="mb-4 h-10 w-10 text-terracotta" />
+            <h2 className="font-display mb-3 text-xl font-normal text-ink dark:text-paper">
               {t('requirementsTitle')}
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-graphite dark:text-[#a1a1aa]">
               {t('requirements')}
             </p>
           </div>
@@ -100,17 +101,17 @@ const Degree = async () => {
         {/* Continuation of Associates */}
         <Link
           href="/programs/study-programs/associates"
-          className="mb-16 flex items-center justify-between gap-4 rounded-2xl border border-blue-100 bg-blue-50 p-6 transition-colors hover:bg-blue-100 dark:border-blue-900/40 dark:bg-blue-900/20 dark:hover:bg-blue-900/30"
+          className="mb-16 flex items-center justify-between gap-4 rounded-card border border-terracotta bg-terracotta/10 p-6 transition-colors hover:bg-terracotta/20"
         >
           <div>
-            <h2 className="mb-1 font-bold text-blue-900 dark:text-blue-200">
+            <h2 className="mb-1 font-semibold text-ink dark:text-paper">
               {t('continuationTitle')}
             </h2>
-            <p className="text-sm text-blue-800 dark:text-blue-300">
+            <p className="text-sm text-graphite dark:text-[#a1a1aa]">
               {t('continuationDescription')}
             </p>
           </div>
-          <span className="flex shrink-0 items-center gap-1 text-sm font-semibold text-blue-700 dark:text-blue-300">
+          <span className="flex shrink-0 items-center gap-1 text-sm font-semibold text-terracotta">
             {t('continuationLink')}
             <FiArrowRight className="h-4 w-4" />
           </span>
@@ -119,10 +120,10 @@ const Degree = async () => {
         {/* Curriculum */}
         <div className="mb-16">
           <div className="mb-8 text-center">
-            <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-gray-100">
+            <h2 className="font-display mb-3 text-3xl font-normal text-ink dark:text-paper">
               {t('curriculumTitle')}
             </h2>
-            <p className="mx-auto max-w-2xl text-gray-600 dark:text-gray-300">
+            <p className="mx-auto max-w-2xl text-graphite dark:text-[#a1a1aa]">
               {t('curriculumDescription')}
             </p>
           </div>
@@ -136,21 +137,20 @@ const Degree = async () => {
         </div>
 
         {/* CTA */}
-        <div className="rounded-2xl border border-gray-100 bg-white px-8 py-12 text-center shadow-sm dark:border-gray-700 dark:bg-gray-800">
-          <h2 className="mb-3 text-2xl font-bold text-gray-900 dark:text-gray-100 md:text-3xl">
+        <div className="rounded-card border border-taupe bg-paper px-8 py-12 text-center shadow-glow dark:border-[#3f3f46] dark:bg-[#27272a]">
+          <h2 className="font-display mb-3 text-2xl font-normal text-ink dark:text-paper md:text-3xl">
             {t('ctaTitle')}
           </h2>
-          <p className="mx-auto mb-6 max-w-xl text-gray-600 dark:text-gray-300">
+          <p className="mx-auto mb-6 max-w-xl text-graphite dark:text-[#a1a1aa]">
             {t('ctaDescription')}
           </p>
-          <a
+          <Button
             href="https://www.jotform.com/build/262587067374165"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-1 hover-filled-slide-right"
           >
-            <span>{t('ctaButton')}</span>
-          </a>
+            {t('ctaButton')}
+          </Button>
         </div>
       </section>
     </div>

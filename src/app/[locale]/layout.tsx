@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { Inter, Lato } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { DM_Sans } from 'next/font/google';
 import '../globals.css';
 import { hasLocale } from 'next-intl';
 import { NextIntlClientProvider } from 'next-intl';
@@ -9,16 +9,17 @@ import { routing } from '@/i18n/routing';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import Footer from '@/components/footer/Footer';
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-dm-sans',
 });
 
-const lato = Lato({
-  subsets: ['latin'],
-  weight: ['300', '400', '700', '900'],
-  variable: '--font-lato',
-});
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f4f4f5' },
+    { media: '(prefers-color-scheme: dark)', color: '#18181b' },
+  ],
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -126,14 +127,6 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <head>
-        {/* Preconnect para optimización */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
@@ -156,11 +149,11 @@ export default async function RootLayout({ children, params }: Props) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${inter.variable} ${lato.variable} bg-white font-lato text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100`}
+        className={`${dmSans.variable} bg-parchment font-sans text-charcoal antialiased dark:bg-[#18181b] dark:text-[#f4f4f5]`}
       >
         <NextIntlClientProvider>
           <ThemeProvider>{children}</ThemeProvider>
-          <div className="h-64 bg-white dark:bg-gray-800"></div>
+          <div className="h-64 bg-parchment dark:bg-[#18181b]"></div>
           <Footer />
         </NextIntlClientProvider>
       </body>

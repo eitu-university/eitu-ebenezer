@@ -18,7 +18,7 @@ export default function LocaleSwitcher({ className }: { className?: string }) {
       aria-label={nextLocale === 'en' ? 'Switch to English' : 'Cambiar a español'}
       onClick={() => router.replace(pathname, { locale: nextLocale })}
       className={cn(
-        'flex items-center gap-1.5 rounded-md p-2 text-sm font-semibold text-gray-200 transition-colors duration-200 hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500',
+        'flex items-center gap-1.5 rounded-md p-2 text-sm font-semibold text-parchment transition-colors duration-200 hover:text-terracotta-light focus:outline-none focus:ring-2 focus:ring-terracotta',
         className
       )}
       title={nextLocale === 'en' ? 'Switch to English' : 'Cambiar a español'}

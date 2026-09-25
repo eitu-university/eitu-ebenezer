@@ -42,11 +42,11 @@ const MenuNode = ({
         href={item.href}
         className={[
           'flex w-full items-center gap-3 rounded-md px-3 py-2 text-left font-medium',
-          depth === 0 ? 'text-gray-700' : 'text-sm text-gray-600',
-          'hover:bg-gray-50 hover:text-blue-600',
+          depth === 0 ? 'text-charcoal' : 'text-sm text-graphite',
+          'hover:bg-parchment hover:text-terracotta',
           depth === 0
-            ? 'dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400'
-            : 'dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400',
+            ? 'dark:text-paper dark:hover:bg-[#18181b] dark:hover:text-terracotta-light'
+            : 'dark:text-[#a1a1aa] dark:hover:bg-[#18181b] dark:hover:text-terracotta-light',
           'transform transition-all duration-300 ease-out will-change-transform',
           depth === 0 ? '-translate-x-4 opacity-0' : '',
           depth === 0 && animateIn ? 'translate-x-1 opacity-100' : '',
@@ -73,11 +73,11 @@ const MenuNode = ({
           aria-controls={nodeKey}
           className={[
             'flex w-full items-center justify-between gap-3 rounded-md px-3 py-2 text-left font-medium',
-            depth === 0 ? 'text-gray-700' : 'text-sm text-gray-600',
-            'hover:bg-gray-50 hover:text-blue-600',
+            depth === 0 ? 'text-charcoal' : 'text-sm text-graphite',
+            'hover:bg-parchment hover:text-terracotta',
             depth === 0
-              ? 'dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-blue-400'
-              : 'dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400',
+              ? 'dark:text-paper dark:hover:bg-[#18181b] dark:hover:text-terracotta-light'
+              : 'dark:text-[#a1a1aa] dark:hover:bg-[#18181b] dark:hover:text-terracotta-light',
             'transform transition-all duration-300 ease-out will-change-transform',
             depth === 0 ? '-translate-x-4 opacity-0' : '',
             depth === 0 && animateIn ? 'translate-x-1 opacity-100' : '',
@@ -178,7 +178,7 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
     <>
       {isMenuOpen && (
         <div
-          className="my-4 space-y-1 rounded-lg border-t border-gray-200 bg-white px-2 pb-3 pt-2 dark:border-gray-700 dark:bg-[#0b1220] md:hidden"
+          className="my-4 space-y-1 rounded-nav border-t border-taupe bg-parchment px-2 pb-3 pt-2 dark:border-[#3f3f46] dark:bg-[#18181b] md:hidden"
           role="menu"
           aria-label="Mobile navigation"
           ref={containerRef}
@@ -197,7 +197,7 @@ const MobileMenu = ({ isMenuOpen, onClose, closeButtonRef }: Props) => {
             />
           ))}
           <div className="px-3 pt-2">
-            <LocaleSwitcher className="!text-gray-700 hover:!text-blue-600 dark:!text-gray-200 dark:hover:!text-blue-400" />
+            <LocaleSwitcher className="!text-charcoal hover:!text-terracotta dark:!text-paper dark:hover:!text-terracotta-light" />
           </div>
         </div>
       )}

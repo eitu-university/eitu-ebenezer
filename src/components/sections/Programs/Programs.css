@@ -5,7 +5,7 @@
   --carousel-duration: 40s;
   --carousel-item-width: 280px;
   --carousel-item-gap: 2rem;
-  --clr-cta: rgb(0, 132, 209);
+  --clr-cta: #ff5a00;
 }
 
 /* Adjust duration for larger screens */
@@ -82,6 +82,6 @@
 .carousel a:hover,
 .carousel a:focus-visible {
   background-color: var(--clr-cta);
-  color: white;
+  color: #ffffff;
   outline: none;
 }

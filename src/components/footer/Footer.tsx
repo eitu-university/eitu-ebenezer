@@ -16,18 +16,18 @@ export default async function Footer() {
       {/* SvgWave colocado sobre el footer */}
       <div className="mb-20"></div>
       <SvgWave />
-      <footer className="relative bg-gray-900">
+      <footer className="relative bg-ink">
         <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-4">
             {/* Logo y descripción */}
             <div className="md:col-span-2">
               <div className="mb-4 flex items-center space-x-2">
                 <Logo />
-                <span className="text-xl font-bold text-gray-300">
+                <span className="font-display text-xl font-normal text-paper">
                   EITU Ebenezer
                 </span>
               </div>
-              <p className="mb-6 leading-relaxed text-gray-300 text-justify">
+              <p className="mb-6 text-justify leading-relaxed text-[#a1a1aa]">
                 {t('description')}
               </p>
               <div className="flex space-x-4">
@@ -35,7 +35,7 @@ export default async function Footer() {
                   <a
                     key={idx}
                     href="#"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 text-gray-800 transition-colors duration-200 hover:bg-blue-600"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3f3f46] text-paper transition-colors duration-200 hover:border-terracotta hover:bg-terracotta hover:text-parchment"
                     aria-label={item.ariaLabel}
                   >
                     <item.icon size={20} />
@@ -46,7 +46,7 @@ export default async function Footer() {
 
             {/* Enlaces rápidos */}
             <div>
-              <h3 className="mb-4 text-lg font-semibold text-gray-300">
+              <h3 className="mb-4 text-lg font-semibold text-paper">
                 {t('quickLinksTitle')}
               </h3>
               <ul className="space-y-2">
@@ -55,7 +55,7 @@ export default async function Footer() {
                       <li key={link.href}>
                         <Link
                           href={link.href}
-                          className="navLink text-gray-300 transition-colors duration-200 hover:text-white"
+                          className="navLink text-[#a1a1aa] transition-colors duration-200 hover:text-terracotta-light"
                         >
                           {tNav(link.labelKey)}
                         </Link>
@@ -67,13 +67,13 @@ export default async function Footer() {
 
             {/* Información de contacto */}
             <div>
-              <h3 className="mb-4 text-lg font-semibold text-gray-300">
+              <h3 className="mb-4 text-lg font-semibold text-paper">
                 {t('contactTitle')}
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <FiMapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-400" />
-                  <p className="text-sm text-gray-300">
+                  <FiMapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-terracotta-light" />
+                  <p className="text-sm text-[#a1a1aa]">
                     {contactInfo.address.street}
                     <br />
                     {contactInfo.address.city}
@@ -82,21 +82,21 @@ export default async function Footer() {
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <RiWhatsappLine className="h-5 w-5 flex-shrink-0 text-blue-400" />
+                  <RiWhatsappLine className="h-5 w-5 flex-shrink-0 text-terracotta-light" />
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={contactInfo.whatsappLink}
-                    className="text-sm text-gray-300"
+                    className="text-sm text-[#a1a1aa] hover:text-terracotta-light"
                   >
                     {contactInfo.phone}
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FiMail className="h-5 w-5 flex-shrink-0 text-blue-400" />
+                  <FiMail className="h-5 w-5 flex-shrink-0 text-terracotta-light" />
                   <a
                     href={contactInfo.emailLink}
-                    className="text-sm text-gray-300"
+                    className="text-sm text-[#a1a1aa] hover:text-terracotta-light"
                   >
                     {contactInfo.email}
                   </a>
@@ -106,23 +106,23 @@ export default async function Footer() {
           </div>
 
           {/* Línea divisoria */}
-          <div className="mt-8 border-t border-gray-800 pt-8">
+          <div className="mt-8 border-t border-white/10 pt-8">
             <div className="flex flex-col items-center justify-between md:flex-row">
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-[#a1a1aa]/80">
                 © {currentYear} EituEbenezer. {t('rights')}
               </p>
               <div className="mt-4 flex space-x-6 md:mt-0">
                 <Link
                   target="_self"
                   href="/politica-de-privacidad"
-                  className="navLink text-sm text-gray-400 transition-colors  duration-200 hover:text-white"
+                  className="navLink text-sm text-[#a1a1aa]/80 transition-colors duration-200 hover:text-terracotta-light"
                 >
                   {tNav('privacy')}
                 </Link>
                 <Link
                   target="_self"
                   href="/terminos-de-servicio"
-                  className="navLink text-sm text-gray-400 transition-colors  duration-200 hover:text-white"
+                  className="navLink text-sm text-[#a1a1aa]/80 transition-colors duration-200 hover:text-terracotta-light"
                 >
                   {tNav('terms')}
                 </Link>
@@ -145,7 +145,7 @@ const SvgWave = () => (
     >
       <path
         fill="currentColor"
-        className="text-gray-900"
+        className="text-ink"
         fillOpacity="1"
         d="M0,160L80,181.3C160,203,320,245,480,256C640,267,800,245,960,250.7C1120,256,1280,288,1360,304L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
       ></path>

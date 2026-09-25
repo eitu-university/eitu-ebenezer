@@ -35,11 +35,11 @@ const ProgramsPage = async () => {
         {/* CONTENIDO */}
         <div className="relative z-10 mx-auto flex justify-center px-4">
           <div className={styles.animteFadeInRight}>
-            <h1 className="mb-6 flex flex-col items-center justify-center text-5xl font-bold leading-tight text-white md:text-7xl">
+            <h1 className="font-display mb-6 flex flex-col items-center justify-center text-5xl font-normal leading-tight text-parchment md:text-7xl">
               {t('title')}
             </h1>
 
-            <p className="text-small mb-8 leading-relaxed text-gray-200 md:text-xl">
+            <p className="text-small mb-8 leading-relaxed text-parchment/80 md:text-xl">
               {t('description')}
             </p>
           </div>
@@ -47,13 +47,13 @@ const ProgramsPage = async () => {
         <SvgWave />
       </section>
 
-      <section className="mx-auto max-w-4xl px-4 py-16">
+      <section className="mx-auto max-w-4xl bg-parchment px-4 py-16 dark:bg-[#18181b]">
         <div className="grid gap-6 sm:grid-cols-2">
           {options.map((option) => (
             <Link
               key={option.href}
               href={option.href}
-              className="group rounded-2xl border border-gray-100 bg-white p-8 text-center text-xl font-semibold text-gray-800 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
+              className="group rounded-card border border-taupe bg-paper p-8 text-center text-xl font-semibold text-ink shadow-glow transition-all duration-300 hover:-translate-y-2 hover:shadow-float dark:border-[#3f3f46] dark:bg-[#27272a] dark:text-paper"
             >
               {option.title}
             </Link>

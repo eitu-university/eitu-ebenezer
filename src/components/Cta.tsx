@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Link } from '@/i18n/navigation';
 import React from 'react';
+import Button from '@/components/ui/Button';
 
 type Props = {
   imgUrl: string;
@@ -26,17 +26,12 @@ const Cta = ({ imgUrl, title, description, buttonHref, buttonText }: Props) => {
           id="content"
           className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 text-center text-white"
         >
-          <div className="rounded-xl bg-black/20 p-4 backdrop-blur-sm md:px-28">
-            <h3 className="mb-4 text-4xl font-bold text-gray-100 md:text-5xl">
+          <div className="rounded-card bg-black/20 p-4 backdrop-blur-sm md:px-28">
+            <h3 className="font-display mb-4 text-4xl font-normal text-parchment md:text-5xl">
               {title}
             </h3>
             <p className="mx-auto mb-6 max-w-2xl">{description}</p>
-            <Link
-              href={buttonHref}
-              className="btn btn-1 hover-filled-slide-right"
-            >
-              <span>{buttonText}</span>
-            </Link>
+            <Button href={buttonHref}>{buttonText}</Button>
           </div>
         </div>
       </div>

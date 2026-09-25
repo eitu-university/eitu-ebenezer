@@ -9,14 +9,37 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['var(--font-lato)', 'system-ui', 'sans-serif'],
-        'inter': ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        'lato': ['var(--font-lato)', 'system-ui', 'sans-serif'],
+        // Cosmica substitute (DESIGN.md): single geometric sans for the whole system.
+        'sans': ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
+        'display': ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        'white-secondary': '#f0f2f6'
+        // Token names are generic surface/text/accent slots kept stable across
+        // design-system swaps (see DESIGN.md) — current values map to "Awesomic".
+        parchment: '#f4f4f5', // Paper — canvas background
+        paper: '#ffffff', // Snow — elevated card surfaces
+        taupe: '#ececee', // Cloud — 1px hairline border color
+        ink: '#09090b', // Obsidian — dominant text, headlines
+        charcoal: '#18181b', // Graphite — body text
+        graphite: '#71717a', // Fog — muted/helper text
+        ash: '#a1a1aa', // Ash — placeholder text, input borders
+        terracotta: {
+          DEFAULT: '#ff5a00', // Ember — the single accent color
+          light: '#ff7a33',
+        },
+      },
+      borderRadius: {
+        card: '36px',
+        nav: '12px',
+        button: '14px',
+        input: '14px',
+      },
+      boxShadow: {
+        // Elevation comes from hairline borders, not shadows, per DESIGN.md.
+        glow: 'none',
+        float: '0px 4px 12px 0px rgba(0, 0, 0, 0.04)',
       },
     },
   },
   plugins: [],
-} 
+}

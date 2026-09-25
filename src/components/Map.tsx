@@ -39,7 +39,7 @@ const Map = () => {
   }, []);
 
   return (
-    <div className="flex h-96 items-center justify-center rounded-2xl bg-gray-200 dark:bg-gray-700">
+    <div className="flex h-96 items-center justify-center rounded-card bg-paper dark:bg-[#27272a]">
       <div id="map" style={{ height: '24rem', width: '100%' }}></div>
     </div>
   );

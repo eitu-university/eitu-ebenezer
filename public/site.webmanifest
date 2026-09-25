@@ -4,8 +4,8 @@
   "description": "Universidad cristiana evangélica pentecostal internacional dedicada a compartir el amor de Cristo y transformar vidas a través del evangelio.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#1f2937",
+  "background_color": "#f4f4f5",
+  "theme_color": "#ff5a00",
   "orientation": "portrait-primary",
   "icons": [
     {

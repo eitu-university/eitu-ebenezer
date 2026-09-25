@@ -34,7 +34,7 @@ export default function Home() {
       <SEO />
       <Toaster position="top-center" />
 
-      <Header />
+      <Header overlay />
       <main className="">
         <Banner />
         <Nations />
