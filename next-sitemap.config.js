@@ -13,6 +13,8 @@ const routes = [
   '/programs/course-programs',
   '/politica-de-privacidad',
   '/terminos-de-servicio',
+  '/politica-de-cookies',
+  '/capellania',
 ];
 
 /** @type {import('next-sitemap').IConfig} */

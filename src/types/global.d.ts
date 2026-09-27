@@ -16,6 +16,7 @@ declare global {
       diploma: string;
       privacy: string;
       terms: string;
+      cookies: string;
     };
     Banner: {
       titlePrefix: string;
@@ -61,6 +62,48 @@ declare global {
         | 'family',
         { title: string; description: string }
       >;
+    };
+    Chaplaincy: {
+      title: string;
+      acronym: string;
+      tagline: string;
+      backToMinistries: string;
+      about: { heading: string; paragraphs: string[] };
+      vision: {
+        heading: string;
+        quote: string;
+        intro: string;
+        items: string[];
+        closing: string;
+      };
+      mission: {
+        heading: string;
+        statement: string;
+        intro: string;
+        items: string[];
+      };
+      values: {
+        heading: string;
+        items: { title: string; text: string }[];
+      };
+      commitment: {
+        heading: string;
+        intro: string;
+        formulaIntro: string;
+        formula: string[];
+        closing: string;
+      };
+      motto: string[];
+      gallery: {
+        heading: string;
+        description: string;
+        imageAlt: string;
+        open: string;
+        close: string;
+        previous: string;
+        next: string;
+        counter: string;
+      };
     };
     Nations: {
       title: string;
@@ -318,6 +361,41 @@ declare global {
       };
       changes: { heading: string; text: string };
     };
+    CookiePolicy: {
+      title: string;
+      subtitle: string;
+      lastUpdated: string;
+      whatAre: { heading: string; text: string };
+      used: {
+        heading: string;
+        intro: string;
+        columns: {
+          name: string;
+          provider: string;
+          purpose: string;
+          type: string;
+          duration: string;
+        };
+        rows: {
+          name: string;
+          provider: string;
+          purpose: string;
+          type: string;
+          duration: string;
+        }[];
+      };
+      thirdParty: { heading: string; items: string[] };
+      consent: { heading: string; text: string };
+      manage: {
+        heading: string;
+        intro: string;
+        browsers: { name: string; url: string }[];
+      };
+      dnt: { heading: string; text: string };
+      moreInfo: { heading: string; text: string; linkLabel: string };
+      changes: { heading: string; text: string };
+      contact: { heading: string; text: string };
+    };
     SEO: {
       title: string;
       description: string;
@@ -335,6 +413,8 @@ declare global {
       degree: { title: string; description: string };
       privacy: { title: string; description: string };
       terms: { title: string; description: string };
+      cookies: { title: string; description: string };
+      chaplaincy: { title: string; description: string };
     };
   }
 }

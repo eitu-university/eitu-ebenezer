@@ -111,7 +111,7 @@ export default async function Footer() {
               <p className="text-sm text-[#a1a1aa]/80">
                 © {currentYear} EituEbenezer. {t('rights')}
               </p>
-              <div className="mt-4 flex space-x-6 md:mt-0">
+              <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 md:mt-0">
                 <Link
                   target="_self"
                   href="/politica-de-privacidad"
@@ -125,6 +125,13 @@ export default async function Footer() {
                   className="navLink text-sm text-[#a1a1aa]/80 transition-colors duration-200 hover:text-terracotta-light"
                 >
                   {tNav('terms')}
+                </Link>
+                <Link
+                  target="_self"
+                  href="/politica-de-cookies"
+                  className="navLink text-sm text-[#a1a1aa]/80 transition-colors duration-200 hover:text-terracotta-light"
+                >
+                  {tNav('cookies')}
                 </Link>
               </div>
             </div>

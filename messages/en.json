@@ -14,7 +14,8 @@
     "postgraduate": "Postgraduate Studies",
     "diploma": "Diplomas",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
   },
   "Banner": {
     "titlePrefix": "Ministerial school of",
@@ -86,6 +87,14 @@
   "Ministries": {
     "title": "Chaplaincy",
     "description": "Each ministry is designed to serve different aspects of Christian life and to reach people at every stage of their faith.",
+    "document": {
+      "title": "Chaplaincy Document",
+      "description": "Learn about the vision, structure and operation of the EITU Ebenezer Chaplaincy department.",
+      "view": "View document",
+      "download": "Download",
+      "viewLabel": "View Chaplaincy document (PDF, opens in a new tab)",
+      "downloadLabel": "Download Chaplaincy document (PDF, {size})"
+    },
     "cta": {
       "title": "Would you like to serve in a chaplaincy ministry?",
       "description": "God has given unique gifts to each of us. Discover how you can use your talents to glorify God and bless others.",
@@ -116,6 +125,132 @@
         "title": "Family Ministry",
         "description": "Strengthening families and building homes centered on Christ."
       }
+    }
+  },
+  "Chaplaincy": {
+    "title": "Ebenezer International Community Chaplains Association",
+    "acronym": "EICCA",
+    "tagline": "Bringing the presence of Christ to every community through compassion, service, and excellence.",
+    "backToMinistries": "Back to Chaplaincy",
+    "about": {
+      "heading": "Who we are",
+      "paragraphs": [
+        "The Ebenezer International Community Chaplains Association (EICCA) is a community-focused chaplaincy organization committed to equipping, developing, and supporting chaplains who have been called to serve individuals, families, churches, institutions, and communities.",
+        "EICCA seeks to bring the presence of Christ to every community through compassion, service, spiritual care, ethical leadership, and excellence.",
+        "Our chaplains are prepared to minister in a variety of settings, including hospitals, nursing homes, hospice care, correctional facilities, law enforcement agencies, and other community environments.",
+        "We believe that effective chaplaincy requires both spiritual preparation and professional responsibility. Therefore, EICCA emphasizes continuing education, ethical conduct, confidentiality, accountability, leadership development, community outreach, and compassionate care."
+      ]
+    },
+    "vision": {
+      "heading": "Our vision",
+      "quote": "To bring the presence of Christ to every community through compassion, service, and excellence.",
+      "intro": "EICCA envisions a united body of spiritually mature and professionally prepared chaplains, equipped to serve diverse communities with:",
+      "items": [
+        "Compassion and understanding",
+        "Spiritual maturity",
+        "Integrity and humility",
+        "Professional excellence",
+        "Ethical responsibility",
+        "Respect for every person",
+        "Commitment to community service",
+        "A heart devoted to prayer and spiritual care",
+        "Readiness to respond to people in times of crisis, grief, need, and transition"
+      ],
+      "closing": "Our vision is to see chaplains positioned and prepared to serve wherever there is a need for spiritual support, compassionate presence, encouragement, and community care."
+    },
+    "mission": {
+      "heading": "Our mission",
+      "statement": "The mission of EICCA is to equip, develop, and mobilize chaplains to provide compassionate spiritual care and meaningful community service while maintaining high standards of ethical, professional, and spiritual conduct.",
+      "intro": "We fulfill this mission by:",
+      "items": [
+        "Providing continuing education and professional development.",
+        "Developing spiritually mature and accountable chaplain leaders.",
+        "Providing training in spiritual care, crisis response, and community ministry.",
+        "Encouraging prayer, Bible study, fasting, and spiritual preparation.",
+        "Supporting chaplains through mentorship and leadership development.",
+        "Promoting community outreach and service.",
+        "Encouraging ministries that serve vulnerable and underserved populations.",
+        "Establishing standards of confidentiality, ethical conduct, and professional boundaries.",
+        "Promoting accountability among chaplains and district leadership.",
+        "Fostering unity and collaboration throughout the organization.",
+        "Preparing chaplains to serve in hospitals, hospice care, correctional facilities, law enforcement agencies, nursing homes, and other community settings.",
+        "Representing Christ through compassionate service and respectful care."
+      ]
+    },
+    "values": {
+      "heading": "Our core values",
+      "items": [
+        {
+          "title": "Faith",
+          "text": "We recognize that prayer, Scripture, spiritual preparation, and dependence on God are foundational to effective chaplaincy."
+        },
+        {
+          "title": "Compassion",
+          "text": "We serve people with empathy, kindness, dignity, and understanding, especially in times of crisis, grief, illness, hardship, and transition."
+        },
+        {
+          "title": "Service",
+          "text": "We believe chaplaincy is a ministry of presence and action. We seek opportunities to serve individuals and communities through practical assistance, outreach, prayer, and encouragement."
+        },
+        {
+          "title": "Integrity",
+          "text": "We expect chaplains and leaders to conduct themselves with honesty, responsibility, humility, and accountability."
+        },
+        {
+          "title": "Excellence",
+          "text": "We are committed to continuous learning, preparation, professionalism, and excellence in every area of chaplaincy service."
+        },
+        {
+          "title": "Respect",
+          "text": "We honor the dignity and worth of every person and strive to provide care without discrimination or inappropriate judgment."
+        },
+        {
+          "title": "Confidentiality and ethical responsibility",
+          "text": "We recognize the importance of protecting personal information, maintaining appropriate boundaries, practicing confidentiality, and complying with applicable ethical and professional standards."
+        },
+        {
+          "title": "Unity",
+          "text": "We believe effective ministry requires cooperation among chaplains, district leaders, organizational leadership, churches, institutions, and community partners."
+        },
+        {
+          "title": "Leadership",
+          "text": "We develop leaders who are spiritually grounded, professionally prepared, accountable, and committed to serving others."
+        },
+        {
+          "title": "Community",
+          "text": "We strive to be present where people live, work, worship, recover, grieve, and face difficult circumstances."
+        }
+      ]
+    },
+    "commitment": {
+      "heading": "Our commitment",
+      "intro": "EICCA is committed to developing chaplains who are prepared not only to minister to people, but also to serve people appropriately and effectively.",
+      "formulaIntro": "We are committed to combining:",
+      "formula": [
+        "Faith",
+        "Training",
+        "Compassion",
+        "Ethics",
+        "Service",
+        "Leadership",
+        "Excellence"
+      ],
+      "closing": "Our goal is to prepare chaplains who can enter difficult situations with a compassionate presence, provide appropriate spiritual support, serve with professionalism, and demonstrate the love of Christ through their words, actions, and service."
+    },
+    "motto": [
+      "Equipping Chaplains.",
+      "Serving Communities.",
+      "Bringing the Presence of Christ."
+    ],
+    "gallery": {
+      "heading": "Gallery",
+      "description": "Moments of service, training, and community from our chaplains.",
+      "imageAlt": "EICCA Chaplaincy, photo {index} of {total}",
+      "open": "Enlarge photo {index} of {total}",
+      "close": "Close gallery",
+      "previous": "Previous photo",
+      "next": "Next photo",
+      "counter": "{index} / {total}"
     }
   },
   "Nations": {
@@ -469,7 +604,7 @@
     },
     "cookies": {
       "heading": "6. Cookies and similar technologies",
-      "text": "Our website may use cookies to improve navigation and gather anonymous usage statistics. You can configure your browser to block or delete cookies at any time."
+      "text": "Our website only uses cookies and local storage that are strictly necessary to remember your language and theme preference. We do not use analytics, advertising or tracking cookies. See our Cookie Policy for details and for how to manage them."
     },
     "rights": {
       "heading": "7. User rights",
@@ -535,6 +670,92 @@
       "text": "We may modify these Terms at any time. Modifications will be posted on this same page along with their update date."
     }
   },
+  "CookiePolicy": {
+    "title": "Cookie Policy",
+    "subtitle": "EituEbenezer Pentecostal Evangelical Christian University",
+    "lastUpdated": "Last updated: September 26, 2026",
+    "whatAre": {
+      "heading": "1. What are cookies?",
+      "text": "Cookies are small text files that a website stores in your browser. Similar technologies, such as local storage (localStorage), serve a similar purpose. In this policy we use the term “cookies” to refer to both."
+    },
+    "used": {
+      "heading": "2. Cookies we use",
+      "intro": "This site only uses first-party cookies that are strictly necessary or store a preference, created when you change the language or theme. We do not use analytics, advertising or tracking cookies, and we do not share browsing data with advertising networks.",
+      "columns": {
+        "name": "Name",
+        "provider": "Provider",
+        "purpose": "Purpose",
+        "type": "Type",
+        "duration": "Duration"
+      },
+      "rows": [
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "eituebenezer.com (first party)",
+          "purpose": "Remember the language you chose (Spanish or English).",
+          "type": "Technical cookie, necessary",
+          "duration": "Session (deleted when you close your browser)"
+        },
+        {
+          "name": "ebenezer-theme",
+          "provider": "eituebenezer.com (first party)",
+          "purpose": "Remember whether you prefer the light or dark theme.",
+          "type": "Local storage, preference",
+          "duration": "Until you delete it from your browser"
+        }
+      ]
+    },
+    "thirdParty": {
+      "heading": "3. Third-party services",
+      "items": [
+        "Location map: our contact page shows an OpenStreetMap map. To display it, your browser downloads map images from OpenStreetMap Foundation servers, which receive technical data such as your IP address and browser type, under their own privacy policy.",
+        "External links: if you click links to WhatsApp, social networks or other sites, those services may use their own cookies. We recommend reviewing their privacy policies."
+      ]
+    },
+    "consent": {
+      "heading": "4. Consent",
+      "text": "The cookies we use are strictly necessary or created at your request, so applicable law does not require prior consent for them. If we add analytics or marketing cookies in the future, we will ask for your consent before enabling them and will update this policy."
+    },
+    "manage": {
+      "heading": "5. How to manage or delete cookies",
+      "intro": "You can block or delete cookies and local storage in your browser settings. If you do, the site will keep working, but it will not remember your language or theme. Here are the instructions for the most common browsers:",
+      "browsers": [
+        {
+          "name": "Google Chrome",
+          "url": "https://support.google.com/chrome/answer/95647"
+        },
+        {
+          "name": "Mozilla Firefox",
+          "url": "https://support.mozilla.org/kb/clear-cookies-and-site-data-firefox"
+        },
+        {
+          "name": "Safari",
+          "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+        },
+        {
+          "name": "Microsoft Edge",
+          "url": "https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+        }
+      ]
+    },
+    "dnt": {
+      "heading": "6. “Do Not Track” and Global Privacy Control signals",
+      "text": "Because we do not track your activity across other websites, there is no tracking to turn off: the site behaves the same whether or not your browser sends a “Do Not Track” or Global Privacy Control signal."
+    },
+    "moreInfo": {
+      "heading": "7. More information",
+      "text": "To learn how we handle the personal data you send us through our forms, see our",
+      "linkLabel": "Privacy Policy"
+    },
+    "changes": {
+      "heading": "8. Changes to this policy",
+      "text": "We may update this Cookie Policy if the cookies we use or the applicable law change. Changes will be posted on this page with their update date."
+    },
+    "contact": {
+      "heading": "9. Contact",
+      "text": "If you have questions about this policy, write to us at"
+    }
+  },
   "SEO": {
     "title": "EituEbenezer | Ebenezer International Theological University",
     "description": "Theological community with the ideal of educating and serving you",
@@ -590,6 +811,14 @@
     "terms": {
       "title": "Terms of Service",
       "description": "Terms of use for the EituEbenezer website."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "Learn which cookies and storage technologies the EituEbenezer website uses and how to manage them."
+    },
+    "chaplaincy": {
+      "title": "EICCA Chaplaincy",
+      "description": "Ebenezer International Community Chaplains Association: equipping chaplains, serving communities, and bringing the presence of Christ."
     }
   }
 }

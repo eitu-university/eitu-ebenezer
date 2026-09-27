@@ -6,7 +6,6 @@ import Banner from '@/components/banner/Banner';
 import AboutUs from '@/components/sections/AboutUs';
 import Staff from '@/components/sections/Staff/Staff';
 import Ministries from '@/components/sections/Ministries/Ministries';
-import Testimonials from '@/components/sections/Testimonials';
 import Contact from '@/components/sections/Contact/Contact';
 import ScrollToTop from '@/components/ScrollToTop';
 import { Toaster } from 'sonner';
@@ -42,7 +41,7 @@ export default function Home() {
         <AboutUs />
         <Staff />
         <Ministries />
-        <Testimonials />
+        {/* Testimonios ocultos hasta contar con testimonios reales (ver components/sections/Testimonials.tsx) */}
         <Contact />
       </main>
       <ScrollToTop />

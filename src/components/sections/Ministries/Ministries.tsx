@@ -1,5 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Cta from '@/components/Cta';
+import { Link } from '@/i18n/navigation';
+import ChaplaincyDocument from './ChaplaincyDocument';
 import {
   FiUsers,
   FiMusic,
@@ -24,7 +26,10 @@ export default async function Ministries() {
   ] as const;
 
   return (
-    <section className="relative overflow-hidden bg-paper py-28 dark:bg-[#18181b]">
+    <section
+      id="capellania"
+      className="relative scroll-mt-24 overflow-hidden bg-paper py-28 dark:bg-[#18181b]"
+    >
       <div className="pointer-events-none absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-terracotta/10 opacity-50 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-terracotta/10 opacity-50 blur-3xl" />
 
@@ -59,14 +64,19 @@ export default async function Ministries() {
                   {t(`items.${ministry.key}.description`)}
                 </p>
 
-                <button className="inline-flex items-center gap-1.5 font-semibold text-terracotta transition-colors duration-200 hover:text-terracotta/80">
+                <Link
+                  href="/capellania"
+                  className="inline-flex items-center gap-1.5 font-semibold text-terracotta transition-colors duration-200 hover:text-terracotta/80"
+                >
                   {tCommon('learnMore')}
                   <FiArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                </button>
+                </Link>
               </div>
             </div>
           ))}
         </div>
+
+        <ChaplaincyDocument />
       </div>
       {/* Call to Action */}
       <Cta
