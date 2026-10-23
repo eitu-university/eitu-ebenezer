@@ -1,77 +1,52 @@
 import { ProgramItem } from '@/types';
 
 export const ProgramList: ProgramItem[] = [
-  // Programas de Estudio - Licenciatura
   {
-    key: 'bachelorYear1',
-    imgSrc: '/images/350x200.svg',
+    key: 'humanTalent',
+    imgSrc: '/images/programas/1.webp',
     link: '#',
-    tagKeys: ['studyPrograms', 'firstYear'],
+    tagKeys: ['coursePrograms'],
   },
   {
-    key: 'bachelorYear2',
-    imgSrc: '/images/350x200.svg',
+    key: 'executiveLeadership',
+    imgSrc: '/images/programas/2.webp',
     link: '#',
-    tagKeys: ['studyPrograms', 'secondYear'],
+    tagKeys: ['coursePrograms'],
   },
   {
-    key: 'bachelorYear3',
-    imgSrc: '/images/350x200.svg',
-    link: '#',
-    tagKeys: ['studyPrograms', 'thirdYear'],
-  },
-  {
-    key: 'bachelorYear4',
-    imgSrc: '/images/350x200.svg',
-    link: '#',
-    tagKeys: ['studyPrograms', 'fourthYear'],
-  },
-
-  // Programas de Cursos - Diplomados
-  {
-    key: 'diploma',
-    imgSrc: '/images/350x200.svg',
+    key: 'theologyDiploma',
+    imgSrc: '/images/programas/3.webp',
     link: '#',
     tagKeys: ['coursePrograms', 'diplomas'],
   },
-
-  // Programas de Cursos - Cursos Express
   {
-    key: 'expressCourse',
-    imgSrc: '/images/350x200.svg',
+    key: 'internationalBachelor',
+    imgSrc: '/images/programas/4.webp',
     link: '#',
-    tagKeys: ['coursePrograms', 'expressCourses'],
-  },
-
-  // Programas de Cursos - Misceláneos
-  {
-    key: 'miscLeadership',
-    imgSrc: '/images/350x200.svg',
-    link: '#',
-    tagKeys: ['coursePrograms', 'misc'],
+    tagKeys: ['studyPrograms'],
   },
   {
-    key: 'miscBusinessAdmin',
-    imgSrc: '/images/350x200.svg',
+    key: 'internationalAssociate',
+    imgSrc: '/images/programas/5.webp',
     link: '#',
-    tagKeys: ['coursePrograms', 'misc'],
+    tagKeys: ['studyPrograms'],
   },
   {
-    key: 'miscAdminAssistant',
-    imgSrc: '/images/350x200.svg',
+    key: 'trainerOfTrainers',
+    imgSrc: '/images/programas/6.webp',
     link: '#',
-    tagKeys: ['coursePrograms', 'misc'],
+    tagKeys: ['coursePrograms'],
   },
   {
-    key: 'miscTrainerOfTrainers',
-    imgSrc: '/images/350x200.svg',
+    key: 'churchAdministration',
+    imgSrc: '/images/programas/7.webp',
     link: '#',
-    tagKeys: ['coursePrograms', 'misc'],
+    tagKeys: ['coursePrograms'],
   },
   {
-    key: 'miscHumanTalent',
-    imgSrc: '/images/350x200.svg',
+    key: 'churchPlanters',
+    imgSrc: '/images/programas/8.webp',
     link: '#',
-    tagKeys: ['coursePrograms', 'misc'],
+    tagKeys: ['coursePrograms'],
   },
 ];

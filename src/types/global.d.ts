@@ -241,19 +241,17 @@ declare global {
         string
       >;
       items: Record<
-        | 'bachelorYear1'
-        | 'bachelorYear2'
-        | 'bachelorYear3'
-        | 'bachelorYear4'
-        | 'diploma'
-        | 'expressCourse'
-        | 'miscLeadership'
-        | 'miscBusinessAdmin'
-        | 'miscAdminAssistant'
-        | 'miscTrainerOfTrainers'
-        | 'miscHumanTalent',
+        | 'humanTalent'
+        | 'executiveLeadership'
+        | 'theologyDiploma'
+        | 'internationalBachelor'
+        | 'internationalAssociate'
+        | 'trainerOfTrainers'
+        | 'churchAdministration'
+        | 'churchPlanters',
         { title: string; description: string }
       >;
+      modal: { close: string };
     };
     Testimonials: {
       title: string;

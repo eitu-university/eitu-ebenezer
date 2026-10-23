@@ -428,50 +428,41 @@
       "misc": "Misceláneo"
     },
     "items": {
-      "bachelorYear1": {
-        "title": "Licenciatura en [Nombre del Programa] - Primer Año",
-        "description": "Descripción del primer año de la licenciatura, con enfoque en materias introductorias y fundamentos básicos."
+      "humanTalent": {
+        "title": "Gestión del Talento Humano",
+        "description": "Desarrolla competencias para atraer, formar y retener el talento en organizaciones e iglesias. Este curso integra estrategias de recursos humanos con principios bíblicos de servicio y mayordomía, permitiéndote liderar equipos con eficiencia, empatía y propósito. Aprenderás selección, evaluación, clima laboral y desarrollo profesional desde una perspectiva gerencial y pastoral. Ideal para quienes administran personas y buscan maximizar su potencial con ética y visión estratégica."
       },
-      "bachelorYear2": {
-        "title": "Licenciatura en [Nombre del Programa] - Segundo Año",
-        "description": "Descripción del segundo año, donde se profundiza en las áreas clave del programa."
+      "executiveLeadership": {
+        "title": "Liderazgo Ejecutivo",
+        "description": "Un programa diseñado para formar líderes de alto impacto que combinan autoridad, humildad y visión. Explorarás modelos contemporáneos de liderazgo, toma de decisiones, comunicación efectiva y gestión del cambio, aplicados tanto al ámbito corporativo como ministerial. Con base en tu experiencia gerencial y teológica, este curso te capacita para influir positivamente, inspirar equipos y conducir organizaciones hacia resultados sostenibles con integridad y propósito eterno."
       },
-      "bachelorYear3": {
-        "title": "Licenciatura en [Nombre del Programa] - Tercer Año",
-        "description": "Descripción del tercer año, con más especialización en las materias del área de estudio."
+      "theologyDiploma": {
+        "title": "Diplomado en Teología",
+        "description": "Profundiza en el conocimiento bíblico, doctrinal y práctico para fortalecer tu ministerio y enseñanza. Este diplomado abarca teología sistemática, hermenéutica, historia de la iglesia y ética cristiana, brindándote herramientas sólidas para interpretar las Escrituras con fidelidad y aplicarlas con relevancia contemporánea. Ideal para pastores, líderes y docentes que desean fundamentar su servicio en la verdad bíblica y comunicarla con claridad y pasión."
       },
-      "bachelorYear4": {
-        "title": "Licenciatura en [Nombre del Programa] - Cuarto Año",
-        "description": "Descripción del cuarto año, donde los estudiantes aplican sus conocimientos en proyectos finales."
+      "internationalBachelor": {
+        "title": "Programa de Licenciatura Internacional",
+        "description": "Formación académica de alto nivel con proyección global, diseñada para quienes buscan excelencia profesional y ministerial. Este programa integra gestión educativa, liderazgo, teología y administración, preparándote para ejercer con competencia en contextos internacionales. Desarrollarás pensamiento crítico, investigación y visión estratégica, con un enfoque que honra los valores bíblicos y responde a los desafíos del mundo actual."
       },
-      "diploma": {
-        "title": "Diplomado en [Nombre del Curso]",
-        "description": "Este diplomado ofrece una formación avanzada en [tema del diplomado], con un enfoque práctico."
+      "internationalAssociate": {
+        "title": "Programa de Asociado Internacional",
+        "description": "Una puerta de entrada a la formación superior con estándares internacionales. Este programa ofrece fundamentos sólidos en áreas de liderazgo, administración, teología y servicio, permitiéndote iniciar o complementar tu desarrollo académico y ministerial. Con flexibilidad y enfoque práctico, te capacita para servir con efectividad en iglesias, organizaciones y comunidades, sentando bases firmes para continuar hacia niveles superiores de estudio."
       },
-      "expressCourse": {
-        "title": "Curso Express en [Nombre del Curso]",
-        "description": "Un curso corto y efectivo que te permitirá aprender [tema del curso express] en un tiempo reducido."
+      "trainerOfTrainers": {
+        "title": "Formador de Formadores",
+        "description": "Capacita a quienes enseñan y discipulan a otros. Este curso te prepara para diseñar, facilitar y evaluar procesos formativos con excelencia pedagógica y fundamento bíblico. Aprenderás metodologías didácticas, planificación educativa, evaluación del aprendizaje y mentoría espiritual, multiplicando así el impacto de tu ministerio. Ideal para docentes, líderes y pastores que desean formar generaciones de creyentes y profesionales con solidez doctrinal y competencia práctica."
       },
-      "miscLeadership": {
-        "title": "Misceláneo: Liderazgo Ejecutivo",
-        "description": "Curso enfocado en el desarrollo de habilidades de liderazgo para ejecutivos en entornos corporativos."
+      "churchAdministration": {
+        "title": "Administración Eclesiástica",
+        "description": "Aprende a gestionar la iglesia con orden, transparencia y visión estratégica. Este curso aborda planificación, finanzas, liderazgo de equipos, comunicación organizacional y gestión de recursos, todo desde una perspectiva bíblica y gerencial. Te capacita para administrar con eficiencia y espiritualidad, cuidando tanto las personas como los procesos, y asegurando que la misión de la iglesia se cumpla con excelencia y fidelidad."
       },
-      "miscBusinessAdmin": {
-        "title": "Misceláneo: Administración de Empresas",
-        "description": "Curso de gestión y administración de empresas para desarrollar habilidades en dirección y administración."
-      },
-      "miscAdminAssistant": {
-        "title": "Misceláneo: Asistencia Administrativa",
-        "description": "Curso orientado a la formación de asistentes administrativos con herramientas y conocimientos clave."
-      },
-      "miscTrainerOfTrainers": {
-        "title": "Misceláneo: Formador de Formadores",
-        "description": "Curso para capacitar a formadores en la creación de programas de enseñanza efectivos."
-      },
-      "miscHumanTalent": {
-        "title": "Misceláneo: Gestión del Talento Humano",
-        "description": "Curso para entender y aplicar conceptos clave en la gestión del talento dentro de las organizaciones."
+      "churchPlanters": {
+        "title": "Sembradores de Iglesia",
+        "description": "Un programa para quienes sienten el llamado de iniciar y multiplicar iglesias con fundamento bíblico y estrategia contemporánea. Explorarás visión, evangelismo, discipulado, liderazgo y organización de nuevas congregaciones, con herramientas prácticas para contextos urbanos y rurales. Con una perspectiva pastoral y misional, este curso te prepara para sembrar con sabiduría, regar con perseverancia y cosechar frutos que perduren para la gloria de Dios."
       }
+    },
+    "modal": {
+      "close": "Cerrar"
     }
   },
   "Testimonials": {

@@ -428,50 +428,41 @@
       "misc": "Miscellaneous"
     },
     "items": {
-      "bachelorYear1": {
-        "title": "Bachelor's in [Program Name] - First Year",
-        "description": "Description of the first year of the bachelor's program, focused on introductory subjects and basic foundations."
+      "humanTalent": {
+        "title": "Human Talent Management",
+        "description": "Develop the skills to attract, train and retain talent in organizations and churches. This course blends human resources strategy with biblical principles of service and stewardship, enabling you to lead teams with efficiency, empathy and purpose. You will learn recruitment, performance evaluation, workplace climate and professional development from both a managerial and a pastoral perspective. Ideal for those who manage people and want to maximize their potential with ethics and strategic vision."
       },
-      "bachelorYear2": {
-        "title": "Bachelor's in [Program Name] - Second Year",
-        "description": "Description of the second year, delving deeper into the program's key areas."
+      "executiveLeadership": {
+        "title": "Executive Leadership",
+        "description": "A program designed to form high-impact leaders who combine authority, humility and vision. You will explore contemporary leadership models, decision-making, effective communication and change management, applied to both corporate and ministry settings. Building on your managerial and theological experience, this course equips you to influence positively, inspire teams and lead organizations toward sustainable results with integrity and eternal purpose."
       },
-      "bachelorYear3": {
-        "title": "Bachelor's in [Program Name] - Third Year",
-        "description": "Description of the third year, with further specialization in the subjects of the study area."
+      "theologyDiploma": {
+        "title": "Diploma in Theology",
+        "description": "Deepen your biblical, doctrinal and practical knowledge to strengthen your ministry and teaching. This diploma covers systematic theology, hermeneutics, church history and Christian ethics, giving you solid tools to interpret Scripture faithfully and apply it with contemporary relevance. Ideal for pastors, leaders and teachers who want to ground their service in biblical truth and communicate it with clarity and passion."
       },
-      "bachelorYear4": {
-        "title": "Bachelor's in [Program Name] - Fourth Year",
-        "description": "Description of the fourth year, where students apply their knowledge in final projects."
+      "internationalBachelor": {
+        "title": "International Bachelor’s Program",
+        "description": "High-level academic training with a global outlook, designed for those seeking professional and ministerial excellence. This program brings together educational management, leadership, theology and administration, preparing you to serve competently in international contexts. You will develop critical thinking, research skills and strategic vision, with an approach that honors biblical values and responds to the challenges of today’s world."
       },
-      "diploma": {
-        "title": "Diploma in [Course Name]",
-        "description": "This diploma offers advanced training in [diploma topic], with a practical approach."
+      "internationalAssociate": {
+        "title": "International Associate Program",
+        "description": "A gateway to higher education with international standards. This program provides solid foundations in leadership, administration, theology and service, allowing you to begin or complement your academic and ministerial development. Flexible and practical, it equips you to serve effectively in churches, organizations and communities, laying a firm foundation to continue on to higher levels of study."
       },
-      "expressCourse": {
-        "title": "Express Course in [Course Name]",
-        "description": "A short, effective course that will let you learn [express course topic] in a reduced amount of time."
+      "trainerOfTrainers": {
+        "title": "Trainer of Trainers",
+        "description": "Equip those who teach and disciple others. This course prepares you to design, facilitate and evaluate learning processes with teaching excellence and a biblical foundation. You will learn instructional methods, educational planning, learning assessment and spiritual mentoring, multiplying the impact of your ministry. Ideal for teachers, leaders and pastors who want to form generations of believers and professionals with doctrinal soundness and practical competence."
       },
-      "miscLeadership": {
-        "title": "Miscellaneous: Executive Leadership",
-        "description": "Course focused on developing leadership skills for executives in corporate settings."
+      "churchAdministration": {
+        "title": "Church Administration",
+        "description": "Learn to manage the church with order, transparency and strategic vision. This course covers planning, finances, team leadership, organizational communication and resource management, all from a biblical and managerial perspective. It equips you to administer with both efficiency and spirituality, caring for people as well as processes, and ensuring the church’s mission is fulfilled with excellence and faithfulness."
       },
-      "miscBusinessAdmin": {
-        "title": "Miscellaneous: Business Administration",
-        "description": "Business management and administration course to develop skills in direction and administration."
-      },
-      "miscAdminAssistant": {
-        "title": "Miscellaneous: Administrative Assistance",
-        "description": "Course aimed at training administrative assistants with key tools and knowledge."
-      },
-      "miscTrainerOfTrainers": {
-        "title": "Miscellaneous: Trainer of Trainers",
-        "description": "Course to train trainers in creating effective teaching programs."
-      },
-      "miscHumanTalent": {
-        "title": "Miscellaneous: Human Talent Management",
-        "description": "Course to understand and apply key concepts in talent management within organizations."
+      "churchPlanters": {
+        "title": "Church Planters",
+        "description": "A program for those who sense the call to start and multiply churches with a biblical foundation and contemporary strategy. You will explore vision, evangelism, discipleship, leadership and the organization of new congregations, with practical tools for urban and rural contexts. With a pastoral and missional perspective, this course prepares you to sow with wisdom, water with perseverance and reap fruit that endures for the glory of God."
       }
+    },
+    "modal": {
+      "close": "Close"
     }
   },
   "Testimonials": {
