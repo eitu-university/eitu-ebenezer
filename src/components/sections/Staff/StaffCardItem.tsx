@@ -35,7 +35,9 @@ const StaffCardItem = async ({ member }: Prop) => {
         <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-terracotta">
           {position}
         </p>
-        <TextToggle text={description} maxLength={maxLenth} />
+        <p className="mb-4 text-justify text-sm leading-relaxed text-graphite dark:text-[#a1a1aa]">
+          {description}
+        </p>
 
         <div className="flex space-x-3 border-t border-taupe pt-4 dark:border-[#3f3f46]">
           <button
