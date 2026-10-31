@@ -2,13 +2,10 @@ import { getTranslations } from 'next-intl/server';
 import { StaffMember } from '@/types';
 import Image from 'next/image';
 import { FiMail, FiLinkedin } from 'react-icons/fi';
-import TextToggle from './TextToggle';
 
 type Prop = {
   member: StaffMember;
 };
-
-const maxLenth = 120;
 
 const StaffCardItem = async ({ member }: Prop) => {
   const t = await getTranslations('Staff.members');
