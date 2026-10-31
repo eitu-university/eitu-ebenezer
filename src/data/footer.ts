@@ -29,6 +29,10 @@ export const quickLinks = [
     labelKey: 'nations',
     href: '/naciones',
   },
+  {
+    labelKey: 'statementOfFaith',
+    href: '/declaracion-de-fe',
+  },
 ] as const satisfies { labelKey: keyof IntlMessages['Navigation']; href: string }[];
 
 export const socialMedia = [

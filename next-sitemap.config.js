@@ -15,6 +15,7 @@ const routes = [
   '/terminos-de-servicio',
   '/politica-de-cookies',
   '/capellania',
+  '/declaracion-de-fe',
 ];
 
 /** @type {import('next-sitemap').IConfig} */

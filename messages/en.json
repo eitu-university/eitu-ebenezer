@@ -15,7 +15,8 @@
     "diploma": "Diplomas",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "cookies": "Cookie Policy"
+    "cookies": "Cookie Policy",
+    "statementOfFaith": "Statement of Faith"
   },
   "Banner": {
     "titlePrefix": "Ministerial school of",
@@ -810,6 +811,64 @@
     "chaplaincy": {
       "title": "EICCA Chaplaincy",
       "description": "Ebenezer International Community Chaplains Association: equipping chaplains, serving communities, and bringing the presence of Christ."
+    },
+    "statementOfFaith": {
+      "title": "Statement of Faith",
+      "description": "The biblical foundations of the faith and doctrine of the Concilio Pentecostal Ebenezer, Inc., and the ordinances the Church celebrates."
+    }
+  },
+  "StatementOfFaith": {
+    "title": "Statement of Faith",
+    "eyebrow": "Concilio Pentecostal Ebenezer, Inc.",
+    "tagline": "The biblical foundations that uphold our faith, our doctrine and our Christian fellowship.",
+    "articles": {
+      "heading": "What we believe",
+      "items": [
+        "We believe that the Gospel of Jesus Christ is God's message to the entire human race, and that the only hope of salvation and redemption for mankind is through the shed blood of Jesus Christ, the Son of God. (John 3:16; Mark 16:15-16)",
+        "We believe that the Holy Bible is the inspired and revealed Word of God, and that it is the only, infallible and sufficient rule of faith and conduct for the Church, without adulteration of any kind. (Rev. 22:18-19). On it we base our belief in God, and it is the foundation of our faith and Christian fellowship.",
+        "We believe that the Concilio Pentecostal Ebenezer, Inc. was established by God with the sacred purpose of being a bearer of His word, so that every person in the world may come to know, love and serve our Lord and Savior Jesus Christ.",
+        "We believe in Water Baptism by immersion, in accordance with Romans 6:1-4.",
+        "We believe in the Baptism in the Holy Spirit and His gifts, according to Mark 1:8 and Acts 1:5.",
+        "We believe in the Lord's Supper, which is the commemoration of Christ's Sacrifice on the Cross, wounded for our sins, according to 1 Corinthians 11:24-25.",
+        "We believe in the solemnity of Marriage between one man and one woman, because it was instituted by God and sanctioned by the Lord at Cana of Galilee, and it resembles the union of Christ with the Church, according to Ephesians 5:24.",
+        "We believe in the Presentation of Children to the Lord, to implore His blessings upon them, according to Matthew 19:13-15.",
+        "We believe in the one true and eternal God, creator of heaven and earth and savior of humanity. God has revealed Himself in the Divine Trinity: God our Father, sustainer of the whole universe (John 5:6-8); God the Son, our Savior Jesus Christ; and God the Holy Spirit, our Comforter. (Matt. 28:19).",
+        "We believe in the two Resurrections, of both the righteous and the unrighteous, to be rewarded according to their works, according to John 5:18-19; 1 Cor. 15:22.",
+        "We believe in the Sanctification of the believer in Christ during their earthly life, in order to enter the Kingdom of God. (1 Pet. 1:15-16; Heb. 12:14-16).",
+        "We believe in the obligation to pay tithes and offerings to the Lord, to identify ourselves as children of God according to His promises made to Abraham. (Gal. 3:6-9; Acts 7:4).",
+        "We believe in Divine Healing: through the prayer of faith, the Lord will heal the sick. (Mark 16:16; James 5:15-16).",
+        "We believe in worshiping God with all reverence. (John 4:22-24).",
+        "We believe in the relationship of man and woman with God through prayer, by the intercession of our Lord Jesus Christ, as declared in 1 Tim. 2:5; John 14:13-14.",
+        "We believe in fasting and vigils as a means of consecration, according to Acts 13:2 and Luke 6:12.",
+        "We believe that Faith, Hope and Charity, working together with Christian works, are of great benefit in the work of the Lord, according to 1 Cor. 13:3.",
+        "We believe that Sunday is the special day on which Christians may most freely gather to worship the Lord, as a day commemorating His Resurrection, not submitting ourselves to the yoke of the Law but looking to Grace. (Rev. 1:10; Acts 20:7).",
+        "We believe it is good to remember the Day of Pentecost as a commemorative day on which the Holy Spirit was poured out upon the Lord's disciples, as He had promised them, according to Acts 2:3-4; Acts 20:16.",
+        "We believe in the power of the Holy Spirit to overcome the three enemies of the soul: the world, the flesh and the devil.",
+        "We believe in God's prophecies in accordance with His word, rejecting all fanaticism and anything that does not conform to sound doctrine. (1 John 4:1; 1 Tim. 4:1-2).",
+        "We believe in the great event of the Millennium, according to the perfect Word of the Lord (Rev. 20:2; Daniel 7:18). Undoubtedly, this millennial kingdom will bring the salvation of the people of Israel as a nation (Ezekiel 37:21-22; Zephaniah 3:19-20; Romans 11:26-27) and the establishment of universal peace (Isaiah 11:6-9; Psalm 72:3-8; Micah 4:3-4).",
+        "We believe that the spirits of those who die in the Lord go to a place of rest (we do not believe in soul sleep; Revelation 6:9-10), awaiting the rapture of the Church, in which they will be raised together with those who are alive in Christ to go to the marriage supper of the Lamb; and that after the wedding, when Christ comes the second time, they and the rest of the believers who were saved during the Great Tribulation will come to reign with Him in the Millennium.",
+        "We believe that the spirits of the wicked who die are taken to the place of torment, and after the Millennium they will be resurrected to appear at the final judgment and be judged before the Great White Throne of God, and then be cast into the Lake of Fire, which is the second death. (Rev. 14:10).",
+        "We believe that the Virgin Mary, an exemplary woman, obedient to God and the biological mother of Jesus, conceived by the work and grace of the Holy Spirit and gave birth to Jesus Christ, and that He was her firstborn Son; but Jesus Christ is the only Savior of souls. We believe that Angels, Seraphim and Cherubim are messengers of God, but they cannot save either, nor may they be worshiped, since this is forbidden by the second commandment of God's Law. (Exodus 20:4-5).",
+        "We believe that the Cross was literally the gallows on which the Lord was humanly executed, representing the persecutions of the Christian, which has to do with the Christian life, for Jesus said: \"He who does not take his cross and follow after Me is not worthy of Me\"; but no worship may be given to the cross, because that is contrary to the commandment of Christ.",
+        "We believe that God commands us to obey the higher earthly authorities, such as government and employers, but never when this goes against the Lord's commandment and may hinder the salvation of souls; it is better to suffer and lose our material life than to lose our Salvation, for Christ said: \"He who loses his life for My sake will find it.\" (Matt. 10:39; Rom. 13:1).",
+        "We believe in a ministry that succeeds the Apostles, inspired by the Holy Spirit and made up of active, spiritual, holy men and women, trained as well as possible and not affiliated with secret societies.",
+        "We believe in the free use of foods, as authorized by the Grace under which we live, except blood and things strangled (Acts 15:19-20), since we are no longer under the Law; as for intoxicating beverages, we abstain from them completely, neither using nor selling them.",
+        "We believe that, invisibly, Christ is the Head of the Church, but that visibly it must be organized, ruled and governed by ministers, deacons and officers elected by the church itself for that purpose."
+      ]
+    },
+    "ordinances": {
+      "heading": "Ordinances of the Church",
+      "intro": "We celebrate the following Ordinances of the Church:",
+      "items": [
+        {
+          "title": "Water Baptism by Immersion",
+          "text": "To take part in this ordinance, the believer must have the necessary mental, emotional and spiritual capacity and be instructed in the fundamental principles of the Holy Scriptures and the doctrines of the Church. This ordinance of water baptism by immersion in the name of the Father, and of the Son, and of the Holy Spirit, as being buried together with Christ, shall be observed as commanded in the Holy Scriptures for all who have truly repented and have truly accepted Christ in their hearts as their Savior and Lord. In doing so, the believer declares that they have been separated from the world by dying with Jesus and have also been raised with Him to walk in newness of life. (Matt. 28:19; Romans 6:3-6; Mark 16:15-16; Acts 10:47-48; Romans 6:4)."
+        },
+        {
+          "title": "The Lord's Supper",
+          "text": "The Lord's Supper consists of the following elements: unleavened bread and the fruit of the vine (grape juice), as symbols expressing our sharing in the divine nature of our Lord Jesus Christ; a memorial of His suffering and death; a prophetic act of His Second Coming; and an expression of our mutual fellowship as believers in Christ. It is therefore enjoined on all the faithful until He comes. The elements are unleavened bread and the fruit of the vine. The bread symbolizes the glorious body of Christ that gives us life, and the fruit of the vine His blood that cleanses us from all sin. Partaking of this ordinance means that we are the body of Christ. (2 Peter 1:4, 10:17; Matt. 36:26-29; 1 Cor. 11:23-26)."
+        }
+      ]
     }
   }
 }

@@ -17,6 +17,7 @@ declare global {
       privacy: string;
       terms: string;
       cookies: string;
+      statementOfFaith: string;
     };
     Banner: {
       titlePrefix: string;
@@ -103,6 +104,17 @@ declare global {
         previous: string;
         next: string;
         counter: string;
+      };
+    };
+    StatementOfFaith: {
+      title: string;
+      eyebrow: string;
+      tagline: string;
+      articles: { heading: string; items: string[] };
+      ordinances: {
+        heading: string;
+        intro: string;
+        items: { title: string; text: string }[];
       };
     };
     Nations: {
@@ -413,6 +425,7 @@ declare global {
       terms: { title: string; description: string };
       cookies: { title: string; description: string };
       chaplaincy: { title: string; description: string };
+      statementOfFaith: { title: string; description: string };
     };
   }
 }

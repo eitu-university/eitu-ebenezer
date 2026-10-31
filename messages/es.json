@@ -15,7 +15,8 @@
     "diploma": "Diplomados",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "cookies": "Política de Cookies"
+    "cookies": "Política de Cookies",
+    "statementOfFaith": "Declaración de Fe"
   },
   "Banner": {
     "titlePrefix": "Escuela ministerial de los",
@@ -810,6 +811,64 @@
     "chaplaincy": {
       "title": "Capellanía EICCA",
       "description": "Asociación Internacional de Capellanes Comunitarios Ebenezer: equipando capellanes, sirviendo comunidades y llevando la presencia de Cristo."
+    },
+    "statementOfFaith": {
+      "title": "Declaración de Fe",
+      "description": "Los fundamentos bíblicos de la fe y la doctrina del Concilio Pentecostal Ebenezer, Inc., y las ordenanzas que celebra la Iglesia."
+    }
+  },
+  "StatementOfFaith": {
+    "title": "Declaración de Fe",
+    "eyebrow": "Concilio Pentecostal Ebenezer, Inc.",
+    "tagline": "Los fundamentos bíblicos que sostienen nuestra fe, nuestra doctrina y nuestra comunión cristiana.",
+    "articles": {
+      "heading": "Lo que creemos",
+      "items": [
+        "Creemos que el Evangelio de Jesucristo es el mensaje de Dios para toda la raza humana y que la única esperanza de salvación y redención para el hombre es a través de la sangre derramada de Jesucristo el Hijo de Dios. (Juan 3:16; Marcos 16:15-16)",
+        "Creemos que la Santa Biblia es la Palabra inspirada y revelada de Dios y que es la única, infalible y suficiente regla de fe y conducta de la Iglesia, sin adulteración de ninguna clase. (Apoc. 22:18-19). En ella fundamentamos nuestra creencia en Dios y es la base de nuestra fe y comunión cristiana.",
+        "Creemos que el Concilio Pentecostal Ebenezer, Inc., fue establecido por Dios con el sagrado propósito de ser portador de su palabra, en procura de que cada persona en el mundo llegue a conocer, amar y servir a nuestro Señor y Salvador Jesucristo.",
+        "Creemos en el Bautismo en Agua por inmersión en concordancia con Romanos 6:1-4.",
+        "Creemos en el Bautismo en el Espíritu Santo y sus dones según S. Marcos 1:8 y Hechos 1:5.",
+        "Creemos en la Santa Cena, que es la conmemoración del Sacrificio de Cristo en la Cruz, herido por nuestros pecados conforme a 1ra Corintios 11:24-25.",
+        "Creemos en la Solemnidad del Matrimonio entre un hombre y una mujer porque es instituido por Dios y sancionado por el Señor en Caná de Galilea, y se asemeja a la unión de Cristo con la Iglesia conforme a Efesios 5:24.",
+        "Creemos en la Presentación de Niños al Señor, para implorar sus bendiciones sobre ellos según S. Mat. 19:13-15.",
+        "Creemos en el único Dios verdadero y Eterno, creador del cielo y de la tierra y salvador de la humanidad. Dios se ha revelado en la Divina Trinidad: Nuestro Padre Dios, sustentador de todo el universo (S. Juan 5:6-8), Dios Hijo, nuestro Salvador Jesucristo, Dios Espíritu Santo, nuestro Consolador. (S. Mat. 28:19).",
+        "Creemos en las dos Resurrecciones, tanto la de los justos como la de los injustos, para recompensas según sus obras conforme a S. Juan 5:18-19; 1ra Cor. 15:22.",
+        "Creemos en la Santificación del Creyente en Cristo, durante su vida terrenal para entrar así al Reino de Dios. (1ra Ped. 1:15-16; Heb. 12:14-16).",
+        "Creemos en la obligación de pagar los diezmos y ofrendas al Señor, para identificarnos como Hijos de Dios, según sus promesas hechas a Abraham. (Gal. 3:6-9; Hech. 7:4).",
+        "Creemos en la Sanidad Divina, que, por medio de la oración de Fe, el Señor sanará al enfermo. (S. Marc. 16:16; Sant. 5:15-16).",
+        "Creemos en el Culto a Dios con toda reverencia. (S. Jn. 4:22-24).",
+        "Creemos en la relación del hombre y la mujer con Dios por la oración mediante la intercesión de nuestro Señor Jesucristo según lo declara 1ra Tim. 2:5; S. Juan 14:13-14.",
+        "Creemos en los ayunos y vigilias como medio de consagración según Hechos 13:2 y S. Luc. 6:12.",
+        "Creemos que la Fe, Esperanza y Caridad, obrando juntamente con las obras cristianas son de gran beneficio en la obra del Señor según 1ra Cor. 13:3.",
+        "Creemos que el día Domingo es el día Especial, en que con más libertad pueden reunirse los cristianos para rendir Culto al Señor, como un día conmemorativo de su Resurrección, no sometiéndonos a yugo de Ley, sino mirando a la Gracia. (Apoc. 1:10; Hech. 20:7).",
+        "Creemos bien recordar el día de Pentecostés, como día conmemorativo en el cual se derramó el Espíritu Santo en los discípulos del Señor, como les había prometido según Hech. 2:3-4; Hech. 20:16.",
+        "Creemos en el Poder del Espíritu Santo para vencer los (3) enemigos del alma: el mundo, la carne y el diablo.",
+        "Creemos en las Profecías de Dios, de acuerdo con su palabra, desechando todo fanatismo y cosa que no se ajuste a la sana doctrina. (1ra Juan 4:1; 1ra Tim. 4:1-2).",
+        "Creemos en el gran acontecimiento del Milenio, conforme a la Palabra perfecta del Señor (Apoc. 20:2; Daniel 7:18). Indudablemente este reino milenario traerá la salvación del pueblo de Israel como nación (Ezequiel 37:21,22; Sofonías 3:19,20; Romanos 11:26,27) y el establecimiento de una paz universal (Isaías 11:6-9; Salmo 72:3-8; Miqueas 4:3,4).",
+        "Creemos que el espíritu de los que mueren en el Señor, van a un lugar de descanso (No creemos en el sueño del alma Apocalipsis 6:9-10), en espera del arrebatamiento o rapto de la iglesia en el que serán levantados junto a los que estén vivos en Cristo, para ir a las bodas del cordero, y que después de las bodas, cuando Cristo venga por Segunda Vez, éstos y el resto de los creyentes que fueron salvados durante la gran tribulación, vendrán para reinar con Él en el Milenio.",
+        "Creemos que el espíritu de los malos que mueren, son llevados al lugar de tormento, y después del Milenio serán resucitados para comparecer al juicio final y ser juzgados ante el Gran Trono Blanco de Dios, para entonces ser echados en el Lago de Fuego, que es la muerte segunda. (Apoc. 14:10).",
+        "Creemos que la Virgen María, mujer ejemplar, obediente a Dios y la madre biológica de Jesús, concibió por obra y gracia del Espíritu Santo, y dio a luz a Jesucristo, y que éste fue su Hijo Primogénito; pero Jesucristo es el Salvador Único de las almas. Los Ángeles, Serafines y Querubines, los creemos mensajeros de Dios, pero tampoco pueden salvar, ni pueden ser adorados, por cuanto lo prohíbe el 2do mandamiento de la Ley de Dios. (Éxodo 20:4-5).",
+        "Creemos que la Cruz, literalmente es el patíbulo donde el Señor fue ajusticiado humanamente, figurando el tipo de las persecuciones del cristiano, lo que tiene que ver con la vida cristiana, por cuanto Jesús dijo: \"El que no toma su cruz y sigue en pos de mí, no es digno de mí\", pero ninguna adoración puede darse a la cruz, porque es en contra del mandamiento de Cristo.",
+        "Creemos que Dios manda a obedecer a las potestades superiores terrenales, tales como gobierno y patronos, pero nunca que esto sea contra el mandamiento del Señor, que puede estorbar la salvación de las almas, es mejor sufrir y perder nuestra vida material, antes que perder la Salvación, pues Cristo dijo: \"El que perdiere su vida por causa de mí, la hallará.\" (S. Mat. 10:39; Rom. 13:1).",
+        "Creemos en un ministerio sucesor de los Apóstoles, inspirados por el Espíritu Santo y compuesto de hombres y mujeres activos, espirituales, santos e instruidos lo mejor posible y sin estar relacionados con sociedades secretas.",
+        "Creemos en el libre uso de comidas, según autoriza la Gracia bajo la cual estamos excepto sangre y ahogado. (Hechos 15:19-20), puesto que ya no estamos bajo la Ley; en cuanto a bebidas embriagantes, abstenernos de ellas por completo, ni usarlas ni venderlas.",
+        "Creemos que invisiblemente, Cristo es el Jefe de la Iglesia, pero que en lo visible tiene que estar organizada, regida y gobernada por ministros, diáconos y oficiales que la misma iglesia elija para dichos efectos."
+      ]
+    },
+    "ordinances": {
+      "heading": "Ordenanzas de la Iglesia",
+      "intro": "Celebramos las siguientes Ordenanzas de la Iglesia:",
+      "items": [
+        {
+          "title": "Bautismo en Agua por Inmersión",
+          "text": "Para participar de esta ordenanza, el creyente debe tener la capacidad mental, emocional y espiritual necesarias y ser instruido en los principios fundamentales de las Sagradas Escrituras y las doctrinas de la Iglesia. Esta ordenanza del bautismo en agua por inmersión en el nombre del Padre, y del Hijo y del Espíritu Santo, como sepultado juntamente con Cristo, deberá observarse como se ordena en las Sagradas Escrituras, para todos los que realmente se han arrepentido, y en sus corazones verdaderamente han aceptado a Cristo como su Salvador y Señor. Al así hacerlo, el creyente declara que ha sido separado del mundo al morir con Jesús y que también ha sido levantado con Él para andar en una nueva vida. (S. Mateo 28:19; Romanos 6:3-6; S. Mar. 16:15-16; Hechos 10:47-48; Romanos 6:4)."
+        },
+        {
+          "title": "Santa Cena",
+          "text": "La Cena del Señor consiste de los elementos siguientes: el pan sin levadura y el fruto de la vid (jugo de uva), como símbolos que expresan nuestra participación de la naturaleza divina de nuestro Señor Jesucristo; un recuerdo de su pasión y muerte, un acto profético de su Segunda Venida; una expresión de nuestra mutua comunión como creyentes en Cristo; y por lo tanto, está ordenada a todos los fieles hasta que Él venga. Los elementos son el pan sin levadura y el fruto de la vid. El pan simboliza el cuerpo glorioso de Cristo que nos vivifica, y el fruto de la vid, su sangre que nos limpia de todo pecado. Participar de esta ordenanza significa que somos el cuerpo de Cristo. (2 Pedro 1:4, 10:17; S. Mat. 36:26-29; I Cor. 11:23-26)."
+        }
+      ]
     }
   }
 }
