@@ -1,11 +1,13 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { FiMapPin, FiClock } from 'react-icons/fi';
 import ContactForm from './ContactForm';
 import { contactInfo } from '@/data';
 import DynamicMap from '@/components/DynamicMap';
+import type { Locale } from '@/i18n/routing';
 
 export default async function Contact() {
   const t = await getTranslations('Contact');
+  const locale = (await getLocale()) as Locale;
 
   return (
     <section
@@ -51,7 +53,7 @@ export default async function Contact() {
                     <br />
                     {contactInfo.address.city}
                     <br />
-                    {contactInfo.address.country}
+                    {contactInfo.address.country[locale]}
                   </p>
                 </div>
               </div>

@@ -1,3 +1,5 @@
+import type { Locale } from '@/i18n/routing';
+
 export const contactInfo = {
   phone: '+1 (561) 313-9313',
   email: 'eitu_fl@hotmail.com',
@@ -7,6 +9,9 @@ export const contactInfo = {
   address: {
     city: 'Florida',
     street: '4194 Lake Worth Rd, Lake Worth Beach',
-    country: 'Estados Unidos',
+    country: {
+      es: 'Estados Unidos',
+      en: 'United States',
+    } satisfies Record<Locale, string>,
   },
 };

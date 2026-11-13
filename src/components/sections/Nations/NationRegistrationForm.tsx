@@ -23,6 +23,7 @@ import { toast } from 'sonner';
 import type { NationsData } from '@/types';
 import Button from '@/components/ui/Button';
 import { Field, pillClasses } from '@/components/ui/Input';
+import PrivacyNotice from '@/components/legal/PrivacyNotice';
 
 interface NationRegistrationFormProps {
   nation: NationsData;
@@ -326,6 +327,8 @@ export default function NationRegistrationForm({
             </>
           )}
         </Button>
+
+        <PrivacyNotice />
       </form>
     </div>
   );

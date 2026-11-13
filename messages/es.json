@@ -543,7 +543,8 @@
     "readMore": "Ver más",
     "readLess": "Ver menos",
     "learnMore": "Saber más →",
-    "getInTouch": "Contáctanos"
+    "getInTouch": "Contáctanos",
+    "privacyNotice": "Al enviar este formulario, aceptas que tratemos tus datos según nuestra <link>Política de Privacidad</link>."
   },
   "NotFound": {
     "title": "404 - Página no encontrada",
@@ -552,130 +553,162 @@
   "PrivacyPolicy": {
     "title": "Política de Privacidad",
     "subtitle": "Universidad Cristiana Evangélica Pentecostal EituEbenezer",
-    "lastUpdated": "Última actualización: 3 de septiembre de 2025",
+    "lastUpdated": "Última actualización: 12 de noviembre de 2026",
     "intro": {
       "heading": "1. Introducción",
-      "text": "En la Universidad Cristiana Evangélica Pentecostal EituEbenezer (en adelante, “EituEbenezer”), valoramos y respetamos la privacidad de nuestros visitantes, miembros, colaboradores y usuarios de nuestro sitio web. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos sus datos personales. Al utilizar nuestro sitio web o compartir sus datos con nosotros, usted acepta los términos de esta política."
+      "text": "En la Universidad Cristiana Evangélica Pentecostal EituEbenezer (en adelante, “EituEbenezer”), valoramos y respetamos la privacidad de nuestros visitantes, estudiantes, asociados, colaboradores y usuarios de nuestro sitio web. Esta Política de Privacidad explica qué datos personales recopilamos, para qué los usamos, con quién los compartimos y cómo los protegemos. Le recomendamos leerla antes de enviarnos sus datos a través de cualquiera de nuestros formularios."
     },
     "dataCollected": {
       "heading": "2. Datos que recopilamos",
+      "intro": "Solo recopilamos los datos que usted nos envía voluntariamente y los datos técnicos mínimos necesarios para que el sitio funcione:",
       "items": [
-        "Nombre completo",
-        "Dirección de correo electrónico",
-        "Número de teléfono",
-        "Dirección postal (si aplica)",
-        "Información de contacto para actividades, eventos o donaciones",
-        "Mensajes enviados a través de formularios de contacto",
-        "Datos técnicos como dirección IP, tipo de navegador y estadísticas de uso del sitio (cookies)"
+        "Datos de identificación y contacto: nombre, apellidos, correo electrónico y número de teléfono.",
+        "Fecha de nacimiento, que pedimos en el registro de asociados para comprobar que cumple la edad mínima (16 años).",
+        "Dirección postal: dirección, ciudad, estado o provincia, código postal y país.",
+        "La capellanía o el ministerio de su interés y el mensaje que nos escriba en el formulario de contacto.",
+        "La información que incluya en la solicitud de admisión a la Licenciatura, que se completa en un formulario de Jotform.",
+        "Datos técnicos: su dirección IP, que usamos de forma temporal para evitar envíos abusivos del formulario de registro, y los registros técnicos que genera nuestro proveedor de alojamiento web. No recopilamos estadísticas de uso ni creamos perfiles de navegación."
       ]
     },
     "purpose": {
       "heading": "3. Finalidad del tratamiento de los datos",
       "items": [
-        "Gestionar la comunicación con nuestros miembros y visitantes",
-        "Enviar boletines informativos, devocionales y anuncios de eventos",
-        "Administrar registros de actividades, reuniones, cultos y servicios",
-        "Gestionar donaciones y emitir comprobantes cuando corresponda",
-        "Responder a solicitudes o preguntas realizadas por los usuarios",
-        "Mejorar la experiencia de navegación en nuestro sitio web"
+        "Responder a los mensajes, consultas y solicitudes que nos envía.",
+        "Gestionar su registro como asociado y sus solicitudes de admisión a nuestros programas.",
+        "Comunicarnos con usted sobre sus estudios y sobre los programas, actividades, cultos y eventos de EituEbenezer relacionados con su solicitud.",
+        "Enviarle información, devocionales o anuncios solo si usted lo ha solicitado o aceptado. Puede pedirnos que dejemos de enviárselos en cualquier momento.",
+        "Proteger el sitio web frente a abusos y envíos automatizados.",
+        "Cumplir con nuestras obligaciones legales."
       ]
     },
     "legalBasis": {
       "heading": "4. Base legal para el tratamiento de datos",
       "items": [
-        "Consentimiento expreso del titular",
-        "Cumplimiento de obligaciones legales o fiscales",
-        "Interés legítimo de EituEbenezer con fines pastorales, administrativos o de comunicación"
+        "Su consentimiento, que usted otorga al enviarnos voluntariamente un formulario.",
+        "La gestión de su solicitud de registro o de admisión, a petición suya.",
+        "El cumplimiento de obligaciones legales o fiscales.",
+        "El interés legítimo de EituEbenezer con fines pastorales, académicos, administrativos y de comunicación, así como para mantener la seguridad del sitio web."
       ]
     },
     "sharing": {
       "heading": "5. Compartición de datos",
-      "intro": "EituEbenezer no vende, alquila ni comparte los datos personales con terceros, salvo en los siguientes casos:",
+      "intro": "EituEbenezer no vende ni alquila sus datos personales. Solo los compartimos en los siguientes casos y en la medida necesaria:",
       "items": [
-        "Cuando sea requerido por ley o por una autoridad competente",
-        "Con proveedores de servicios tecnológicos que nos ayudan a operar el sitio web (por ejemplo, alojamiento o envío de correos electrónicos), siempre bajo acuerdos de confidencialidad",
-        "Con su consentimiento explícito"
+        "Resend: el servicio que usamos para hacer llegar a nuestro correo electrónico los mensajes de los formularios de contacto y de registro.",
+        "Jotform: la plataforma en la que se completa la solicitud de admisión a la Licenciatura, que trata esos datos según su propia política de privacidad.",
+        "Nuestro proveedor de alojamiento web, que procesa los datos técnicos necesarios para que el sitio funcione.",
+        "OpenStreetMap Foundation: recibe su dirección IP cuando su navegador carga el mapa de la página de contacto.",
+        "Cuando sea requerido por ley o por una autoridad competente.",
+        "Con su consentimiento explícito."
       ]
     },
+    "transfers": {
+      "heading": "6. Transferencias internacionales",
+      "text": "EituEbenezer tiene su sede en Florida, Estados Unidos, y nuestros proveedores pueden procesar los datos en Estados Unidos o en otros países. Si nos envía sus datos desde otro país, estos se tratarán en Estados Unidos, donde las leyes de protección de datos pueden ser distintas a las de su país. En todos los casos aplicamos las medidas descritas en esta política para protegerlos."
+    },
     "cookies": {
-      "heading": "6. Cookies y tecnologías similares",
-      "text": "Nuestro sitio web solo utiliza cookies y almacenamiento local estrictamente necesarios para recordar su idioma y su preferencia de tema. No utilizamos cookies de analítica, publicidad ni seguimiento. Consulte nuestra Política de Cookies para ver el detalle y cómo gestionarlas."
+      "heading": "7. Cookies y tecnologías similares",
+      "text": "Nuestro sitio web solo utiliza cookies y almacenamiento local estrictamente necesarios para recordar su idioma y su preferencia de tema. No utilizamos cookies de analítica, publicidad ni seguimiento. Consulte nuestra",
+      "linkLabel": "Política de Cookies",
+      "textAfter": "para ver el detalle y cómo gestionarlas."
+    },
+    "minors": {
+      "heading": "8. Menores de edad",
+      "text": "Nuestro sitio está dirigido principalmente a personas adultas. El registro de asociados solo admite personas de 16 años o más, y no recopilamos a sabiendas datos de menores de 13 años. Si usted es menor de edad, le pedimos que cuente con la autorización de su padre, madre o tutor antes de enviarnos sus datos. Si cree que un menor nos ha enviado datos sin esa autorización, escríbanos y los eliminaremos."
     },
     "rights": {
-      "heading": "7. Derechos del usuario",
+      "heading": "9. Derechos del usuario",
       "intro": "Usted tiene derecho a:",
       "items": [
-        "Acceder a sus datos personales",
-        "Rectificar datos inexactos o incompletos",
-        "Solicitar la eliminación de sus datos cuando ya no sean necesarios",
-        "Oponerse al tratamiento o solicitar su limitación",
-        "Retirar su consentimiento en cualquier momento"
+        "Acceder a sus datos personales.",
+        "Rectificar datos inexactos o incompletos.",
+        "Solicitar la eliminación de sus datos cuando ya no sean necesarios.",
+        "Oponerse al tratamiento o solicitar su limitación.",
+        "Retirar su consentimiento en cualquier momento, sin que esto afecte al tratamiento realizado antes de retirarlo."
       ],
-      "contactText": "Para ejercer estos derechos, puede comunicarse con nosotros a través del correo electrónico"
+      "contactText": "Para ejercer estos derechos, escríbanos al correo electrónico",
+      "responseText": "Responderemos a su solicitud lo antes posible y dentro de los plazos que establezca la ley aplicable. También puede presentar una reclamación ante la autoridad de protección de datos de su país."
     },
     "retention": {
-      "heading": "8. Conservación de los datos",
-      "text": "Conservaremos sus datos personales únicamente durante el tiempo necesario para cumplir con los fines descritos y con las obligaciones legales aplicables."
+      "heading": "10. Conservación de los datos",
+      "text": "Conservaremos sus datos personales solo durante el tiempo necesario para atender su consulta, gestionar su registro o sus estudios y cumplir con nuestras obligaciones legales. Después los eliminaremos o los anonimizaremos."
+    },
+    "security": {
+      "heading": "11. Seguridad de los datos",
+      "text": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra pérdida, mal uso, acceso no autorizado, divulgación o destrucción. Sin embargo, ningún sistema de transmisión o almacenamiento por Internet es completamente seguro, por lo que no podemos garantizar una seguridad absoluta."
+    },
+    "changes": {
+      "heading": "12. Cambios en esta política",
+      "text": "Podemos modificar esta Política de Privacidad en cualquier momento. Los cambios se publicarán en esta misma página con su fecha de actualización. Si los cambios son importantes, lo indicaremos de forma visible en el sitio."
     },
     "contact": {
-      "heading": "9. Contacto",
+      "heading": "13. Contacto",
+      "intro": "El responsable del tratamiento de sus datos es la Universidad Cristiana Evangélica Pentecostal EituEbenezer. Para cualquier pregunta sobre esta política o sobre sus datos, puede contactarnos en:",
       "emailLabel": "Email",
       "phoneLabel": "Teléfono",
       "addressLabel": "Dirección"
-    },
-    "security": {
-      "heading": "10. Seguridad de los datos",
-      "text": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra pérdida, mal uso, acceso no autorizado, divulgación o destrucción."
-    },
-    "changes": {
-      "heading": "11. Cambios en esta política",
-      "text": "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios serán publicados en esta misma página con su fecha de actualización."
     }
   },
   "TermsOfService": {
     "title": "Términos de Servicio",
     "subtitle": "Universidad Cristiana Evangélica Pentecostal EituEbenezer",
-    "lastUpdated": "Última actualización: 3 de septiembre de 2025",
+    "lastUpdated": "Última actualización: 12 de noviembre de 2026",
     "siteUse": {
-      "heading": "1. Uso del sitio web",
-      "text1": "El sitio web de la Universidad Cristiana Evangélica Pentecostal EituEbenezer tiene como propósito compartir información sobre nuestras actividades, enseñanzas cristianas, y contenidos espirituales.",
-      "text2": "El uso de este sitio implica la aceptación de estos Términos de Servicio."
+      "heading": "1. Aceptación y uso del sitio web",
+      "text1": "El sitio web de la Universidad Cristiana Evangélica Pentecostal EituEbenezer tiene como propósito compartir información sobre nuestros programas de estudio, actividades, enseñanzas cristianas y contenidos espirituales.",
+      "text2": "Al usar este sitio, usted acepta estos Términos de Servicio. Si no está de acuerdo con ellos, le pedimos que no lo utilice."
+    },
+    "programs": {
+      "heading": "2. Información sobre programas y admisión",
+      "text": "La información sobre programas, planes de estudio, créditos, duración, horarios y costos se ofrece a título informativo y puede cambiar sin previo aviso. Su publicación en este sitio no constituye una oferta vinculante ni garantiza la admisión. La admisión, la matrícula y las condiciones académicas se rigen por los requisitos y acuerdos que EituEbenezer comunique en cada proceso."
+    },
+    "forms": {
+      "heading": "3. Formularios y datos personales",
+      "text": "Al enviar un formulario, usted declara que la información que proporciona es verdadera y que tiene derecho a compartirla. Tratamos sus datos según nuestra <privacy>Política de Privacidad</privacy> y nuestra <cookies>Política de Cookies</cookies>."
     },
     "contentOwnership": {
-      "heading": "2. Propiedad del contenido",
-      "text": "Todo el contenido publicado (textos, imágenes, videos, audios, documentos) pertenece a EituEbenezer, salvo que se indique lo contrario. Queda prohibida su reproducción o distribución sin autorización previa, especialmente para fines comerciales."
+      "heading": "4. Propiedad del contenido",
+      "text": "Todo el contenido publicado (textos, imágenes, videos, audios, documentos) pertenece a EituEbenezer, salvo que se indique lo contrario. Las citas bíblicas, los mapas y otros materiales de terceros pertenecen a sus respectivos titulares. Queda prohibida la reproducción o distribución de nuestro contenido sin autorización previa, especialmente con fines comerciales."
     },
     "properUse": {
-      "heading": "3. Uso adecuado",
-      "text": "Se espera que el uso de este sitio sea respetuoso y conforme a principios cristianos. No se permite el uso del contenido para burlas, difamación o cualquier fin contrario a la fe y valores que promovemos."
+      "heading": "5. Uso adecuado",
+      "text": "Se espera que el uso de este sitio sea respetuoso y conforme a principios cristianos. No se permite usar el contenido para burlas, difamación o cualquier fin contrario a la fe y los valores que promovemos. Tampoco se permite intentar dañar el sitio, acceder sin autorización a sus sistemas ni enviar mensajes automatizados o abusivos a través de sus formularios."
     },
     "externalLinks": {
-      "heading": "4. Enlaces externos",
-      "text": "Este sitio puede incluir enlaces a páginas externas. No nos hacemos responsables del contenido de sitios de terceros."
+      "heading": "6. Enlaces y servicios externos",
+      "text": "Este sitio incluye enlaces a servicios de terceros, como WhatsApp, redes sociales o el formulario de admisión de Jotform. Esos servicios tienen sus propios términos y políticas de privacidad, y no nos hacemos responsables de su contenido ni de su funcionamiento."
+    },
+    "liability": {
+      "heading": "7. Limitación de responsabilidad",
+      "text": "Este sitio se ofrece “tal cual” y “según disponibilidad”. Procuramos que la información sea correcta y esté actualizada, pero no garantizamos que esté libre de errores ni que el sitio funcione sin interrupciones. En la medida máxima permitida por la ley, EituEbenezer no será responsable de los daños derivados del uso del sitio o de la imposibilidad de usarlo, ni de las decisiones que se tomen a partir de su contenido."
+    },
+    "law": {
+      "heading": "8. Ley aplicable",
+      "text": "Estos Términos se rigen por las leyes del estado de Florida, Estados Unidos. Cualquier controversia relacionada con ellos se someterá a los tribunales competentes de dicho estado, salvo que la ley aplicable disponga otra cosa."
+    },
+    "changes": {
+      "heading": "9. Cambios en los términos",
+      "text": "Podemos modificar estos Términos en cualquier momento. Las modificaciones se publicarán en esta misma página con su fecha de actualización."
     },
     "contact": {
-      "heading": "5. Contacto",
+      "heading": "10. Contacto",
       "intro": "Para cualquier consulta relacionada con el uso del sitio, puede contactarnos en:",
       "emailLabel": "Email",
       "phoneLabel": "Teléfono",
       "addressLabel": "Dirección"
-    },
-    "changes": {
-      "heading": "6. Cambios en los términos",
-      "text": "Podemos modificar estos Términos en cualquier momento. Las modificaciones se publicarán en esta misma página con su fecha de actualización."
     }
   },
   "CookiePolicy": {
     "title": "Política de Cookies",
     "subtitle": "Universidad Cristiana Evangélica Pentecostal EituEbenezer",
-    "lastUpdated": "Última actualización: 26 de septiembre de 2026",
+    "lastUpdated": "Última actualización: 12 de noviembre de 2026",
     "whatAre": {
       "heading": "1. ¿Qué son las cookies?",
       "text": "Las cookies son pequeños archivos de texto que un sitio web guarda en su navegador. Tecnologías similares, como el almacenamiento local (localStorage), cumplen una función parecida. En esta política usamos el término “cookies” para referirnos a ambas."
     },
     "used": {
       "heading": "2. Cookies que utilizamos",
-      "intro": "Este sitio solo utiliza cookies propias, estrictamente necesarias o de preferencia, que se crean cuando usted cambia el idioma o el tema. No utilizamos cookies de analítica, publicidad ni seguimiento, y no compartimos datos de navegación con redes publicitarias.",
+      "intro": "Este sitio solo utiliza cookies propias, estrictamente necesarias o de preferencia, que se crean cuando usa el sitio en un idioma distinto al de su navegador o cuando cambia el tema. No utilizamos cookies de analítica, publicidad ni seguimiento, y no compartimos datos de navegación con redes publicitarias.",
       "columns": {
         "name": "Nombre",
         "provider": "Proveedor",
@@ -687,7 +720,7 @@
         {
           "name": "NEXT_LOCALE",
           "provider": "eituebenezer.com (propia)",
-          "purpose": "Recordar el idioma que usted eligió (español o inglés).",
+          "purpose": "Recordar el idioma que usted eligió (español o inglés) cuando es distinto al de su navegador.",
           "type": "Cookie técnica, necesaria",
           "duration": "Sesión (se elimina al cerrar el navegador)"
         },
@@ -704,7 +737,7 @@
       "heading": "3. Servicios de terceros",
       "items": [
         "Mapa de ubicación: en la página de contacto mostramos un mapa de OpenStreetMap. Para mostrarlo, su navegador descarga las imágenes del mapa desde los servidores de la OpenStreetMap Foundation, que reciben datos técnicos como su dirección IP y el tipo de navegador, de acuerdo con su propia política de privacidad.",
-        "Enlaces externos: si hace clic en enlaces a WhatsApp, redes sociales u otros sitios, esos servicios pueden utilizar sus propias cookies. Le recomendamos revisar sus políticas de privacidad."
+        "Enlaces externos: si hace clic en enlaces a WhatsApp, redes sociales, el formulario de admisión de Jotform u otros sitios, esos servicios pueden utilizar sus propias cookies. Le recomendamos revisar sus políticas de privacidad."
       ]
     },
     "consent": {

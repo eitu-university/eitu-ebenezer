@@ -1,5 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
+import type { Locale } from '@/i18n/routing';
 import { FiMail, FiMapPin } from 'react-icons/fi';
 import { RiWhatsappLine } from 'react-icons/ri';
 import Logo from '../Logo';
@@ -15,6 +16,7 @@ export default async function Footer() {
   const currentYear = new Date().getFullYear();
   const t = await getTranslations('Footer');
   const tNav = await getTranslations('Navigation');
+  const locale = (await getLocale()) as Locale;
 
   return (
     <div className="relative">
@@ -101,7 +103,7 @@ export default async function Footer() {
                     <br />
                     {contactInfo.address.city}
                     <br />
-                    {contactInfo.address.country}
+                    {contactInfo.address.country[locale]}
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">

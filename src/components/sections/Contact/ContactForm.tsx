@@ -14,6 +14,7 @@ import { toast } from 'sonner';
 import { contactInfo } from '@/data';
 import Button from '@/components/ui/Button';
 import { Field, pillClasses, textareaClasses } from '@/components/ui/Input';
+import PrivacyNotice from '@/components/legal/PrivacyNotice';
 
 export default function ContactForm() {
   const tContact = useTranslations('Contact');
@@ -196,6 +197,8 @@ export default function ContactForm() {
             </>
           )}
         </Button>
+
+        <PrivacyNotice />
       </form>
 
       {/* Información de contacto adicional */}

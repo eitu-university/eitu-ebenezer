@@ -1,10 +1,17 @@
+import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import { contactInfo } from '@/data';
+import LegalContact from '@/components/legal/LegalContact';
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+const linkClasses = 'text-terracotta underline hover:text-terracotta/80';
+const textClasses =
+  'mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -20,6 +27,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           : `/${locale}/politica-de-privacidad`,
     },
   };
+}
+
+function Section({
+  id,
+  heading,
+  children,
+}: {
+  id: string;
+  heading: string;
+  children: ReactNode;
+}) {
+  return (
+    <section aria-labelledby={id}>
+      <h2
+        id={id}
+        className="font-display text-xl font-normal text-ink dark:text-paper"
+      >
+        {heading}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
+function List({ items }: { items: string[] }) {
+  return (
+    <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default async function PrivacyPolicyPage() {
@@ -46,184 +85,79 @@ export default async function PrivacyPolicyPage() {
         </header>
 
         <div className="mx-auto max-w-3xl space-y-10">
-          <section aria-labelledby="intro">
-            <h2
-              id="intro"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('intro.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
-              {t('intro.text')}
+          <Section id="intro" heading={t('intro.heading')}>
+            <p className={textClasses}>{t('intro.text')}</p>
+          </Section>
+
+          <Section id="datos" heading={t('dataCollected.heading')}>
+            <p className={textClasses}>{t('dataCollected.intro')}</p>
+            <List items={dataCollectedItems} />
+          </Section>
+
+          <Section id="finalidad" heading={t('purpose.heading')}>
+            <List items={purposeItems} />
+          </Section>
+
+          <Section id="base-legal" heading={t('legalBasis.heading')}>
+            <List items={legalBasisItems} />
+          </Section>
+
+          <Section id="comparticion" heading={t('sharing.heading')}>
+            <p className={textClasses}>{t('sharing.intro')}</p>
+            <List items={sharingItems} />
+          </Section>
+
+          <Section id="transferencias" heading={t('transfers.heading')}>
+            <p className={textClasses}>{t('transfers.text')}</p>
+          </Section>
+
+          <Section id="cookies" heading={t('cookies.heading')}>
+            <p className={textClasses}>
+              {t('cookies.text')}{' '}
+              <Link className={linkClasses} href="/politica-de-cookies">
+                {t('cookies.linkLabel')}
+              </Link>{' '}
+              {t('cookies.textAfter')}
             </p>
-          </section>
+          </Section>
 
-          <section aria-labelledby="datos">
-            <h2
-              id="datos"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('dataCollected.heading')}
-            </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
-              {dataCollectedItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </section>
+          <Section id="menores" heading={t('minors.heading')}>
+            <p className={textClasses}>{t('minors.text')}</p>
+          </Section>
 
-          <section aria-labelledby="finalidad">
-            <h2
-              id="finalidad"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('purpose.heading')}
-            </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
-              {purposeItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section aria-labelledby="base-legal">
-            <h2
-              id="base-legal"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('legalBasis.heading')}
-            </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
-              {legalBasisItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section aria-labelledby="comparticion">
-            <h2
-              id="comparticion"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('sharing.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa]">
-              {t('sharing.intro')}
-            </p>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
-              {sharingItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section aria-labelledby="cookies">
-            <h2
-              id="cookies"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('cookies.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
-              {t('cookies.text')}
-            </p>
-          </section>
-
-          <section aria-labelledby="derechos">
-            <h2
-              id="derechos"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('rights.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa]">
-              {t('rights.intro')}
-            </p>
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-charcoal dark:text-[#a1a1aa] text-justify">
-              {rightsItems.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
+          <Section id="derechos" heading={t('rights.heading')}>
+            <p className={textClasses}>{t('rights.intro')}</p>
+            <List items={rightsItems} />
+            <p className={textClasses}>
               {t('rights.contactText')}{' '}
-              <a
-                className="text-terracotta underline hover:text-terracotta/80"
-                href={contactInfo.emailLink}
-              >
+              <a className={linkClasses} href={contactInfo.emailLink}>
                 {contactInfo.email}
               </a>
               .
             </p>
-          </section>
+            <p className={textClasses}>{t('rights.responseText')}</p>
+          </Section>
 
-          <section aria-labelledby="conservacion">
-            <h2
-              id="conservacion"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('retention.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
-              {t('retention.text')}
-            </p>
-          </section>
+          <Section id="conservacion" heading={t('retention.heading')}>
+            <p className={textClasses}>{t('retention.text')}</p>
+          </Section>
 
-          <section aria-labelledby="contacto">
-            <h2
-              id="contacto"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('contact.heading')}
-            </h2>
-            <div className="mt-3 space-y-1 text-charcoal dark:text-[#a1a1aa]">
-              <p>
-                📧 {t('contact.emailLabel')}:{' '}
-                <a
-                  className="text-terracotta underline hover:text-terracotta/80"
-                  href={contactInfo.emailLink}
-                >
-                  {contactInfo.email}
-                </a>
-              </p>
-              <p>
-                📞 {t('contact.phoneLabel')}:{' '}
-                <a
-                  className="text-terracotta underline hover:text-terracotta/80"
-                  href={contactInfo.whatsappLink}
-                >
-                  {contactInfo.phone}
-                </a>
-              </p>
-              <p>
-                📍 {t('contact.addressLabel')}: {contactInfo.address.country},{' '}
-                {contactInfo.address.city}
-              </p>
-            </div>
-          </section>
+          <Section id="seguridad" heading={t('security.heading')}>
+            <p className={textClasses}>{t('security.text')}</p>
+          </Section>
 
-          <section aria-labelledby="seguridad">
-            <h2
-              id="seguridad"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('security.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
-              {t('security.text')}
-            </p>
-          </section>
+          <Section id="cambios" heading={t('changes.heading')}>
+            <p className={textClasses}>{t('changes.text')}</p>
+          </Section>
 
-          <section aria-labelledby="cambios">
-            <h2
-              id="cambios"
-              className="font-display text-xl font-normal text-ink dark:text-paper"
-            >
-              {t('changes.heading')}
-            </h2>
-            <p className="mt-3 leading-relaxed text-charcoal dark:text-[#a1a1aa] text-justify">
-              {t('changes.text')}
-            </p>
-          </section>
+          <Section id="contacto" heading={t('contact.heading')}>
+            <p className={textClasses}>{t('contact.intro')}</p>
+            <LegalContact
+              emailLabel={t('contact.emailLabel')}
+              phoneLabel={t('contact.phoneLabel')}
+              addressLabel={t('contact.addressLabel')}
+            />
+          </Section>
         </div>
       </section>
     </main>

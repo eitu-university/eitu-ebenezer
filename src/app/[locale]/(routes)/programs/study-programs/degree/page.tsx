@@ -145,7 +145,7 @@ const Degree = async () => {
             {t('ctaDescription')}
           </p>
           <Button
-            href="https://www.jotform.com/build/262587067374165"
+            href="https://form.jotform.com/262587067374165"
             target="_blank"
             rel="noopener noreferrer"
           >

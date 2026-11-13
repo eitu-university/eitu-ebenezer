@@ -326,6 +326,7 @@ declare global {
       readLess: string;
       learnMore: string;
       getInTouch: string;
+      privacyNotice: string;
     };
     NotFound: {
       title: string;
@@ -336,35 +337,49 @@ declare global {
       subtitle: string;
       lastUpdated: string;
       intro: { heading: string; text: string };
-      dataCollected: { heading: string; items: string[] };
+      dataCollected: { heading: string; intro: string; items: string[] };
       purpose: { heading: string; items: string[] };
       legalBasis: { heading: string; items: string[] };
       sharing: { heading: string; intro: string; items: string[] };
-      cookies: { heading: string; text: string };
+      transfers: { heading: string; text: string };
+      cookies: {
+        heading: string;
+        text: string;
+        linkLabel: string;
+        textAfter: string;
+      };
+      minors: { heading: string; text: string };
       rights: {
         heading: string;
         intro: string;
         items: string[];
         contactText: string;
+        responseText: string;
       };
       retention: { heading: string; text: string };
+      security: { heading: string; text: string };
+      changes: { heading: string; text: string };
       contact: {
         heading: string;
+        intro: string;
         emailLabel: string;
         phoneLabel: string;
         addressLabel: string;
       };
-      security: { heading: string; text: string };
-      changes: { heading: string; text: string };
     };
     TermsOfService: {
       title: string;
       subtitle: string;
       lastUpdated: string;
       siteUse: { heading: string; text1: string; text2: string };
+      programs: { heading: string; text: string };
+      forms: { heading: string; text: string };
       contentOwnership: { heading: string; text: string };
       properUse: { heading: string; text: string };
       externalLinks: { heading: string; text: string };
+      liability: { heading: string; text: string };
+      law: { heading: string; text: string };
+      changes: { heading: string; text: string };
       contact: {
         heading: string;
         intro: string;
@@ -372,7 +387,6 @@ declare global {
         phoneLabel: string;
         addressLabel: string;
       };
-      changes: { heading: string; text: string };
     };
     CookiePolicy: {
       title: string;
