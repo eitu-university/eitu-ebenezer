@@ -534,7 +534,10 @@
     "description": "We are a Christian theological university committed to forming leaders with purpose. Our mission is to educate you with excellence and serve you with vocation.",
     "quickLinksTitle": "Quick Links",
     "contactTitle": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "followUs": "Follow us",
+    "facebookAssociate": "Associate",
+    "facebookBachelor": "International Bachelor's"
   },
   "Common": {
     "readMore": "Read more",

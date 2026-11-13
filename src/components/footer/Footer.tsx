@@ -3,7 +3,12 @@ import { Link } from '@/i18n/navigation';
 import { FiMail, FiMapPin } from 'react-icons/fi';
 import { RiWhatsappLine } from 'react-icons/ri';
 import Logo from '../Logo';
-import { quickLinks, socialMedia } from '@/data/footer';
+import {
+  quickLinks,
+  socialMedia,
+  facebookPages,
+  facebookIcon as FacebookIcon,
+} from '@/data/footer';
 import { contactInfo } from '@/data';
 
 export default async function Footer() {
@@ -30,15 +35,33 @@ export default async function Footer() {
               <p className="mb-6 text-justify leading-relaxed text-[#a1a1aa]">
                 {t('description')}
               </p>
-              <div className="flex space-x-4">
-                {socialMedia.map((item, idx) => (
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-paper">
+                {t('followUs')}
+              </h3>
+              <div className="flex flex-wrap items-center gap-3">
+                {socialMedia.map((item) => (
                   <a
-                    key={idx}
-                    href="#"
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3f3f46] text-paper transition-colors duration-200 hover:border-terracotta hover:bg-terracotta hover:text-parchment"
                     aria-label={item.ariaLabel}
                   >
                     <item.icon size={20} />
+                  </a>
+                ))}
+                {facebookPages.map((page) => (
+                  <a
+                    key={page.href}
+                    href={page.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-10 items-center gap-2 rounded-full border border-[#3f3f46] px-4 text-sm text-paper transition-colors duration-200 hover:border-terracotta hover:bg-terracotta hover:text-parchment"
+                    aria-label={`Facebook – ${t(page.labelKey)}`}
+                  >
+                    <FacebookIcon size={18} />
+                    <span>{t(page.labelKey)}</span>
                   </a>
                 ))}
               </div>

@@ -534,7 +534,10 @@
     "description": "Somos una universidad teológica cristiana comprometida con la formación de líderes con propósito. Nuestra misión es educarte con excelencia y servirte con vocación.",
     "quickLinksTitle": "Enlaces Rápidos",
     "contactTitle": "Contacto",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "followUs": "Síguenos",
+    "facebookAssociate": "Asociado",
+    "facebookBachelor": "Licenciatura Internacional"
   },
   "Common": {
     "readMore": "Ver más",

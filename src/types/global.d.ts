@@ -317,6 +317,9 @@ declare global {
       quickLinksTitle: string;
       contactTitle: string;
       rights: string;
+      followUs: string;
+      facebookAssociate: string;
+      facebookBachelor: string;
     };
     Common: {
       readMore: string;
