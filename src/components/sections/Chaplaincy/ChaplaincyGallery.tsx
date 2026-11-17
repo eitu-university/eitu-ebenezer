@@ -4,7 +4,14 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import type { GalleryImage } from '@/data/chaplaincy-gallery';
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const REDUCED_MOTION = '(prefers-reduced-motion: reduce)';
 
 type Props = {
   images: GalleryImage[];
@@ -18,7 +25,49 @@ export default function ChaplaincyGallery({ images }: Props) {
   const touchStartX = useRef<number | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const gridRef = useRef<HTMLUListElement>(null);
+  const lightboxImgRef = useRef<HTMLImageElement>(null);
+
   const total = images.length;
+
+  // Grid: photos fade up in a staggered wave as they scroll into view.
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia();
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        const items = gsap.utils.toArray<HTMLElement>('li');
+        gsap.set(items, { autoAlpha: 0, y: 40, scale: 0.96 });
+        ScrollTrigger.batch(items, {
+          start: 'top 90%',
+          once: true,
+          onEnter: (batch) =>
+            gsap.to(batch, {
+              autoAlpha: 1,
+              y: 0,
+              scale: 1,
+              duration: 0.8,
+              ease: 'power3.out',
+              stagger: 0.08,
+            }),
+        });
+      });
+    },
+    { scope: gridRef }
+  );
+
+  // Lightbox: each newly shown image fades and settles in.
+  useGSAP(
+    () => {
+      if (activeIndex === null || !lightboxImgRef.current) return;
+      if (window.matchMedia(REDUCED_MOTION).matches) return;
+      gsap.fromTo(
+        lightboxImgRef.current,
+        { autoAlpha: 0, scale: 0.95 },
+        { autoAlpha: 1, scale: 1, duration: 0.45, ease: 'power2.out' }
+      );
+    },
+    { dependencies: [activeIndex] }
+  );
 
   const open = (index: number) => {
     setActiveIndex(index);
@@ -67,7 +116,7 @@ export default function ChaplaincyGallery({ images }: Props) {
 
   return (
     <>
-      <ul className="columns-2 gap-3 sm:gap-4 md:columns-3 xl:columns-4">
+      <ul ref={gridRef} className="columns-2 gap-3 sm:gap-4 md:columns-3 xl:columns-4">
         {images.map((image, index) => (
           <li key={image.src} className="mb-3 break-inside-avoid sm:mb-4">
             <button
@@ -137,6 +186,7 @@ export default function ChaplaincyGallery({ images }: Props) {
             >
               <Image
                 key={active.src}
+                ref={lightboxImgRef}
                 src={active.src}
                 alt={t('imageAlt', { index: activeIndex + 1, total })}
                 fill
